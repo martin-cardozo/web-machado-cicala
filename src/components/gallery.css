@@ -43,6 +43,8 @@
     animation-play-state: paused;
 }
 
+
+
 @keyframes scroll-up {
     0%{
         transform: translateY(0);
@@ -88,5 +90,16 @@
         margin: 0;
         padding: 0;
     }
+    
+    #slide-track-2{
+        visibility: hidden;
+    }
 
+    #slide-track-3{
+        visibility: hidden;
+    }
+
+    #slide-track-4{
+        visibility: hidden;
+    }
 }
