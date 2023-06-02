@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import './navbar.css'
 import miLogo from '../assets/MachadoCicala_logo_Negro.png'
 import Menu from './Menu'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
 
@@ -26,7 +27,9 @@ const Navbar = () => {
 
     return(
         <header>
-            <img className="logo" src={miLogo} alt="logo de la empresa" />
+            <Link to={"/"} className="logo">
+                <img src={miLogo} alt="logo de la empresa" />
+            </Link>
             
             
             <nav>

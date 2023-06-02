@@ -16,6 +16,7 @@ header {
     width: 20em;
     height: 100%;
     margin-right: auto;
+    margin-left: 20px;
     padding: 0.9em;
     display: flex;
     cursor: pointer;
@@ -64,7 +65,7 @@ header {
     align-items: flex-start;
     justify-content: space-between;
     font-size: 16px;
-    font-family: 'Droid Sans Mono', sans-serif;;
+    font-family: 'Droid Sans Mono', sans-serif;
     overflow-y: scroll;
 
 }
@@ -83,15 +84,15 @@ header {
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    margin: 20px;
+    margin: 8px;
     padding: 8px;
-
 
 }
 
 .menu-col li > a:hover{
     font-size: 18px;
     color: rgb(133, 133, 133);
+    background-color: rgb(210, 210, 210);
 }
 
 .menu-col img{
@@ -139,19 +140,14 @@ header {
         margin-top: 10px;
     }
 
-
+    
+    .menu{
+        height: 100%;
+    }
 
     .menu-container {
         flex-direction: column;
         padding: 0;
     }
 
-    .menu-col{
-        height: 20em;
-        padding: 0;
-    }
-    
-    .menu-col li{
-        margin: 10px;
-    }
 }

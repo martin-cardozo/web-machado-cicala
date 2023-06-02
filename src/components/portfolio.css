@@ -1,0 +1,133 @@
+
+/* Slider contenedor */
+.slider{
+    height: 42em;
+    margin: auto;
+    position: relative;
+    width: 98%;
+    display: flex;
+    overflow: hidden;
+}
+
+
+/* Slide tracks. En total son 4 tracks verticales */
+/* De abajo hacia arriba */
+.slide-track-up-categ{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    height: calc(277px * 8);
+    width: 350px;
+    
+    animation: scroll-up-categ 110s linear infinite;
+}
+
+/* De arriba hacia abajo */
+.slide-track-down-categ{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    height: calc(277px * 6);
+    width: 350px;
+    
+    animation: scroll-down-categ 110s linear infinite;
+}
+
+
+
+
+
+@keyframes scroll-up-categ {
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(calc(-277px*4));
+    }
+}
+
+@keyframes scroll-down-categ {
+    0%{
+        transform: translateY(calc(-277px*3));
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+/* Card */
+.card{
+    height: 277px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    margin: 6px;
+    padding: 5px;
+
+    text-align: center;
+    color: rgb(21, 21, 21);
+    font-size: 20px;
+    font-family: 'Droid Sans Mono', sans-serif;
+
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+.card:hover{
+    opacity: 0.8;
+    height: 282px;
+    width: 353px;
+    border-left: 2px solid rgb(rgb(21, 21, 21));
+    border-bottom: 2px solid rgb(rgb(21, 21, 21));
+    box-shadow: black;
+}
+
+.card > a{
+    width: 100%;
+}
+
+
+.bg1{
+    background: linear-gradient(90deg, rgba(132, 100, 100, 0.98) 50%, rgba(132, 100, 100, 0.98) 0%);
+}
+
+.bg2{
+    background: linear-gradient(90deg, rgba(90, 65, 37, 0.98) 50%, rgba(90, 65, 37, 0.98) 0%); 
+}
+
+.bg3{
+    background: linear-gradient(90deg, rgba(123, 115, 110, 0.98) 50%, rgba(123, 115, 110, 0.98) 0%);
+}
+
+.bg4{
+    background: linear-gradient(90deg,  rgba(123, 132, 172, 0.96) 50%, rgba(123, 132, 172, 0.96) 0%); 
+}
+
+.bg5{
+    background: linear-gradient(90deg, rgba(107, 159, 65, 0.96)  50%, rgba(107, 159, 65, 0.96) 0%);
+}
+
+.bg6{
+    background: linear-gradient(90deg, rgba(130, 89, 125, 0.96) 50%, rgba(130, 89, 125, 0.96) 0%);
+}
+
+.bg7{
+    background: linear-gradient(90deg, rgba(29, 143, 151, 0.96) 50%, rgba(29, 143, 151, 0.96) 0%); 
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    
+    .slider{
+        flex-direction: column;
+    }
+
+    .slide-track-up-categ{
+        animation-play-state: paused;
+    }
+    
+    .slide-track-down-categ{
+        animation-play-state: paused;
+    }
+}
