@@ -42,7 +42,7 @@ const Navbar = () => {
                 </nav>
 
                 <div className={menuClass}>
-                    <Menu/>
+                    <Menu setBurgerClass={setBurgerClass} setMenuClass={setMenuClass} isMenuClicked={isMenuClicked} setIsMenuClicked={setIsMenuClicked}/>
                 </div>
             </header>
             

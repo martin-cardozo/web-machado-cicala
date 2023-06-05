@@ -16,7 +16,7 @@
 }
 
 .gallery img:hover{
-    opacity: 0.9;
+    opacity: 0.8;
     outline: 2px solid #2a2a2a;
 }
 
