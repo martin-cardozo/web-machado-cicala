@@ -1,0 +1,101 @@
+
+/* Slider contenedor */
+.slider{
+    height: 42em;
+    margin: auto;
+    position: relative;
+    width: 98%;
+    display: flex;
+    overflow: hidden;
+}
+
+
+/* Slide tracks. En total son 4 tracks verticales */
+/* De abajo hacia arriba */
+.slide-track-up{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    height: calc(277px * 8);
+    width: 350px;
+    
+    animation: scroll-up 110s linear infinite;
+}
+
+/* De arriba hacia abajo */
+.slide-track-down{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    height: calc(277px * 8);
+    width: 350px;
+    
+    animation: scroll-down 110s linear infinite;
+}
+
+/* .slide-track-up:hover{
+    animation-play-state: paused;
+}
+
+.slide-track-down:hover{
+    animation-play-state: paused;
+} */
+
+
+
+@keyframes scroll-up {
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(calc(-277px*4));
+    }
+}
+
+@keyframes scroll-down {
+    0%{
+        transform: translateY(calc(-277px*4));
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+/* Slide */
+.slide{
+    height: 277px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    margin: 6px;
+    padding: 5px;
+
+}
+
+.slide > img{
+    width: 100%;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.slide > img:hover{
+    opacity: 0.5;
+    border: 1.5px  solid #000;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    
+    #slide-track-2{
+        visibility: hidden;
+    }
+
+    #slide-track-3{
+        visibility: hidden;
+    }
+
+    #slide-track-4{
+        visibility: hidden;
+    }
+}

@@ -1,12 +1,9 @@
-import Navbar from '../components/Navbar'
 import '../components/portfolio.css'
 
 
 function Services() {
   return (
     <>
-        <Navbar />
-
         <div className="slider">
 
             {/* categorías 1 a 4 */}

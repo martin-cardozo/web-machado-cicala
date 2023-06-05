@@ -1,5 +1,5 @@
 import Navbar from "../components/Navbar"
-import Gallery from "../components/Gallery"
+import Slider from "../components/Slider"
 
 // import image1 from '../assets/images/home/Arg-Vs-Bra.jpg'
 
@@ -11,7 +11,7 @@ function Home() {
   return (
     <>
       <Navbar />
-      <Gallery images={images}/>
+      <Slider images={images}/>
     </>
   )
 }

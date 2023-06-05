@@ -1,120 +1,204 @@
-import Navbar from '../components/Navbar'
+import { Link } from 'react-router-dom'
 import '../components/portfolio.css'
 
 
 function Portfolio() {
   return (
-    <>
-        <Navbar />
-
+    
         <div className="slider">
 
             {/* categorías 1 a 4 */}
             <div className="slide-track-up-categ">
-                <div className="card bg1">
-                    <a href="">Advertising</a>
-                </div>
-                <div className="card bg2">
-                    <a href="">Beauty</a>
-                </div>
-                <div className="card bg3">
-                    <a href="">Celebrities</a>
-                </div>
-                <div className="card bg4">
-                    <a href="">Entertaiment</a>
-                </div>
+                
+                <Link to={"1"}>
+                    <div className="card bg1">
+                        Advertising
+                    </div>
+                </Link>
 
-                <div className="card bg1">
-                    <a href="">Advertising</a>
-                </div>
-                <div className="card bg2">
-                    <a href="">Beauty</a>
-                </div>
-                <div className="card bg3">
-                    <a href="">Celebrities</a>
-                </div>
-                <div className="card bg4">
-                    <a href="">Entertaiment</a>
-                </div>
+                <Link to={"2"}>
+                    <div className="card bg2">
+                        Beauty
+                    </div>
+                </Link>
+                
+                <Link to={"3"}>
+                    <div className="card bg3">
+                        Celebrities
+                    </div>
+                </Link>
+
+                <Link to={"4"}>
+                    <div className="card bg4">
+                        Entertaiment
+                    </div>
+                </Link>
+
+                <Link to={"1"}>
+                    <div className="card bg1">
+                        Advertising
+                    </div>
+                </Link>
+
+                <Link to={"2"}>
+                    <div className="card bg2">
+                        Beauty
+                    </div>
+                </Link>
+                
+                <Link to={"3"}>
+                    <div className="card bg3">
+                        Celebrities
+                    </div>
+                </Link>
+
+                <Link to={"4"}>
+                    <div className="card bg4">
+                        Entertaiment
+                    </div>
+                </Link>
+
             </div>
 
             {/* categorías 5 a 7 */}
             <div className="slide-track-down-categ">
-                <div className="card bg5">
-                    <a href="">Fashion</a>
-                </div>
-                <div className="card bg6">
-                    <a href="">Hair</a>
-                </div>
-                <div className="card bg7">
-                    <a href="">Lifestyle</a>
-                </div>
 
-                <div className="card bg5">
-                    <a href="">Fashion</a>
-                </div>
-                <div className="card bg6">
-                    <a href="">Hair</a>
-                </div>
-                <div className="card bg7">
-                    <a href="">Lifestyle</a>
-                </div>
+                <Link to={"5"}>
+                    <div className="card bg5">
+                        Fashion
+                    </div>
+                </Link>
+
+                <Link to={"6"}>
+                    <div className="card bg6">
+                        Hair
+                    </div>
+                </Link>
+
+                <Link to={"7"}>
+                    <div className="card bg7">
+                        Lifestyle
+                    </div>
+                </Link>
+
+
+
+                <Link to={"5"}>
+                    <div className="card bg5">
+                        Fashion
+                    </div>
+                </Link>
+
+                <Link to={"6"}>
+                    <div className="card bg6">
+                        Hair
+                    </div>
+                </Link>
+
+                <Link to={"7"}>
+                    <div className="card bg7">
+                        Lifestyle
+                    </div>
+                </Link>
+
+
             </div>
 
             {/* categorías 8 a 11 */}
             <div className="slide-track-up-categ">
-                <div className="card bg4">
-                    <a href="">Films (+ AD Films)</a>
-                </div>
-                <div className="card bg3">
-                    <a href="">Short Films - Music Videos</a>
-                </div>
-                <div className="card bg2">
-                    <a href="">Special Projects</a>
-                </div>
-                <div className="card bg1">
-                    <a href="">Still</a>
-                </div>
 
-                <div className="card bg4">
-                    <a href="">Films (+ AD Films)</a>
-                </div>
-                <div className="card bg3">
-                    <a href="">Short Films - Music Videos</a>
-                </div>
-                <div className="card bg2">
-                    <a href="">Special Projects</a>
-                </div>
-                <div className="card bg1">
-                    <a href="">Still</a>
-                </div>
+                <Link to={"8"}>
+                    <div className="card bg4">
+                        Films (+ AD Films)
+                    </div>
+                </Link>
+
+                <Link to={"9"}>
+                    <div className="card bg3">
+                        Short Films - Music Videos
+                    </div>
+                </Link>
+
+                <Link to={"10"}>
+                    <div className="card bg2">
+                        Special Projects
+                    </div>
+                </Link>
+
+                <Link to={"11"}>
+                    <div className="card bg1">
+                        Still
+                    </div>
+                </Link>
+                
+                
+                <Link to={"8"}>
+                    <div className="card bg4">
+                        Films (+ AD Films)
+                    </div>
+                </Link>
+
+                <Link to={"9"}>
+                    <div className="card bg3">
+                        Short Films - Music Videos
+                    </div>
+                </Link>
+
+                <Link to={"10"}>
+                    <div className="card bg2">
+                        Special Projects
+                    </div>
+                </Link>
+
+                <Link to={"11"}>
+                    <div className="card bg1">
+                        Still
+                    </div>
+                </Link>
+                
             </div>
 
             {/* categorías 12 a 14 */}
             <div className="slide-track-down-categ">
-                <div className="card bg7">
-                    <a href="">Kids</a>
-                </div>
-                <div className="card bg6">
-                    <a href="">Animals</a>
-                </div>
-                <div className="card bg5">
-                    <a href="">Cars</a>
-                </div>
-                
 
-                <div className="card bg7">
-                    <a href="">Kids</a>
-                </div>
-                <div className="card bg6">
-                    <a href="">Animals</a>
-                </div>
-                <div className="card bg5">
-                    <a href="">Cars</a>
-                </div>
+                <Link to={"12"}>
+                    <div className="card bg7">
+                        Kids
+                    </div>
+                </Link>
+
+                <Link to={"13"}>
+                    <div className="card bg6">
+                        Animals
+                    </div>
+                </Link>
+
+                <Link to={"14"}>
+                    <div className="card bg5">
+                        Cars
+                    </div>
+                </Link>
+
+                <Link to={"12"}>
+                    <div className="card bg7">
+                        Kids
+                    </div>
+                </Link>
+
+                <Link to={"13"}>
+                    <div className="card bg6">
+                        Animals
+                    </div>
+                </Link>
+
+                <Link to={"14"}>
+                    <div className="card bg5">
+                        Cars
+                    </div>
+                </Link>
             </div>
         </div>
-    </>
+    
   )
 }
 

@@ -8,6 +8,8 @@ import About from './routes/About.jsx'
 import Contact from './routes/Contact'
 import Portfolio from './routes/Portfolio'
 import Services from './routes/Services'
+import Navbar from './components/Navbar'
+import Gallery from './components/Gallery'
 
 
 const router = createBrowserRouter([
@@ -28,13 +30,33 @@ const router = createBrowserRouter([
   },
   {
     path: "/portfolio",
-    element: <Portfolio />,
-    errorElement: <h1>Error</h1>
+    element: <Navbar />,
+    errorElement: <h1>Error</h1>,
+    children: [
+      {
+        path: "",
+        element: <Portfolio />
+      },
+      {
+        path: ":portfolioid",
+        element: <Gallery category={"portfolio"} />
+      }
+    ]
   },
   {
     path: "/services",
-    element: <Services />,
-    errorElement: <h1>Error</h1>
+    element: <Navbar />,
+    errorElement: <h1>Error</h1>,
+    children: [
+      {
+        path: "",
+        element: <Services />
+      },
+      {
+        path: ":serviceid",
+        element: <Gallery category={"service"} />
+      }
+    ]
   },
 ])
 

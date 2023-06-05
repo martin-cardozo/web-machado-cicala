@@ -17,39 +17,41 @@ function Menu() {
         <div className='menu-col'>
             <ul>
                 <li><Link to={"/portfolio"}><strong>PORTFOLIO</strong></Link></li>
-                <li><a href="">Advertising</a></li>
-                <li><a href="">Beauty</a></li>
-                <li><a href="">Celebrities</a></li>
-                <li><a href="">Entertaiment</a></li>
-                <li><a href="">Fashion</a></li>
-                <li><a href="">Hair</a></li>
-                <li><a href="">Lifestyle</a></li>
-                <li><a href="">Films (+ AD Films)</a></li>
-                <li><a href="">Short Films - Music Videos</a></li>
-                <li><a href="">Special Projects</a></li>
-                <li><a href="">Still</a></li>
-                <li><a href="">Kids</a></li>
-                <li><a href="">Animals</a></li>
-                <li><a href="">Cars</a></li>
+                <li><Link to={"/portfolio/1"}>Advertising</Link></li>
+                <li><Link to={"/portfolio/2"}>Beauty</Link></li>
+                <li><Link to={"/portfolio/3"}>Celebrities</Link></li>
+                <li><Link to={"/portfolio/4"}>Entertaiment</Link></li>
+                <li><Link to={"/portfolio/5"}>Fashion</Link></li>
+                <li><Link to={"/portfolio/6"}>Hair</Link></li>
+                <li><Link to={"/portfolio/7"}>Lifestyle</Link></li>
+                <li><Link to={"/portfolio/8"}>Films (+ AD Films)</Link></li>
+                <li><Link to={"/portfolio/9"}>Short Films - Music Videos</Link></li>
+                <li><Link to={"/portfolio/10"}>Special Projects</Link></li>
+                <li><Link to={"/portfolio/11"}>Still</Link></li>
+                <li><Link to={"/portfolio/12"}>Kids</Link></li>
+                <li><Link to={"/portfolio/13"}>Animals</Link></li>
+                <li><Link to={"/portfolio/14"}>Cars</Link></li>
+                
             </ul>
         </div>
         <div className='menu-col'>
             <ul>
                 <li><Link to={"/services"}><strong>SERVICIOS</strong></Link></li>
-                <li><a href="">Producciones fotográficas</a></li>
-                <li><a href="">Producciones audiovisuales</a></li>
-                <li><a href="">Desarrollo de conceptos creativos</a></li>
-                <li><a href="">Dirección de arte</a></li>
-                <li><a href="">Video Clips</a></li>
-                <li><a href="">Mega producciones</a></li>
-                <li><a href="">Special Projects</a></li>
-                <li><a href="">Diseño y armado de escenografías</a></li>
-                <li><a href="">Scouting y realización de props</a></li>
-                <li><a href="">Retoque estético y montaje</a></li>
-                <li><a href="">Edición Audiovisual</a></li>
-                <li><a href="">Make up</a></li>
-                <li><a href="">Styling</a></li>
-                <li><a href="">Producción de moda</a></li>
+                <li><Link to={"/services/1"}>Producciones fotográficas</Link></li>
+                <li><Link to={"/services/2"}>Producciones audiovisuales</Link></li>
+                <li><Link to={"/services/3"}>Desarrollo de conceptos creativos</Link></li>
+                <li><Link to={"/services/4"}>Dirección de arte</Link></li>
+                <li><Link to={"/services/5"}>Video Clips</Link></li>
+                <li><Link to={"/services/6"}>Mega producciones</Link></li>
+                <li><Link to={"/services/7"}>Special Projects</Link></li>
+                <li><Link to={"/services/8"}>Diseño y armado de escenografías</Link></li>
+                <li><Link to={"/services/9"}>Scouting y realización de props</Link></li>
+                <li><Link to={"/services/10"}>Retoque estético y montaje</Link></li>
+                <li><Link to={"/services/11"}>Edición Audiovisual</Link></li>
+                <li><Link to={"/services/12"}>Make up</Link></li>
+                <li><Link to={"/services/13"}>Styling</Link></li>
+                <li><Link to={"/services/14"}>Producción de moda</Link></li>
+                
             </ul>
         </div>
         <div className='menu-col'>

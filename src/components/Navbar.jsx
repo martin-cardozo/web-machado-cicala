@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import './navbar.css'
 import miLogo from '../assets/MachadoCicala_logo_Negro.png'
 import Menu from './Menu'
-import { Link } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 
 const Navbar = () => {
 
@@ -26,24 +26,28 @@ const Navbar = () => {
 
 
     return(
-        <header>
-            <Link to={"/"} className="logo">
-                <img src={miLogo} alt="logo de la empresa" />
-            </Link>
-            
-            
-            <nav>
-                <div className="burger-menu" onClick={updateMenu}>
-                    <div className={burgerClass} ></div>
-                    <div className={burgerClass} ></div>
-                    <div className={burgerClass} ></div>
-                </div>
-            </nav>
+        <>
+            <header>
+                <Link to={"/"} className="logo">
+                    <img src={miLogo} alt="logo de la empresa" />
+                </Link>
+                
+                
+                <nav>
+                    <div className="burger-menu" onClick={updateMenu}>
+                        <div className={burgerClass} ></div>
+                        <div className={burgerClass} ></div>
+                        <div className={burgerClass} ></div>
+                    </div>
+                </nav>
 
-            <div className={menuClass}>
-                <Menu/>
-            </div>
-        </header>
+                <div className={menuClass}>
+                    <Menu/>
+                </div>
+            </header>
+            
+            <Outlet />
+        </>
     )
 }
 

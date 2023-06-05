@@ -61,6 +61,7 @@
     width: 350px;
     display: flex;
     align-items: center;
+    justify-content: center;
     margin: 6px;
     padding: 5px;
 
@@ -82,9 +83,7 @@
     box-shadow: black;
 }
 
-.card > a{
-    width: 100%;
-}
+
 
 
 .bg1{
