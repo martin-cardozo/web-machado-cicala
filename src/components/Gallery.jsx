@@ -79,7 +79,7 @@ function Gallery({category}) {
                 <div
                 onClick={() => setSelectedImg(image)}
                 >
-                    <img key={image} src={image} alt="" />
+                    <img className='cursor-pointer' key={image} src={image} alt="" />
                 </div>
               ))
             }

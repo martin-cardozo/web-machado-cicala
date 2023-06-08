@@ -7,6 +7,9 @@ header {
     background-color: rgb(249, 249, 249);
     display: flex;
     justify-content: flex-end;
+
+    position: fixed;
+    top: 0;
     /* border: 1px  solid green; */
 }
 
@@ -47,7 +50,7 @@ header {
 
 .menu {
     width: 100%;
-    height: 42em;
+    height: 40.5em;
     margin-top: 5em;
     background-color: rgb(231, 231, 231);
     opacity: 0.95;
@@ -56,6 +59,8 @@ header {
     position: absolute;
     top: 0;
     z-index:1;
+
+    position: fixed;
 }
 
 .menu-container{
@@ -134,12 +139,10 @@ header {
 }
 
 /* Mobile */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     
     .logo{
         width: 18em;
-        height: 80%;
-        margin: 0;
     }
     
     .menu{
@@ -148,7 +151,25 @@ header {
 
     .menu-container {
         flex-direction: column;
-        padding: 0;
+        margin: 4px;
+        padding: 4px;
     }
+
+    .menu-col{
+        margin: 0 0 10px 0;
+    }
+
+    .menu-col li{
+        padding: 2px;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    
+    .logo{
+        margin: 0.6em 0 0 0;
+    }
+    
 
 }

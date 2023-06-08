@@ -1,10 +1,13 @@
 
+/* Galería estática */
 .gallery{
-    columns: 5 320px;
+    columns: 4 320px;
     column-gap: 0.5em;
     background-color: #f9f9f9;
     margin: 1em;
 }
+
+
 
 .gallery img{
     max-width: 100%;
@@ -12,11 +15,103 @@
 
     display: block;
     outline: 2px solid #fff;
-    cursor: pointer;
+
 }
 
 .gallery img:hover{
-    opacity: 0.8;
+    background:  rgba(221, 221, 221, 0.8);
     outline: 2px solid #2a2a2a;
 }
 
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+
+/* Clases del Slider */
+
+/* Slide tracks. En total son 4 tracks verticales */
+/* De abajo hacia arriba */
+.slide-track-up{
+    height: calc(285px * 8);
+    
+    animation: scroll-up 110s linear infinite;
+
+}
+
+/* De arriba hacia abajo */
+.slide-track-down{
+    height: calc(285px * 8);
+    
+    animation: scroll-down 110s linear infinite;
+  
+}
+
+/* Exclusivo para el Slider de Home, Portfolio y Services */
+.overflow{
+    display: flex;
+    height: 38.1em;
+    overflow-y: hidden;
+}
+/*  */
+
+
+@keyframes scroll-up {
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(calc(-278px*4));
+    }
+}
+
+@keyframes scroll-down {
+    100%{
+        transform: translateY(0);
+    }
+    0%{
+        transform: translateY(calc(-278px*4));
+    }
+}
+
+/* Slider unico con todas las imagenes */
+.unique-slider{
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 1100px) {
+
+    .gallery{
+        columns: 2;
+    }
+    
+    .overflow{
+        display: block;
+        height: 100%;
+    }
+
+    .unique-slider{
+        display: initial;
+    }
+    
+
+    .slide-track-up{
+        display: none;
+        animation-play-state: paused;
+    }
+
+    .slide-track-down{
+        display: none;
+        animation-play-state: paused;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .gallery{
+        columns: 1;
+    }
+}
