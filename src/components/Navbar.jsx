@@ -11,15 +11,18 @@ const Navbar = () => {
     const [menuClass, setMenuClass] = useState("menu hidden")
     const [isMenuClicked, setIsMenuClicked] = useState(false)
 
+
     // Icono de menú hamburguesa
     const updateMenu = () => {
         if(!isMenuClicked) {
             setBurgerClass("burger-bar clicked")
             setMenuClass("menu visible")
+
         }
         else {
             setBurgerClass("burger-bar unclicked")
             setMenuClass("menu hidden")
+
         }
         setIsMenuClicked(!isMenuClicked)
     }

@@ -135,6 +135,16 @@
     }
 }
 
+@media only screen and (min-width: 1090px) {
+    
+    .fixed{
+        position: fixed;
+        z-index: -1;
+    }
+
+}
+
+
 
 @media only screen and (max-width: 1090px) {
     
@@ -146,6 +156,10 @@
     .card{
         width: 98%;
         margin: 0;
+    }
+
+    .initial{
+        position: initial;
     }
 }
 

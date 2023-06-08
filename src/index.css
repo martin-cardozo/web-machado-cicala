@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
 @import url('https://fonts.cdnfonts.com/css/droid-sans-mono-2');
 :root{
-    margin: 0;
+    margin: 90px 0 0 0;
     box-sizing: border-box;
     --primary: #f9f9f9;
     --secondary: #4e4e4e;
@@ -13,7 +13,7 @@ body{
     font-family: "Noto Serif";
     color: var(--secondary);
     background-color: var(--primary);
-    margin-top: 6em;
+    
 }
 
 .App{

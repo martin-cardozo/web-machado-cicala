@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './navbar.css'
 import instagramLogo from '../assets/icons/icon-instagram.svg'
 import tiktokLogo from '../assets/icons/icon-tiktok.svg'
@@ -12,6 +12,7 @@ function Menu({setBurgerClass, setMenuClass, isMenuClicked, setIsMenuClicked}) {
         if(isMenuClicked) {
             setBurgerClass("burger-bar unclicked")
             setMenuClass("menu hidden")
+
         }
         setIsMenuClicked(!isMenuClicked)
     }

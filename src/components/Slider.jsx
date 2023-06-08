@@ -21,7 +21,7 @@ function Slider({images}) {
 
 
         
-            <div className="gallery overflow">
+            <div className="gallery overflow fixed static">
 
                 <div className="unique-slider">
                     {
