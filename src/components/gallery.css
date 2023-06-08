@@ -5,6 +5,9 @@
     column-gap: 0.5em;
     background-color: #f9f9f9;
     margin: 1em;
+
+    position: fixed;
+    z-index: -1;
 }
 
 
@@ -19,7 +22,6 @@
 }
 
 .gallery img:hover{
-    background:  rgba(221, 221, 221, 0.8);
     outline: 2px solid #2a2a2a;
 }
 
@@ -86,6 +88,7 @@
 
     .gallery{
         columns: 2;
+        position: static;
     }
     
     .overflow{
