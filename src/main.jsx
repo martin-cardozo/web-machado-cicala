@@ -10,28 +10,29 @@ import Portfolio from './routes/Portfolio'
 import Services from './routes/Services'
 import Navbar from './components/Navbar'
 import Gallery from './components/Gallery'
+import Error from './routes/Error'
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
-    errorElement: <h1>Error</h1>
+    errorElement: <Error />
   },
   {
     path: "/about",
     element: <About />,
-    errorElement: <h1>Error</h1>
+    errorElement: <Error />
   },
   {
     path: "/contact",
     element: <Contact />,
-    errorElement: <h1>Error</h1>
+    errorElement: <Error />
   },
   {
     path: "/portfolio",
     element: <Navbar />,
-    errorElement: <h1>Error</h1>,
+    errorElement: <Error />,
     children: [
       {
         path: "",
@@ -46,7 +47,7 @@ const router = createBrowserRouter([
   {
     path: "/services",
     element: <Navbar />,
-    errorElement: <h1>Error</h1>,
+    errorElement: <Error />,
     children: [
       {
         path: "",
