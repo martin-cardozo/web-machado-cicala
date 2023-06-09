@@ -21,18 +21,16 @@ function Slider({images}) {
 
 
         
-            <div className="gallery overflow fixed static">
+            <div className="gallery overflow fixed">
 
                 <div className="unique-slider">
                     {
-                        chunkArray(images, 4)
-                        .map((chunk) =>(
-                            chunk.map((image) => (
-                                <div>
-                                    <img key={image.length} src={image} alt="slides" />
-                                </div>
-                            ))
+                        images.map((image) => (
+                            <div>
+                                <img key={image.length} src={image} alt="slides" />
+                            </div>
                         ))
+                        
                     }
                 </div>
 

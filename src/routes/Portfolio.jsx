@@ -5,7 +5,7 @@ import '../components/portfolio.css'
 function Portfolio() {
   return (
     
-        <div className="slider fixed initial">
+        <div className="slider">
 
             <div className='big-slider'>
                 <Link to={"1"}>

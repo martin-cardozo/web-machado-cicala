@@ -48,13 +48,7 @@
   
 }
 
-/* Exclusivo para el Slider de Home, Portfolio y Services */
-.overflow{
-    display: flex;
-    height: 38.1em;
-    overflow-y: hidden;
-}
-/*  */
+
 
 
 @keyframes scroll-up {
@@ -80,40 +74,34 @@
     display: none;
 }
 
-
-
-
-
 @media only screen and (min-width: 1100px) {
 
-    .fixed{
-        position: fixed;
-        z-index: -1;
+    /* Exclusivo para el Slider de Home, Portfolio y Services */
+    .overflow{
+        display: flex;
+        height: 38.1em;
+        overflow-y: hidden;
     }
-    
-    
+
 }
+
 
 
 @media only screen and (max-width: 1100px) {
 
     .gallery{
-        columns: 2;
+        columns: 3 240px;
     }
 
-    .static{
-        position: static;
-        z-index: 0;
-    }
+
+
     
-    .overflow{
-        display: block;
-        height: 100%;
+    .unique-slider{
+        display: inherit;
+        position: relative;
     }
 
-    .unique-slider{
-        display: initial;
-    }
+    
     
 
     .slide-track-up{
