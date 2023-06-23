@@ -52,41 +52,47 @@ function Portfolio() {
 
                 <Link to={"8"}>
                     <div className="card bg4">
-                        Films (+ AD Films)
+                        Films 
                     </div>
                 </Link>
 
                 <Link to={"9"}>
                     <div className="card bg3">
-                        Short Films - Music Videos
+                        Short Films 
                     </div>
                 </Link>
 
                 <Link to={"10"}>
+                    <div className="card bg3">
+                        Music Videos
+                    </div>
+                </Link>
+
+                <Link to={"11"}>
                     <div className="card bg2">
                         Special Projects
                     </div>
                 </Link>
 
-                <Link to={"11"}>
+                <Link to={"12"}>
                     <div className="card bg1">
                         Still
                     </div>
                 </Link>
 
-                <Link to={"12"}>
+                <Link to={"13"}>
                     <div className="card bg7">
                         Kids
                     </div>
                 </Link>
 
-                <Link to={"13"}>
+                <Link to={"14"}>
                     <div className="card bg6">
                         Animals
                     </div>
                 </Link>
 
-                <Link to={"14"}>
+                <Link to={"15"}>
                     <div className="card bg5">
                         Cars
                     </div>
@@ -197,89 +203,103 @@ function Portfolio() {
 
                 <Link to={"8"}>
                     <div className="card bg4">
-                        Films (+ AD Films)
+                        Films 
                     </div>
                 </Link>
 
                 <Link to={"9"}>
                     <div className="card bg3">
-                        Short Films - Music Videos
+                        Short Films 
                     </div>
                 </Link>
 
                 <Link to={"10"}>
+                    <div className="card bg3">
+                        Music Videos
+                    </div>
+                </Link>
+
+                <Link to={"11"}>
                     <div className="card bg2">
                         Special Projects
                     </div>
                 </Link>
 
-                <Link to={"11"}>
-                    <div className="card bg1">
-                        Still
-                    </div>
-                </Link>
+                
                 
                 
                 <Link to={"8"}>
                     <div className="card bg4">
-                        Films (+ AD Films)
+                        Films 
                     </div>
                 </Link>
 
                 <Link to={"9"}>
                     <div className="card bg3">
-                        Short Films - Music Videos
+                        Short Films 
                     </div>
                 </Link>
 
                 <Link to={"10"}>
-                    <div className="card bg2">
-                        Special Projects
+                    <div className="card bg3">
+                        Music Videos
                     </div>
                 </Link>
 
                 <Link to={"11"}>
-                    <div className="card bg1">
-                        Still
+                    <div className="card bg2">
+                        Special Projects
                     </div>
                 </Link>
                 
             </div>
 
-            {/* categorías 12 a 14 */}
+            {/* categorías 12 a 15 */}
             <div className="slide-track-down-categ">
 
                 <Link to={"12"}>
+                    <div className="card bg1">
+                        Still
+                    </div>
+                </Link>
+
+                <Link to={"13"}>
                     <div className="card bg7">
                         Kids
                     </div>
                 </Link>
 
-                <Link to={"13"}>
+                <Link to={"14"}>
                     <div className="card bg6">
                         Animals
                     </div>
                 </Link>
 
-                <Link to={"14"}>
+                <Link to={"15"}>
                     <div className="card bg5">
                         Cars
                     </div>
                 </Link>
 
                 <Link to={"12"}>
+                    <div className="card bg1">
+                        Still
+                    </div>
+                </Link>
+
+                <Link to={"13"}>
                     <div className="card bg7">
                         Kids
                     </div>
                 </Link>
 
-                <Link to={"13"}>
+                <Link to={"14"}>
                     <div className="card bg6">
                         Animals
                     </div>
                 </Link>
 
-                <Link to={"14"}>
+                <Link to={"15"}>
                     <div className="card bg5">
                         Cars
                     </div>

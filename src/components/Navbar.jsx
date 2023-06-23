@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
 import './navbar.css'
 import miLogo from '../assets/MachadoCicala_logo_Negro.png'
+import instagramLogo from '../assets/icons/icon-instagram.svg'
+import tiktokLogo from '../assets/icons/icon-tiktok.svg'
 import Menu from './Menu'
 import { Link, Outlet } from 'react-router-dom'
 
@@ -17,14 +19,18 @@ const Navbar = () => {
         if(!isMenuClicked) {
             setBurgerClass("burger-bar clicked")
             setMenuClass("menu visible")
-
         }
         else {
             setBurgerClass("burger-bar unclicked")
             setMenuClass("menu hidden")
-
         }
         setIsMenuClicked(!isMenuClicked)
+    }
+
+
+    // Ocultar dropdown cuando se hace click en un item
+    const updateDropdown = () => {
+        $(".dropdown").hide()
     }
 
 
@@ -34,6 +40,36 @@ const Navbar = () => {
                 <Link to={"/"} className="logo">
                     <img src={miLogo} alt="logo de la empresa" />
                 </Link>
+
+                <div className='navbar-menu'>
+                    <Link to={'/about'}>BIOGRAFÍA</Link>
+
+                    <div className='dropdown'>
+                        <Link to={'/portfolio'}>PORTFOLIO</Link>
+                        <div class="dropdown-content">
+                            <Link to={"/portfolio/1"} onClick={updateDropdown}>Advertising</Link>
+                            <Link to={"/portfolio/2"} onClick={updateDropdown}>Beauty</Link>
+                            <Link to={"/portfolio/3"} onClick={updateDropdown}>Celebrities</Link>
+                            <Link to={"/portfolio/4"} onClick={updateDropdown}>Entertaiment</Link>
+                            <Link to={"/portfolio/5"} onClick={updateDropdown}>Fashion</Link>
+                            <Link to={"/portfolio/6"} onClick={updateDropdown}>Hair</Link>
+                            <Link to={"/portfolio/7"} onClick={updateDropdown}>Lifestyle</Link>
+                            <Link to={"/portfolio/8"} onClick={updateDropdown}>Films</Link>
+                            <Link to={"/portfolio/9"} onClick={updateDropdown}>Short Films</Link>
+                            <Link to={"/portfolio/10"} onClick={updateDropdown}>Music Videos</Link>
+                            <Link to={"/portfolio/11"} onClick={updateDropdown}>Special Projects</Link>
+                            <Link to={"/portfolio/12"} onClick={updateDropdown}>Still</Link>
+                            <Link to={"/portfolio/13"} onClick={updateDropdown}>Kids</Link>
+                            <Link to={"/portfolio/14"} onClick={updateDropdown}>Animals</Link>
+                            <Link to={"/portfolio/15"} onClick={updateDropdown}>Cars</Link>
+                        </div>
+                    </div>
+                    
+                    <Link to={'/services'}>SERVICIOS</Link>
+                    <Link to={'/contact'}>CONTACTO</Link>
+                    <Link to={"https://www.instagram.com/machadocicala/?hl=es"} target='_blank'><img rel='icon' src={instagramLogo} alt="instagram" /></Link>
+                    <Link to={"https://www.tiktok.com/@machadocicala"} target='_blank'><img rel='icon' src={tiktokLogo} alt="tiktok" /></Link>
+                </div>
                 
                 
                 <nav>

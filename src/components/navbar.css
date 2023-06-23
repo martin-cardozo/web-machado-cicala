@@ -28,16 +28,57 @@ header {
     /* border: 1px  solid green; */
 }
 
+/* Menú de la barra de navegación que se ve solo en escritorio */
+.navbar-menu{
+    width: 55%;
+    height: 20px;
+    margin: 30px 60px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.navbar-menu img{
+    width: 50%;
+}
+
+/* Contenido de Portfolio */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #efefef;
+    font-size: 14px;
+    font-weight: normal;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: black;
+    margin-top: 4px;
+    padding: 6px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {
+    font-weight: bold;
+    background-color: #f7f7f7
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
 
+
+/* Menú hamburguesa */
 .burger-menu {
     width: 30px;
     height: 20px;
     margin: 30px 60px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
+    display: none;
     cursor: pointer;
     /* border: 1px  solid green; */
 }
@@ -50,31 +91,11 @@ header {
 }
 
 .menu {
-    width: 100%;
-    height: 40.5em;
-    margin-top: 5em;
-    background-color: rgb(231, 231, 231);
-    opacity: 0.95;
-    color: black;
-    font-size: 16px;
-
-    position: fixed;
-    top: 0;
-
-    z-index: 100;
+    display: none;
 }
 
 .menu-container{
-    width: 100%;
-    margin: 10px;
-    padding: 10px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    font-size: 16px;
-    font-family: 'Droid Sans Mono', sans-serif;
-    overflow-y: scroll;
-
+    display: none;
 }
 
 .menu-col{
@@ -92,13 +113,17 @@ header {
     align-items: flex-start;
     justify-content: space-between;
     margin: 8px;
-    padding: 8px;
+    padding: 3px;
+}
 
+.menu-col li img{
+    display: inline;
+    margin: 0 5px;
 }
 
 .menu-col li > a:hover{
-    font-size: 18px;
-    color: rgb(133, 133, 133);
+    font-size: 15px;
+    color: rgb(90, 90, 90);
     background-color: rgb(210, 210, 210);
 }
 
@@ -140,7 +165,55 @@ header {
 }
 
 /* Mobile */
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1080px) {
+    
+    .navbar-menu{
+        display: none;
+    }
+
+    /* Muestro el botón hamburguesa */
+    .burger-menu{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    /* Muestro el menú */
+    .menu{
+        width: 100%;
+        height: 40%;
+        font-size: 14px;
+        margin-top: 5em;
+        background-color: rgb(231, 231, 231);
+        opacity: 0.95;
+        color: black;
+
+        position: fixed;
+        top: 0;
+        z-index: 100;
+    }
+
+
+    /* Muestro el menú container*/
+    .menu-container{
+        width: 100%;
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        font-family: 'Droid Sans Mono', sans-serif;
+        overflow-y: scroll;
+    
+    }
+
+
+
+}
+
+
+@media only screen and (max-width: 840px) {
     
     .logo{
         width: 18em;
@@ -148,6 +221,7 @@ header {
     
     .menu{
         height: 100%;
+        font-size: 16px;
     }
 
     .menu-container {
@@ -157,7 +231,8 @@ header {
     }
 
     .menu-col{
-        margin: 0 0 10px 0;
+        width: 100%;
+        margin: 0 auto 10px;
     }
 
     .menu-col li{

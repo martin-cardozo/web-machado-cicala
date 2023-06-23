@@ -43,18 +43,21 @@ function Gallery({category}) {
                 images = Object.values(import.meta.glob('../assets/images/portfolio/short_films/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
                 break;
             case "10":
-                images = Object.values(import.meta.glob('../assets/images/portfolio/special_projects/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
+                images = Object.values(import.meta.glob('../assets/images/portfolio/music_videos/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
                 break;
             case "11":
-                images = Object.values(import.meta.glob('../assets/images/portfolio/still/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
+                images = Object.values(import.meta.glob('../assets/images/portfolio/special_projects/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
                 break;
             case "12":
-                images = Object.values(import.meta.glob('../assets/images/portfolio/kids/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
+                images = Object.values(import.meta.glob('../assets/images/portfolio/still/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
                 break;
             case "13":
-                images = Object.values(import.meta.glob('../assets/images/portfolio/animals/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
+                images = Object.values(import.meta.glob('../assets/images/portfolio/kids/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
                 break;
             case "14":
+                images = Object.values(import.meta.glob('../assets/images/portfolio/animals/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
+                break;
+            case "15":
                 images = Object.values(import.meta.glob('../assets/images/portfolio/cars/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
                 break;
             default:
@@ -91,33 +94,39 @@ function Gallery({category}) {
                 images = Object.values(import.meta.glob('../assets/images/portfolio/short_films/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
                 break;
             case "10":
-                images = Object.values(import.meta.glob('../assets/images/portfolio/special_projects/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
+                images = Object.values(import.meta.glob('../assets/images/portfolio/music_videos/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
                 break;
             case "11":
-                images = Object.values(import.meta.glob('../assets/images/portfolio/still/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
+                images = Object.values(import.meta.glob('../assets/images/portfolio/special_projects/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
                 break;
             case "12":
-                images = Object.values(import.meta.glob('../assets/images/portfolio/kids/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
+                images = Object.values(import.meta.glob('../assets/images/portfolio/still/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
                 break;
             case "13":
-                images = Object.values(import.meta.glob('../assets/images/portfolio/animals/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
+                images = Object.values(import.meta.glob('../assets/images/portfolio/kids/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
                 break;
             case "14":
+                images = Object.values(import.meta.glob('../assets/images/portfolio/animals/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
+                break;
+            case "15":
                 images = Object.values(import.meta.glob('../assets/images/portfolio/cars/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
                 break;
-        
             default:
                 break;
         }
+    }
+
+    /* Color de fondo de la imagen mientras carga en la escala de grises */
+    function grey() {
+        var v = (Math.random()*(256)|200).toString(16);
+        return "#" + v + v + v;
     }
 
     return (
         <div className="gallery">
             {
               images.map((image) => (
-                <div
-                onClick={() => setSelectedImg(image)}
-                >
+                <div onClick={() => setSelectedImg(image)} style={{backgroundColor: grey()}}>
                     <img className='cursor-pointer' key={image} src={image} alt="" />
                 </div>
               ))

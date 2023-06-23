@@ -1,5 +1,10 @@
+import { Link } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import '../components/about.css'
+import logo from '../assets/MachadoCicala_logo.png'
+import foto1 from '../assets/machado-cicala-blanco-negro.jpg'
+import foto2 from '../assets/gabriel-machado.jpg'
+import foto3 from '../assets/jose-cicala.jpg'
 
 function About() {
   return (
@@ -7,20 +12,45 @@ function About() {
         <Navbar />
     
         <div className='about'>
+
             <section>
-                <article>
-                    <h2><strong> MACHADO CICALA PHOTO&FILM</strong></h2>
-                    <p>Machado Cicala es la Productora Fotográfica y Audiovisual que cautiva miradas de marcas nacionales e internacionales. Gabriel Machado y José Cicala crean universos que se consolidan a través de la lente, firmando un pacto invisible con su talento. Ambos tienen estilos diversos entre sí, pero los une una irrefutable pasión: la imagen.</p>
-                    
-                    <p>Con más de veinte años de trayectoria, el team supo especializarse en los focos que representan a cada uno de ellos para lograr transmitir su visión de la estética y del arte. A la hora de trabajar, se transforman en dos transmisores de energía.</p>
 
-                    <p>Gabriel Machado, el “preferido” de las celebrities, disfruta creando climas para conquistar a las figuras a través de sus flashes. El rubro del entretenimiento es su fuerte, cree en la belleza escondida de las personas y a través de la lente logra captar momentos únicos donde el potencial de cada persona queda expuesto sin oponer resistencia. Su terapia son el teatro y la televisión.</p>
+                <div>
+                    <img className='logo' src={logo} alt="logo" />
+                </div>
+                <div>
+                    <img src={foto1} alt="foto" />
+                </div>
 
-                    <p>Por otro lado, José Cicala se destaca por el entusiasmo en su rol de Director de arte. Encuentra en el rubro audiovisual y en las mega producciones fotográficas un camino para crear historias, épocas y personajes. Su dedicación en la preproducción y la obsesión por los detalles siempre culminan en un producto perfecto. Su mente está permanentemente predispuesta para echarse a volar.</p>
+                <div className='links'>
+                    <div className='link1'>
+                        <img src={foto2} alt="foto" />
+                        <Link>
+                            <p>Bio</p>
+                            <p><strong>Gabriel Machado</strong></p>
+                        </Link>
+                    </div>
+                        
 
-                    <p>Machado Cicala es, entonces, un centro de pasión innegociable, donde predominan el amor por el trabajo, la buena energía y la imaginación sin límites. Con dos conceptos distintos, pero no opuestos, se complementan para crear productos de alta calidad rindiéndole culto a su talento.</p>
-                </article>
+                    <div className='link2'>
+                        <img src={foto3} alt="foto" />
+                        <Link>
+                            <p>Bio</p>
+                            <p><strong>José Cicala</strong></p>
+                        </Link>
+                    </div>
+                </div>
+
             </section>
+
+            <section className='info'>
+                <p>Machado Cicala es la Productora Fotográfica y Audiovisual que cautiva miradas de marcas nacionales e internacionales. Gabriel Machado y José Cicala crean universos que se consolidan a través de la lente, firmando un pacto invisible con su talento. Ambos tienen estilos diversos entre sí, pero los une una irrefutable pasión: la imagen.</p>
+                <p>Con más de veinte años de trayectoria, el team supo especializarse en los focos que representan a cada uno de ellos para lograr transmitir su visión de la estética y del arte. A la hora de trabajar, se transforman en dos transmisores de energía.</p>
+                <p>Gabriel Machado, el “preferido” de las celebrities, disfruta creando climas para conquistar a las figuras a través de sus flashes. El rubro del entretenimiento es su fuerte, cree en la belleza escondida de las personas y a través de la lente logra captar momentos únicos donde el potencial de cada persona queda expuesto sin oponer resistencia. Su terapia son el teatro y la televisión.</p>
+                <p>Por otro lado, José Cicala se destaca por el entusiasmo en su rol de Director de arte. Encuentra en el rubro audiovisual y en las mega producciones fotográficas un camino para crear historias, épocas y personajes. Su dedicación en la preproducción y la obsesión por los detalles siempre culminan en un producto perfecto. Su mente está permanentemente predispuesta para echarse a volar.</p>
+                <p>Machado Cicala es, entonces, un centro de pasión innegociable, donde predominan el amor por el trabajo, la buena energía y la imaginación sin límites. Con dos conceptos distintos, pero no opuestos, se complementan para crear productos de alta calidad rindiéndole culto a su talento.</p>
+            </section>
+            {/* 
 
             <section>
                 <aside><img src="https://picsum.photos/200/300" alt="FOTO" /></aside>
@@ -49,7 +79,7 @@ function About() {
 
                 </article>
                 <aside><img src="https://picsum.photos/200/300" alt="FOTO" /></aside>
-            </section>
+            </section> */}
         </div>
     </>
   )
