@@ -48,6 +48,22 @@ function Menu({setBurgerClass, setMenuClass, isMenuClicked, setIsMenuClicked}) {
             <div className='menu-col'>
                 <ul>
                     <li onClick={updateMenu}><Link to={"/services"}><strong>SERVICIOS</strong></Link></li>
+                    <li onClick={updateMenu}><Link to={"/services/1"}>Producciones fotográficas</Link></li>
+                    <li onClick={updateMenu}><Link to={"/services/2"}>Producciones audiovisuales</Link></li>
+                    <li onClick={updateMenu}><Link to={"/services/3"}>Desarrollo de conceptos creativos</Link></li>
+                    <li onClick={updateMenu}><Link to={"/services/4"}>Dirección de arte</Link></li>
+                    <li onClick={updateMenu}><Link to={"/services/5"}>Video clips</Link></li>
+                    <li onClick={updateMenu}><Link to={"/services/6"}>Mega producciones</Link></li>
+                    <li onClick={updateMenu}><Link to={"/services/7"}>Special projects</Link></li>
+                    <li onClick={updateMenu}><Link to={"/services/8"}>Diseño y armado de escenografías</Link></li>
+                    <li onClick={updateMenu}><Link to={"/services/9"}>Scouting y realización de props</Link></li>
+                    <li onClick={updateMenu}><Link to={"/services/10"}>Retoque estético</Link></li>
+                    <li onClick={updateMenu}><Link to={"/services/11"}>Montaje</Link></li>
+                    <li onClick={updateMenu}><Link to={"/services/12"}>Edición audiovisual</Link></li>
+                    <li onClick={updateMenu}><Link to={"/services/13"}>Make up</Link></li>
+                    <li onClick={updateMenu}><Link to={"/services/14"}>Styling</Link></li>
+                    <li onClick={updateMenu}><Link to={"/services/15"}>Producción de moda</Link></li>
+                    
                 </ul>
             </div>
             <div className='menu-col'>

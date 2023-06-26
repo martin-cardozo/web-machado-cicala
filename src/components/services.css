@@ -1,0 +1,48 @@
+
+.services{
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+}
+.service-menu{
+    width: 80%;
+    background-color: #747474;
+    color: #f9f9f9;
+    margin: 15px 5px 15px 15px;
+    padding: 40px;
+    font-size: 14px;
+}
+
+.service-menu a{
+    display: block;
+    margin-bottom: 8px;
+    padding: 2px 0;
+}
+.service-menu a:hover{
+    background-color: #7d7d7d;
+}
+
+.slider-menu{
+    margin: 15px 0 15px 0px;
+    background-color: #1d1d1d;
+}
+
+@media only screen and (max-width: 1080px) {
+    
+    .services{
+        display: inline-block;
+    }
+
+    .service-menu{
+        width: 100%;
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .slider-menu{
+        margin: 15px 0 15px 0px;
+        background-color: #fff;
+    }
+    
+}
+

@@ -69,7 +69,7 @@ const router = createBrowserRouter([
       },
       {
         path: ":serviceid",
-        element: <Gallery category={"service"} />
+        element: <Services />
       }
     ]
   },
