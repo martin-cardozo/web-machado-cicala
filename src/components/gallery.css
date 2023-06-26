@@ -119,10 +119,10 @@
 
 @media only screen and (min-width: 1080px) {
 
-    /* Exclusivo para el Slider de Home, Portfolio y Services */
+    /* Exclusivo para el Slider de Home y Services */
     .overflow{
         display: flex;
-        height: 38.1em;
+        height: 37.4em;
         overflow-y: hidden;
     }
 

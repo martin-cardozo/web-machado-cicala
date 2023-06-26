@@ -1,17 +1,18 @@
 
 .about{
-    height: 42em;
-    background-color: #000;
+    height: 39.4em;
+    background-color: #252525;
     color: #dbdbdb;
+    padding: 0 40px;
     text-align: justify;
     font-weight: normal;
-    font-family: 'Poppins';
+    /* font-family: 'Poppins'; */
     display: flex;
 }
 
 .about section{
-    margin: 20px 0;
-    padding: 25px;
+    margin-top: 3px;
+    padding: 0 10px;
 }
 
 /* Lado izquierdo */
@@ -60,29 +61,35 @@
 }
 
 .perfil{
-    width: 60%;
+    width: 90%;
 }
 section h2{
-    font-size: 35px;
-    margin: 10px 0 20px 0;
+    font-size: 30px;
+    margin: 20px 0;
     text-align: center;
 }
 
 
 /* Lado derecho */
+.info{
+    margin-top: 85px;
+}
 
 .info p{
-    margin: 20px 10px;
-    font-size: 17px;
+    margin: 0 0 30px 0;
+    font-size: 13px;
 }
 
 @media only screen and (max-width: 1080px) {
-
+    
     .about{
         height: 100%;
     }
     .about .logo{
-        width: 100%;
+        width: 80%;
+    }
+    .info{
+        padding: 0 0 20px 0;
     }
 }
 
@@ -94,13 +101,19 @@ section h2{
     }
 
     .about .logo{
-        width: 70%;
+        display: inline-block;
     }
 
     .perfil{
-        width: 70%;
         display: inline-block;
     }
+
+    section h2{
+        margin: 20px auto;
+        padding: 20px;
+        font-size: 35px;
+    }
+
 
     .info p{
         text-align: justify;

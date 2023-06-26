@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/poppins');
 @import url('https://fonts.cdnfonts.com/css/droid-sans-mono-2');
 :root{
     margin: 90px 0 0 0;
@@ -10,7 +10,7 @@
   
   /* base styles & title */
 body{
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     color: var(--secondary);
     background-color: var(--primary);
     

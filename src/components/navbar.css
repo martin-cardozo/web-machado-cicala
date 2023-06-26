@@ -35,6 +35,10 @@ header {
     margin: 30px;
     display: flex;
     justify-content: space-evenly;
+    font-size: 14px;
+}
+
+.navbar-menu a:hover{
     font-weight: bold;
 }
 
@@ -48,6 +52,7 @@ header {
     position: absolute;
     background-color: #fff;
     opacity: 0.9;
+    padding: 4px 0;
     font-size: 13.5px;
     font-weight: normal;
     min-width: 140px;
@@ -204,7 +209,7 @@ header {
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
-        font-family: 'Poppins';
+        /* font-family: 'Poppins'; */
         overflow-y: scroll;
     
     }
