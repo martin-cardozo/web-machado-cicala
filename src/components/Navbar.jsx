@@ -13,6 +13,9 @@ const Navbar = () => {
     const [menuClass, setMenuClass] = useState("menu hidden")
     const [isMenuClicked, setIsMenuClicked] = useState(false)
 
+    const [isPortfolioClicked, setIsPortfolioClicked] = useState(false)
+    const [portfolioClass, setPortfolioClass] = useState("dropdown-content hidden")
+
 
     // Icono de menú hamburguesa
     const updateMenu = () => {
@@ -30,7 +33,17 @@ const Navbar = () => {
 
     // Ocultar dropdown cuando se hace click en un item
     const updateDropdown = () => {
-        $(".dropdown").hide()
+        $(".dropdown-content").hide()
+    }
+
+    const pinDropdown = () => {
+        if(!isPortfolioClicked) {
+            setPortfolioClass("dropdown-content visible")
+        }
+        else {
+            setPortfolioClass("dropdown-content hidden")
+        }
+        setIsPortfolioClicked(!isPortfolioClicked)
     }
 
 
@@ -45,8 +58,8 @@ const Navbar = () => {
                     <Link to={'/about'}>BIOGRAFÍA</Link>
 
                     <div className='dropdown'>
-                        <Link to={'/portfolio'}>PORTFOLIO</Link>
-                        <div class="dropdown-content">
+                        <Link to={'#'} onClick={pinDropdown}>PORTFOLIO</Link>
+                        <div class="dropdown-content" className={portfolioClass}>
                             <Link to={"/portfolio/1"} onClick={updateDropdown}>Advertising</Link>
                             <Link to={"/portfolio/2"} onClick={updateDropdown}>Beauty</Link>
                             <Link to={"/portfolio/3"} onClick={updateDropdown}>Celebrities</Link>

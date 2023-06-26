@@ -10,7 +10,7 @@
   
   /* base styles & title */
 body{
-    font-family: "Noto Serif";
+    font-family: 'Poppins';
     color: var(--secondary);
     background-color: var(--primary);
     

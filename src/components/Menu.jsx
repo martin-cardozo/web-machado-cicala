@@ -26,7 +26,7 @@ function Menu({setBurgerClass, setMenuClass, isMenuClicked, setIsMenuClicked}) {
             </div>
             <div className='menu-col'>
                 <ul>
-                    <li onClick={updateMenu}><Link to={"/portfolio"}><strong>PORTFOLIO</strong></Link></li>
+                    <li><Link to={"#"}><strong>PORTFOLIO</strong></Link></li>
                     <li onClick={updateMenu}><Link to={"/portfolio/1"}>Advertising</Link></li>
                     <li onClick={updateMenu}><Link to={"/portfolio/2"}>Beauty</Link></li>
                     <li onClick={updateMenu}><Link to={"/portfolio/3"}>Celebrities</Link></li>

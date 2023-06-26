@@ -5,12 +5,13 @@
     color: #dbdbdb;
     text-align: justify;
     font-weight: normal;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins';
     display: flex;
 }
 
 .about section{
-    margin: 25px;
+    margin: 20px 0;
+    padding: 25px;
 }
 
 /* Lado izquierdo */
@@ -18,13 +19,28 @@
     width: 50%;
     margin-left: 0;
     margin-bottom: 10px;
+    cursor: inherit;
+}
+
+.grey-instagram{
+    background-color: #c6c6c6;
+    color: #000;
+    margin-top: 1em;
+    padding: 8px 0;
+    text-align: center;
+}
+
+.grey-instagram img{
+    display: inline-block;
+    margin: 0 10px 0 0;
+    height: 22px;
 }
 
 .links{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    margin-top: 70px;
+    margin-top: 30px;
     padding: 4px;
 }
 
@@ -38,19 +54,62 @@
     height: 50px;
 }
 
-.link1 a, .link2 a{
+.link1 div, .link2 div{
     margin-top: 10px;
     margin-left: 10px;
 }
 
-/* Lado derecho */
-.info p{
-    margin: 20px 0;
+.perfil{
+    width: 60%;
+}
+section h2{
+    font-size: 35px;
+    margin: 10px 0 20px 0;
+    text-align: center;
 }
 
-@media only screen and (max-width: 600px) {
-    .about section{
+
+/* Lado derecho */
+
+.info p{
+    margin: 20px 10px;
+    font-size: 17px;
+}
+
+@media only screen and (max-width: 1080px) {
+
+    .about{
+        height: 100%;
+    }
+    .about .logo{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    
+    .about{
+        display: block;
+        text-align: center;
+    }
+
+    .about .logo{
+        width: 70%;
+    }
+
+    .perfil{
+        width: 70%;
         display: inline-block;
     }
 
+    .info p{
+        text-align: justify;
+    }
+
+}
+
+@media only screen and (max-width: 420px) {
+    .perfil{
+        width: 90%;
+    }
 }

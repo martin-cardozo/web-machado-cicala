@@ -126,8 +126,13 @@ function Gallery({category}) {
         <div className="gallery">
             {
               images.map((image) => (
-                <div onClick={() => setSelectedImg(image)} style={{backgroundColor: grey()}}>
-                    <img className='cursor-pointer' key={image} src={image} alt="" />
+                <div className='image-container' onClick={() => setSelectedImg(image)} style={{backgroundColor: grey()}}>
+                    <img key={image} src={image} alt="" />
+                    <div class="centered">
+                        <h2>Lorem, ipsum.</h2>
+                        <hr />
+                        <h3>Lorem ipsum dolor sit amet.</h3>
+                    </div>
                 </div>
               ))
             }
