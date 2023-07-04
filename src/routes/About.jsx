@@ -4,7 +4,7 @@ import logo from '../assets/MachadoCicala_logo.png'
 import foto1 from '../assets/machado-cicala-blanco-negro.jpg'
 import foto2 from '../assets/gabriel-machado.jpg'
 import foto3 from '../assets/jose-cicala.jpg'
-import instagramLogo from '../assets/icons/icon-instagram.svg'
+import instagramLogo from '../assets/icons/icon-instagram.png'
 
 function About({path}) {
 

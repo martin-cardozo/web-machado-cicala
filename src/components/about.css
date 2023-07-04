@@ -60,10 +60,10 @@
     margin-left: 10px;
 }
 
-.perfil{
+.about .perfil{
     width: 90%;
 }
-section h2{
+.about section h2{
     font-size: 30px;
     margin: 20px 0;
     text-align: center;
@@ -71,11 +71,11 @@ section h2{
 
 
 /* Lado derecho */
-.info{
+.about .info{
     margin-top: 85px;
 }
 
-.info p{
+.about .info p{
     margin: 0 0 30px 0;
     font-size: 13px;
 }
@@ -88,7 +88,7 @@ section h2{
     .about .logo{
         width: 80%;
     }
-    .info{
+    .about .info{
         padding: 0 0 20px 0;
     }
 }
@@ -104,25 +104,25 @@ section h2{
         display: inline-block;
     }
 
-    .perfil{
+    .about .perfil{
         display: inline-block;
     }
 
-    section h2{
+    .about section h2{
         margin: 20px auto;
         padding: 20px;
         font-size: 35px;
     }
 
 
-    .info p{
+    .about .info p{
         text-align: justify;
     }
 
 }
 
 @media only screen and (max-width: 420px) {
-    .perfil{
+    .about .perfil{
         width: 90%;
     }
 }

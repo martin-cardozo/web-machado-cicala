@@ -15,6 +15,12 @@ function chunkArray(images, chunkSize){
 
 
 function Slider({images}) {
+
+    /* Color de fondo de la imagen mientras carga en la escala de grises */
+    function grey() {
+        var v = (Math.random()*(256)|200).toString(16);
+        return "#" + v + v + v;
+    }
     
     
     return (
@@ -26,7 +32,7 @@ function Slider({images}) {
                 <div className="unique-slider">
                     {
                         images.map((image) => (
-                            <div>
+                            <div style={{backgroundColor: grey()}}>
                                 <img key={image.length} src={image} alt="slides" />
                             </div>
                         ))
@@ -38,7 +44,7 @@ function Slider({images}) {
                     {
                         chunkArray(images, 4)[0]
                         .map((image) => (
-                            <div>
+                            <div style={{backgroundColor: grey()}}>
                                 <img key={image.length} src={image} alt="slides" />
                             </div>
                         ))
@@ -46,7 +52,7 @@ function Slider({images}) {
                     {
                         chunkArray(images, 4)[0]
                         .map((image) => (
-                            <div>
+                            <div style={{backgroundColor: grey()}}>
                                 <img key={image.length} src={image} alt="slides" />
                             </div>
                         ))
@@ -56,7 +62,7 @@ function Slider({images}) {
                     {
                         chunkArray(images, 4)[1]
                         .map((image) => (
-                            <div>
+                            <div style={{backgroundColor: grey()}}>
                                 <img key={image.length} src={image} alt="slides" />
                             </div>
                         ))
@@ -65,7 +71,7 @@ function Slider({images}) {
                     {
                         chunkArray(images, 4)[1]
                         .map((image) => (
-                            <div>
+                            <div style={{backgroundColor: grey()}}>
                                 <img key={image.length} src={image} alt="slides" />
                             </div>
                         ))
@@ -76,7 +82,7 @@ function Slider({images}) {
                     {
                         chunkArray(images, 4)[2]
                         .map((image) => (
-                            <div>
+                            <div style={{backgroundColor: grey()}}>
                                 <img key={image.length} src={image} alt="slides" />
                             </div>
                         ))
@@ -85,7 +91,7 @@ function Slider({images}) {
                     {
                         chunkArray(images, 4)[2]
                         .map((image) => (
-                            <div>
+                            <div style={{backgroundColor: grey()}}>
                                 <img key={image.length} src={image} alt="slides" />
                             </div>
                         ))
@@ -96,7 +102,7 @@ function Slider({images}) {
                     {
                         chunkArray(images, 4)[3]
                         .map((image) => (
-                            <div>
+                            <div style={{backgroundColor: grey()}}>
                                 <img key={image.length} src={image} alt="slides" />
                             </div>
                         ))
@@ -105,7 +111,7 @@ function Slider({images}) {
                     {
                         chunkArray(images, 4)[3]
                         .map((image) => (
-                            <div>
+                            <div style={{backgroundColor: grey()}}>
                                 <img key={image.length} src={image} alt="slides" />
                             </div>
                         ))

@@ -1,8 +1,9 @@
 import React, {useState} from 'react'
 import './navbar.css'
 import miLogo from '../assets/MachadoCicala_logo_Negro.png'
-import instagramLogo from '../assets/icons/icon-instagram.svg'
+import instagramLogo from '../assets/icons/icon-instagram.png'
 import tiktokLogo from '../assets/icons/icon-tiktok.svg'
+import linkedinLogo from '../assets/icons/icon-linkedin.png'
 import Menu from './Menu'
 import { Link, Outlet } from 'react-router-dom'
 
@@ -59,7 +60,7 @@ const Navbar = () => {
 
                     <div className='dropdown'>
                         <Link to={'#'} onClick={pinDropdown}>PORTFOLIO</Link>
-                        <div class="dropdown-content" className={portfolioClass}>
+                        <div className={`dropdown-content ${portfolioClass}`}>
                             <Link to={"/portfolio/1"} onClick={updateDropdown}>Advertising</Link>
                             <Link to={"/portfolio/2"} onClick={updateDropdown}>Beauty</Link>
                             <Link to={"/portfolio/3"} onClick={updateDropdown}>Celebrities</Link>
@@ -80,8 +81,14 @@ const Navbar = () => {
                     
                     <Link to={'/services'}>SERVICIOS</Link>
                     <Link to={'/contact'}>CONTACTO</Link>
-                    <Link to={"https://www.instagram.com/machadocicala/?hl=es"} target='_blank'><img rel='icon' src={instagramLogo} alt="instagram" /></Link>
-                    <Link to={"https://www.tiktok.com/@machadocicala"} target='_blank'><img rel='icon' src={tiktokLogo} alt="tiktok" /></Link>
+                    
+                    <div className='social-networks'>
+                        <p>Encontranos en: </p> 
+                        <Link to={"https://www.instagram.com/machadocicala/?hl=es"} target='_blank'><img rel='icon' src={instagramLogo} alt="instagram" /></Link>
+                        <Link to={"https://www.tiktok.com/@machadocicala"} target='_blank'><img rel='icon' src={tiktokLogo} alt="tiktok" /></Link>
+                        <Link to={"#"} target='_blank'><img rel='icon' src={linkedinLogo} alt="linkedin" /></Link>
+                    </div>
+                    
                 </div>
                 
                 

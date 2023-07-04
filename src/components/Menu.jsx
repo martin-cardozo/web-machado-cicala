@@ -1,6 +1,6 @@
 import React from 'react'
 import './navbar.css'
-import instagramLogo from '../assets/icons/icon-instagram.svg'
+import instagramLogo from '../assets/icons/icon-instagram.png'
 import tiktokLogo from '../assets/icons/icon-tiktok.svg'
 import emailLogo from '../assets/icons/icon-email.svg'
 
@@ -68,7 +68,7 @@ function Menu({setBurgerClass, setMenuClass, isMenuClicked, setIsMenuClicked}) {
             </div>
             <div className='menu-col'>
                 <ul>
-                    <li ><Link to={"#"}><strong>CONTACTO</strong></Link></li>
+                    <li ><Link to={"/contact"}><strong>CONTACTO</strong></Link></li>
                     <li onClick={updateMenu}><Link to={"#"}><img rel='icon' src={emailLogo} alt="email" />contacto@machadocicala.com.ar</Link></li>
                     <li onClick={updateMenu}><Link to={"https://www.instagram.com/machadocicala/?hl=es"} target='_blank'><img rel='icon' src={instagramLogo} alt="instagram" />@machadocicala</Link></li>
                     <li onClick={updateMenu}><Link to={"https://www.tiktok.com/@machadocicala"} target='_blank'><img rel='icon' src={tiktokLogo} alt="tiktok" />@machadocicala</Link></li>

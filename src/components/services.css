@@ -5,17 +5,19 @@
     background-color: #fff;
 }
 .service-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: 46.2em;
-    width: 100%;
-    background-color: #505050;
+    width: 80%;
+    background-color: #1a1a1a;
     color: #f9f9f9;
     margin: 15px 5px 0 5px;
-    padding: 30px 40px;
+    padding: 20px 40px;
     font-size: 13px;
 }
 
 .service-menu a{
-    display: block;
     margin-bottom: 8px;
     padding: 2px 0;
 }
