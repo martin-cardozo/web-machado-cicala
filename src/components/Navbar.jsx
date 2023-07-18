@@ -79,7 +79,7 @@ const Navbar = () => {
                         </div>
                     </div>
                     
-                    <Link to={'/services'}>SERVICIOS</Link>
+                    <Link to={'/services/1'}>SERVICIOS</Link>
                     <Link to={'/contact'}>CONTACTO</Link>
                     
                     <div className='social-networks'>
