@@ -63,10 +63,10 @@ const router = createBrowserRouter([
     element: <Navbar />,
     errorElement: <Error />,
     children: [
-      {
-        path: "",
-        element: <Services />
-      },
+      // {
+      //   path: "",
+      //   element: <Services />
+      // },
       {
         path: ":serviceid",
         element: <Services />
