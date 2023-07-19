@@ -3,29 +3,27 @@ import "../components/services.css"
 // import Slider from "../components/Slider"
 import services from "../../database/services.json"
 
-
-
 function Services() {
   const params = useParams()
-  
+
   let images = []
 
-  {services &&
-    services.map((service) => {
-      images.push(
-        {
-          "id": service.id,
-          "url": new URL(
-            `${service["File Path"]}${service["Archive Name"]}${service.Format}`,
-            import.meta.url
-          ).href
-        }
-      )
-    })}
-
+  {
+    services &&
+      services.map((service) => {
+        images.push({
+          id: service.id,
+          url: [{
+            
+              href:`${service["File Path"]}${service["Archive Name"]}${service.Format}`,
+              as:`services/+${service.id}`
+            
+          }],
+        })
+      })
+  }
 
   console.log(images)
-
 
   return (
     <>
@@ -60,20 +58,16 @@ function Services() {
                           <p>{service.text}</p>
                         </div>
                       )}
-                      
-                      {
-                        images.map((image) => {
-                          return(
-                            <div key={image.id}>
-                              {service.id == image.id && (
-                                <img src={image.url} alt="slides" />
 
-                              )}
-                            </div>
-                          )
-                        })
-                        
-                      }
+                      {images.map((image) => {
+                        return (
+                          <div key={image.id}>
+                            {service.id == image.id && (
+                              <img src={image.url[0].href} as={image.url[0].as} alt="slides" />
+                            )}
+                          </div>
+                        )
+                      })}
 
                       {/* <img
                         src={
