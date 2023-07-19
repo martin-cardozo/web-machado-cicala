@@ -2,105 +2,105 @@
         {
             "id":1,
             "text":"Texto muy corto 1 que habla sobre este servicio",
-            "File Path": "/images/services/",
+            "File Path": "/src/assets/images/services/",
             "Archive Name": "producciones_fotograficas",
             "Format":".jpg"
         },
         {
             "id":2,
             "text":"",
-            "File Path": "/images/services/",
+            "File Path": "/src/assets/images/services/",
             "Archive Name": "producciones_audiovisuales",
             "Format":".jpg"
         },
         {
             "id":3,
             "text":"Texto muy corto 3 que habla sobre este servicio",
-            "File Path": "/images/services/",
+            "File Path": "/src/assets/images/services/",
             "Archive Name": "desarrollo_de_conceptos_creativos",
             "Format":".jpg"
         },
         {
             "id":4,
             "text":"Texto muy corto 4 que habla sobre este servicio",
-            "File Path": "/images/services/",
+            "File Path": "/src/assets/images/services/",
             "Archive Name": "direccion_de_arte",
             "Format":".jpg"
         },
         {
             "id":5,
             "text":"Texto muy corto 5 que habla sobre este servicio",
-            "File Path": "/images/services/",
+            "File Path": "/src/assets/images/services/",
             "Archive Name": "video_clips",
             "Format":".jpg"
         },
         {
             "id":6,
             "text":"Texto muy corto 6 que habla sobre este servicio",
-            "File Path": "/images/services/",
+            "File Path": "/src/assets/images/services/",
             "Archive Name": "mega_producciones",
             "Format":".jpg"
         },
         {
             "id":7,
             "text":"Texto muy corto 7 que habla sobre este servicio",
-            "File Path": "/images/services/",
+            "File Path": "/src/assets/images/services/",
             "Archive Name": "special_projects",
             "Format":".jpg"
         },
         {
             "id":8,
             "text":"Texto muy corto 8 que habla sobre este servicio",
-            "File Path": "/images/services/",
+            "File Path": "/src/assets/images/services/",
             "Archive Name": "diseño_y_armado_de_escenografias",
             "Format":".jpg"
         },
         {
             "id":9,
             "text":"Texto muy corto 9 que habla sobre este servicio",
-            "File Path": "/images/services/",
+            "File Path": "/src/assets/images/services/",
             "Archive Name": "scouting_y_realizacion_de_props",
             "Format":".jpg"
         },
         {
             "id":10,
             "text":"Texto muy corto 10 que habla sobre este servicio",
-            "File Path": "/images/services/",
+            "File Path": "/src/assets/images/services/",
             "Archive Name": "retoque_estetico",
             "Format":".jpg"
         },
         {
             "id":11,
             "text":"Texto muy corto 11 que habla sobre este servicio",
-            "File Path": "/images/services/",
+            "File Path": "/src/assets/images/services/",
             "Archive Name": "montaje",
             "Format":".jpg"
         },
         {
             "id":12,
             "text":"Texto muy corto 12 que habla sobre este servicio",
-            "File Path": "/images/services/",
+            "File Path": "/src/assets/images/services/",
             "Archive Name": "edicion_audiovisual",
             "Format":".jpg"
         },
         {
             "id":13,
             "text":"Texto muy corto 13 que habla sobre este servicio",
-            "File Path": "/images/services/",
+            "File Path": "/src/assets/images/services/",
             "Archive Name": "make_up",
             "Format":".jpg"
         },
         {
             "id":14,
             "text":"Texto muy corto 14 que habla sobre este servicio",
-            "File Path": "/images/services/",
+            "File Path": "/src/assets/images/services/",
             "Archive Name": "styling",
             "Format":".jpg"
         },
         {
             "id":15,
             "text":"Texto muy corto 15 que habla sobre este servicio",
-            "File Path": "/images/services/",
+            "File Path": "/src/assets/images/services/",
             "Archive Name": "produccion_de_moda",
             "Format":".jpg"
         }

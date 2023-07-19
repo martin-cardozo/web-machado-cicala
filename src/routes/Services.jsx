@@ -3,140 +3,29 @@ import "../components/services.css"
 // import Slider from "../components/Slider"
 import services from "../../database/services.json"
 
+
+
 function Services() {
   const params = useParams()
+  
+  let images = []
 
-  let images = Object.values(
-    import.meta.glob("../assets/images/services/*.{png,jpg,jpeg,PNG,JPEG}", {
-      eager: true,
-      as: "url",
-    })
-  )
+  {services &&
+    services.map((service) => {
+      images.push(
+        {
+          "id": service.id,
+          "url": new URL(
+            `${service["File Path"]}${service["Archive Name"]}${service.Format}`,
+            import.meta.url
+          ).href
+        }
+      )
+    })}
 
-  //   switch (params.serviceid) {
-  //     case "1":
-  //       images = Object.values(
-  //         import.meta.glob(
-  //           "../assets/images/portfolio/advertising/*.{png,jpg,jpeg,PNG,JPEG}",
-  //           { eager: true, as: "url" }
-  //         )
-  //       )
-  //       break
-  //     case "2":
-  //       images = Object.values(
-  //         import.meta.glob(
-  //           "../assets/images/portfolio/beauty/*.{png,jpg,jpeg,PNG,JPEG}",
-  //           { eager: true, as: "url" }
-  //         )
-  //       )
-  //       break
-  //     case "3":
-  //       images = Object.values(
-  //         import.meta.glob(
-  //           "../assets/images/portfolio/celebrities/*.{png,jpg,jpeg,PNG,JPEG}",
-  //           { eager: true, as: "url" }
-  //         )
-  //       )
-  //       break
-  //     case "4":
-  //       images = Object.values(
-  //         import.meta.glob(
-  //           "../assets/images/portfolio/entertaiment/*.{png,jpg,jpeg,PNG,JPEG}",
-  //           { eager: true, as: "url" }
-  //         )
-  //       )
-  //       break
-  //     case "5":
-  //       images = Object.values(
-  //         import.meta.glob(
-  //           "../assets/images/portfolio/fashion/*.{png,jpg,jpeg,PNG,JPEG}",
-  //           { eager: true, as: "url" }
-  //         )
-  //       )
-  //       break
-  //     case "6":
-  //       images = Object.values(
-  //         import.meta.glob(
-  //           "../assets/images/portfolio/hair/*.{png,jpg,jpeg,PNG,JPEG}",
-  //           { eager: true, as: "url" }
-  //         )
-  //       )
-  //       break
-  //     case "7":
-  //       images = Object.values(
-  //         import.meta.glob(
-  //           "../assets/images/portfolio/lifestyle/*.{png,jpg,jpeg,PNG,JPEG}",
-  //           { eager: true, as: "url" }
-  //         )
-  //       )
-  //       break
-  //     case "8":
-  //       images = Object.values(
-  //         import.meta.glob(
-  //           "../assets/images/portfolio/films/*.{png,jpg,jpeg,PNG,JPEG}",
-  //           { eager: true, as: "url" }
-  //         )
-  //       )
-  //       break
-  //     case "9":
-  //       images = Object.values(
-  //         import.meta.glob(
-  //           "../assets/images/portfolio/short_films/*.{png,jpg,jpeg,PNG,JPEG}",
-  //           { eager: true, as: "url" }
-  //         )
-  //       )
-  //       break
-  //     case "10":
-  //       images = Object.values(
-  //         import.meta.glob(
-  //           "../assets/images/portfolio/music_videos/*.{png,jpg,jpeg,PNG,JPEG}",
-  //           { eager: true, as: "url" }
-  //         )
-  //       )
-  //       break
-  //     case "11":
-  //       images = Object.values(
-  //         import.meta.glob(
-  //           "../assets/images/portfolio/special_projects/*.{png,jpg,jpeg,PNG,JPEG}",
-  //           { eager: true, as: "url" }
-  //         )
-  //       )
-  //       break
-  //     case "12":
-  //       images = Object.values(
-  //         import.meta.glob(
-  //           "../assets/images/portfolio/still/*.{png,jpg,jpeg,PNG,JPEG}",
-  //           { eager: true, as: "url" }
-  //         )
-  //       )
-  //       break
-  //     case "13":
-  //       images = Object.values(
-  //         import.meta.glob(
-  //           "../assets/images/portfolio/kids/*.{png,jpg,jpeg,PNG,JPEG}",
-  //           { eager: true, as: "url" }
-  //         )
-  //       )
-  //       break
-  //     case "14":
-  //       images = Object.values(
-  //         import.meta.glob(
-  //           "../assets/images/portfolio/animals/*.{png,jpg,jpeg,PNG,JPEG}",
-  //           { eager: true, as: "url" }
-  //         )
-  //       )
-  //       break
-  //     case "15":
-  //       images = Object.values(
-  //         import.meta.glob(
-  //           "../assets/images/portfolio/cars/*.{png,jpg,jpeg,PNG,JPEG}",
-  //           { eager: true, as: "url" }
-  //         )
-  //       )
-  //       break
-  //     default:
-  //       break
-  //   }
+
+  console.log(images)
+
 
   return (
     <>
@@ -171,8 +60,22 @@ function Services() {
                           <p>{service.text}</p>
                         </div>
                       )}
+                      
+                      {
+                        images.map((image) => {
+                          return(
+                            <div key={image.id}>
+                              {service.id == image.id && (
+                                <img src={image.url} alt="slides" />
 
-                      <img
+                              )}
+                            </div>
+                          )
+                        })
+                        
+                      }
+
+                      {/* <img
                         src={
                           new URL(
                             `${service["File Path"]}${service["Archive Name"]}${service.Format}`,
@@ -180,7 +83,7 @@ function Services() {
                           ).href
                         }
                         alt="service"
-                      />
+                      /> */}
                     </div>
                   )}
                 </div>
