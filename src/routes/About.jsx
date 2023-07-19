@@ -21,8 +21,6 @@ function About({ path }) {
       {path == null && (
         <>
           <section className="section1">
-            
-
             <div className="image-grid">
               <img
                 className="image-grid-col-8 image-grid-row-2"

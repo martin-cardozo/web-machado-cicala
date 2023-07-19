@@ -93,7 +93,7 @@
 }
 
 .about .info p {
-  margin: 0 0 20px 0;
+  margin: 7px 0 20px 0;
   font-size: 13px;
 }
 
@@ -119,6 +119,7 @@
   margin: 5px;
   width: 60px;
   height: 60px;
+  object-fit: cover;
 }
 
 .link1 div,
