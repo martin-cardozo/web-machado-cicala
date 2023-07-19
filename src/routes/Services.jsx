@@ -2,28 +2,88 @@ import { Link, useParams } from "react-router-dom"
 import "../components/services.css"
 // import Slider from "../components/Slider"
 import services from "../../database/services.json"
+import service1 from "../assets/images/services/producciones_audiovisuales.jpg"
+import service2 from "../assets/images/services/producciones_fotograficas.jpg"
+import service3 from "../assets/images/services/desarrollo_de_conceptos_creativos.jpg"
+import service4 from "../assets/images/services/direccion_de_arte.jpg"
+import service5 from "../assets/images/services/video_clips.jpg"
+import service6 from "../assets/images/services/mega_producciones.jpg"
+import service7 from "../assets/images/services/special_projects.jpg"
+import service8 from "../assets/images/services/diseño_y_armado_de_escenografias.jpg"
+import service9 from "../assets/images/services/scouting_y_realizacion_de_props.jpg"
+import service10 from "../assets/images/services/retoque_estetico.jpg"
+import service11 from "../assets/images/services/montaje.jpg"
+import service12 from "../assets/images/services/edicion_audiovisual.jpg"
+import service13 from "../assets/images/services/make_up.jpg"
+import service14 from "../assets/images/services/styling.jpg"
+import service15 from "../assets/images/services/produccion_de_moda.jpg"
 
 function Services() {
   const params = useParams()
 
-  let images = []
+  let images = [
+    {
+      id: 1,
+      image: service1,
+    },
+    {
+      id: 2,
+      image: service2,
+    },
+    {
+      id: 3,
+      image: service3,
+    },
+    {
+      id: 4,
+      image: service4,
+    },
+    {
+      id: 5,
+      image: service5,
+    },
+    {
+      id: 6,
+      image: service6,
+    },
+    {
+      id: 7,
+      image: service7,
+    },
+    {
+      id: 8,
+      image: service8,
+    },
+    {
+      id: 9,
+      image: service9,
+    },
+    {
+      id: 10,
+      image: service10,
+    },
+    {
+      id: 11,
+      image: service11,
+    },
+    {
+      id: 12,
+      image: service12,
+    },
+    {
+      id: 13,
+      image: service13,
+    },
+    {
+      id: 14,
+      image: service14,
+    },
+    {
+      id: 15,
+      image: service15,
+    },
+  ]
 
-  {
-    services &&
-      services.map((service) => {
-        images.push({
-          id: service.id,
-          url: [{
-            
-              href:`${service["File Path"]}${service["Archive Name"]}${service.Format}`,
-              as:`services/+${service.id}`
-            
-          }],
-        })
-      })
-  }
-
-  console.log(images)
 
   return (
     <>
@@ -60,13 +120,14 @@ function Services() {
                       )}
 
                       {images.map((image) => {
-                        return (
+                        return(
                           <div key={image.id}>
-                            {service.id == image.id && (
-                              <img src={image.url[0].href} as={image.url[0].as} alt="slides" />
-                            )}
-                          </div>
+                          {service.id == image.id &&
+                          <img src={image.image} alt="slides" />
+                          }
+                        </div>
                         )
+                        
                       })}
 
                       {/* <img
