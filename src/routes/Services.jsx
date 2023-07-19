@@ -6,12 +6,12 @@ import services from "../../database/services.json"
 function Services() {
   const params = useParams()
 
-  //   let images = Object.values(
-  //     import.meta.glob("../assets/images/services/*.{png,jpg,jpeg,PNG,JPEG}", {
-  //       eager: true,
-  //       as: "url",
-  //     })
-  //   )
+    let images = Object.values(
+      import.meta.glob("../assets/images/services/*.{png,jpg,jpeg,PNG,JPEG}", {
+        eager: true,
+        as: "url",
+      })
+    )
 
   //   switch (params.serviceid) {
   //     case "1":
@@ -160,7 +160,7 @@ function Services() {
         </section>
 
         <section className="service-image">
-          {services &&
+          {services ?
             services.map((service) => {
               return (
                 <div key={service.id}>
@@ -171,6 +171,7 @@ function Services() {
                           <p>{service.text}</p>
                         </div>
                       )}
+                      
 
                       <img
                         src={
@@ -185,7 +186,7 @@ function Services() {
                   )} 
                 </div>
               )
-            })}
+            }):[]}
         </section>
 
         {/* Mosaico estilo Slider */}
