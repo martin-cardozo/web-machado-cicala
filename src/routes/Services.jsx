@@ -84,6 +84,11 @@ function Services() {
     },
   ]
 
+  /* Color de fondo de la imagen mientras carga en la escala de grises */
+  function grey() {
+    var v = ((Math.random() * 256) | 200).toString(16)
+    return "#" + v + v + v
+  }
 
   return (
     <>
@@ -120,14 +125,16 @@ function Services() {
                       )}
 
                       {images.map((image) => {
-                        return(
-                          <div key={image.id}>
-                          {service.id == image.id &&
-                          <img src={image.image} alt="slides" />
-                          }
-                        </div>
+                        return (
+                          <div
+                            key={image.id}
+                            style={{ backgroundColor: grey() }}
+                          >
+                            {service.id == image.id && (
+                              <img src={image.image} alt="slides" />
+                            )}
+                          </div>
                         )
-                        
                       })}
 
                       {/* <img
