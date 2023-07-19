@@ -160,7 +160,7 @@ function Services() {
         </section>
 
         <section className="service-image">
-          {services ?
+          {services &&
             services.map((service) => {
               return (
                 <div key={service.id}>
@@ -186,7 +186,7 @@ function Services() {
                   )} 
                 </div>
               )
-            }):[]}
+            })}
         </section>
 
         {/* Mosaico estilo Slider */}
