@@ -1,7 +1,7 @@
 import { Link, useParams } from "react-router-dom"
 import "../components/services.css"
 // import Slider from "../components/Slider"
-import services from "../database/services.json"
+import services from "../../database/services.json"
 
 function Services() {
   const params = useParams()
