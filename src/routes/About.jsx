@@ -21,9 +21,7 @@ function About({ path }) {
       {path == null && (
         <>
           <section className="section1">
-            {/* <div>
-              <img className="logo" src={logo} alt="logo" />
-            </div> */}
+            
 
             <div className="image-grid">
               <img
