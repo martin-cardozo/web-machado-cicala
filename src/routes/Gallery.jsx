@@ -1,20 +1,23 @@
 import { useParams } from 'react-router-dom';
 import { useState } from 'react';
-import './gallery.css'
-import Modal from './Modal';
+import '../components/gallery.css'
+import Modal from '../components/Modal';
 
 
 
-function Gallery({category}) {
+
+function Gallery() {
+    
+
     const [ selectedImg, setSelectedImg] = useState(null)
 
 
-    const params = useParams()
+    const {id} = useParams()
     
     let images = []
 
-    if (category=="portfolio") {
-        switch (params.portfolioid) {
+    
+        switch (id) {
             case "1":
                 images = Object.values(import.meta.glob('../assets/images/portfolio/advertising/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
                 break;
@@ -62,7 +65,7 @@ function Gallery({category}) {
                 break;
             default:
                 break;
-        }
+        
         
     }
 
@@ -78,7 +81,7 @@ function Gallery({category}) {
               images.map((image) => (
                 <div className='image-container' onClick={() => setSelectedImg(image)} style={{backgroundColor: grey()}}>
                     <img key={image} src={image} alt="" />
-                    <div class="centered">
+                    <div className="centered">
                         <h2>Lorem, ipsum.</h2>
                         <hr />
                         <h3>Lorem ipsum dolor sit amet.</h3>

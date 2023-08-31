@@ -1,7 +1,5 @@
 import { Link, useParams } from "react-router-dom"
 import "../components/services.css"
-// import Slider from "../components/Slider"
-import services from "../../database/services.json"
 import service1 from "../assets/images/services/producciones_audiovisuales.jpg"
 import service2 from "../assets/images/services/producciones_fotograficas.jpg"
 import service3 from "../assets/images/services/desarrollo_de_conceptos_creativos.jpg"
@@ -19,67 +17,112 @@ import service14 from "../assets/images/services/styling.jpg"
 import service15 from "../assets/images/services/produccion_de_moda.jpg"
 
 function Services() {
-  const params = useParams()
+  const {name} = useParams()
 
-  let images = [
+  let services = [
     {
       id: 1,
+      text: "Texto muy corto 1 que habla sobre este servicio",
+      "Text Name": "PRODUCCIONES FOTOGRÁFICAS",
+      "Archive Name": "producciones_fotograficas",
       image: service1,
     },
     {
       id: 2,
+      text: "",
+      "Text Name": "PRODUCCIONES AUDIOVISUALES",
+      "Archive Name": "producciones_audiovisuales",
       image: service2,
     },
     {
       id: 3,
+      text: "Texto muy corto 3 que habla sobre este servicio",
+      "Text Name": "DESARROLLO DE CONCEPTOS CREATIVOS",
+      "Archive Name": "desarrollo_de_conceptos_creativos",
       image: service3,
     },
     {
       id: 4,
+      text: "Texto muy corto 4 que habla sobre este servicio",
+      "Text Name": "DIRECCIÓN DE ARTE",
+      "Archive Name": "direccion_de_arte",
       image: service4,
     },
     {
       id: 5,
+      text: "Texto muy corto 5 que habla sobre este servicio",
+      "Text Name": "VIDEO CLIPS",
+      "Archive Name": "video_clips",
       image: service5,
     },
     {
       id: 6,
+      text: "Texto muy corto 6 que habla sobre este servicio",
+      "Text Name": "MEGA PRODUCCIONES",
+      "Archive Name": "mega_producciones",
       image: service6,
     },
     {
       id: 7,
+      text: "Texto muy corto 7 que habla sobre este servicio",
+      "Text Name": "SPECIAL PROJECTS",
+      "Archive Name": "special_projects",
       image: service7,
     },
     {
       id: 8,
+      text: "Texto muy corto 8 que habla sobre este servicio",
+      "Text Name": "DISEÑO Y ARMADO DE ESCENOGRAFÍAS",
+      "Archive Name": "diseño_y_armado_de_escenografias",
       image: service8,
     },
     {
       id: 9,
+      text: "Texto muy corto 9 que habla sobre este servicio",
+      "Text Name": "SCOUTING Y REALIZACIÓN DE PROPS",
+      "Archive Name": "scouting_y_realizacion_de_props",
       image: service9,
     },
     {
       id: 10,
+      text: "Texto muy corto 10 que habla sobre este servicio",
+      "Text Name": "RETOQUE ESTÉTICO",
+      "Archive Name": "retoque_estetico",
       image: service10,
     },
     {
       id: 11,
+      text: "Texto muy corto 11 que habla sobre este servicio",
+      "Text Name": "MONTAJE",
+      "Archive Name": "montaje",
       image: service11,
     },
     {
       id: 12,
+      text: "Texto muy corto 12 que habla sobre este servicio",
+      "Text Name": "EDICIÓN AUDIOVISUAL",
+      "Archive Name": "edicion_audiovisual",
       image: service12,
     },
     {
       id: 13,
+      text: "Texto muy corto 13 que habla sobre este servicio",
+      "Text Name": "MAKE UP",
+      "Archive Name": "make_up",
       image: service13,
     },
     {
       id: 14,
+      text: "Texto muy corto 14 que habla sobre este servicio",
+      "Text Name": "STYLING",
+      "Archive Name": "styling",
       image: service14,
     },
     {
       id: 15,
+      text: "Texto muy corto 15 que habla sobre este servicio",
+      "Text Name": "PRODUCCIÓN DE MODA",
+      "Archive Name": "produccion_de_moda",
       image: service15,
     },
   ]
@@ -94,21 +137,13 @@ function Services() {
     <>
       <div className="services">
         <section className="service-menu">
-          <Link to={"/services/1"}>PRODUCCIONES FOTOGRÁFICAS</Link>
-          <Link to={"/services/2"}>PRODUCCIONES AUDIOVISUALES</Link>
-          <Link to={"/services/3"}>DESARROLLO DE CONCEPTOS CREATIVOS</Link>
-          <Link to={"/services/4"}>DIRECCIÓN DE ARTE</Link>
-          <Link to={"/services/5"}>VIDEO CLIPS</Link>
-          <Link to={"/services/6"}>MEGA PRODUCCIONES</Link>
-          <Link to={"/services/7"}>SPECIAL PROJECTS</Link>
-          <Link to={"/services/8"}>DISEÑO Y ARMADO DE ESCENOGRAFÍAS</Link>
-          <Link to={"/services/9"}>SCOUTING Y REALIZACIÓN DE PROPS</Link>
-          <Link to={"/services/10"}>RETOQUE ESTÉTICO</Link>
-          <Link to={"/services/11"}>MONTAJE</Link>
-          <Link to={"/services/12"}>EDICIÓN AUDIOVISUAL</Link>
-          <Link to={"/services/13"}>MAKE UP</Link>
-          <Link to={"/services/14"}>STYLING</Link>
-          <Link to={"/services/15"}>PRODUCCIÓN DE MODA</Link>
+
+          {services.map(service => (
+            <Link key={service.id} to={`/services/${service["Archive Name"]}`}>{service["Text Name"]}</Link>
+
+          ))}
+
+          
         </section>
 
         <section className="service-image">
@@ -116,7 +151,7 @@ function Services() {
             services.map((service) => {
               return (
                 <div key={service.id}>
-                  {params.serviceid == service.id && (
+                  {name == service["Archive Name"] && (
                     <div>
                       {service.text != "" && (
                         <div className="service-text">
@@ -124,28 +159,11 @@ function Services() {
                         </div>
                       )}
 
-                      {images.map((image) => {
-                        return (
-                          <div
-                            key={image.id}
-                            style={{ backgroundColor: grey() }}
-                          >
-                            {service.id == image.id && (
-                              <img src={image.image} alt="slides" />
-                            )}
-                          </div>
-                        )
-                      })}
+                      <div style={{ backgroundColor: grey() }}>
+                        <img src={service.image} alt="slides" />
+                      </div>
 
-                      {/* <img
-                        src={
-                          new URL(
-                            `${service["File Path"]}${service["Archive Name"]}${service.Format}`,
-                            import.meta.url
-                          ).href
-                        }
-                        alt="service"
-                      /> */}
+                      
                     </div>
                   )}
                 </div>

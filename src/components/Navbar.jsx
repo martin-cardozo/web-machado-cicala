@@ -79,7 +79,7 @@ const Navbar = () => {
                         </div>
                     </div>
                     
-                    <Link to={'/services/1'}>SERVICIOS</Link>
+                    <Link to={'/services/producciones_fotograficas'}>SERVICIOS</Link>
                     <Link to={'/contact'}>CONTACTO</Link>
                     
                     <div className='social-networks'>

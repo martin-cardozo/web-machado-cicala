@@ -91,7 +91,67 @@
   
 }
 
+.page {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  /* smoothie grid */
+  .photo-grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+  }
+  .photo-card {
+    width: 100%;
+    padding: 10px;
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: 6px;
+    position: relative;
+  }
 
+  /* forms */
+.form-photo {
+    background: #fff;
+    padding: 20px;
+    max-width: 480px;
+    margin: 0 auto;
+    border-radius: 6px;
+  }
+  .form-photo input, .form-photo textarea {
+    display: block;
+    width: 100%;
+    padding: 6px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    margin: 10px 0 20px 0;
+  }
+  .form-photo button {
+    background: var(--primary);
+    color: #fff;
+    border: 0;
+    border-radius: 6px;
+    padding: 6px 8px;
+    font-family: "Poppins";
+    cursor: pointer;
+  }
+
+  .admin-navbar {
+    background: #4b064c;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  .admin-navbar a {
+    color: #f2f2f2;
+    margin: 10px;
+    display: inline-block;
+  }
+  .admin-navbar h1 {
+    color: #fff;
+  }
 
 
 @keyframes scroll-up {
