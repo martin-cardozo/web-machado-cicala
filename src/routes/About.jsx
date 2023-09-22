@@ -10,9 +10,11 @@ import foto6 from "../assets/about/gabriel_3.jpg"
 import foto7 from "../assets/about/gabriel_4.jpg"
 
 import foto8 from "../assets/about/jose_1.jpg"
-import foto9 from "../assets/about/jose_2.jpg"
-import foto10 from "../assets/about/jose_3.jpeg"
-import foto11 from "../assets/about/jose_4.jpg"
+// import foto9 from "../assets/about/jose_2.jpg"
+// import foto10 from "../assets/about/jose_3.jpeg"
+// import foto11 from "../assets/about/jose_4.jpg"
+import foto12 from "../assets/about/jose_5.jpg"
+
 import instagramLogo from "../assets/icons/icon-instagram.png"
 
 function About({ path }) {
@@ -223,9 +225,10 @@ function About({ path }) {
                 src={foto8}
                 alt="foto"
               />
-              <img className="image-grid-col-2" src={foto9} alt="foto" />
-              <img className="image-grid-col-2" src={foto10} alt="foto" />
-              <img className="image-grid-col-4" src={foto11} alt="foto" />
+              <img className="image-grid-col-8" src={foto12} alt="foto" />
+              {/* <img className="image-grid-col-2" src={foto9} alt="foto" /> */}
+              {/* <img className="image-grid-col-2" src={foto10} alt="foto" /> */}
+              {/* <img className="image-grid-col-4" src={foto11} alt="foto" /> */}
             </div>
             <div className="grey-instagram">
               <Link

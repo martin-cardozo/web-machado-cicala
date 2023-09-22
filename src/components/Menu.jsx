@@ -27,6 +27,7 @@ function Menu({setBurgerClass, setMenuClass, isMenuClicked, setIsMenuClicked}) {
             <div className='menu-col'>
                 <ul>
                     <li><Link to={"#"}><strong>PORTFOLIO</strong></Link></li>
+                    <li><Link to={"#"} style={{cursor: 'default'}}><strong>Fotografía</strong></Link></li>
                     <li onClick={updateMenu}><Link to={"/portfolio/1"}>Advertising</Link></li>
                     <li onClick={updateMenu}><Link to={"/portfolio/2"}>Beauty</Link></li>
                     <li onClick={updateMenu}><Link to={"/portfolio/3"}>Celebrities</Link></li>
@@ -34,14 +35,16 @@ function Menu({setBurgerClass, setMenuClass, isMenuClicked, setIsMenuClicked}) {
                     <li onClick={updateMenu}><Link to={"/portfolio/5"}>Fashion</Link></li>
                     <li onClick={updateMenu}><Link to={"/portfolio/6"}>Hair</Link></li>
                     <li onClick={updateMenu}><Link to={"/portfolio/7"}>Lifestyle</Link></li>
-                    <li onClick={updateMenu}><Link to={"/portfolio/8"}>Films</Link></li>
-                    <li onClick={updateMenu}><Link to={"/portfolio/9"}>Short Films</Link></li>
-                    <li onClick={updateMenu}><Link to={"/portfolio/10"}>Music Videos</Link></li>
-                    <li onClick={updateMenu}><Link to={"/portfolio/11"}>Special Projects</Link></li>
-                    <li onClick={updateMenu}><Link to={"/portfolio/12"}>Still</Link></li>
-                    <li onClick={updateMenu}><Link to={"/portfolio/13"}>Kids</Link></li>
-                    <li onClick={updateMenu}><Link to={"/portfolio/14"}>Animals</Link></li>
-                    <li onClick={updateMenu}><Link to={"/portfolio/15"}>Cars</Link></li>
+                    <li onClick={updateMenu}><Link to={"/portfolio/8"}>Kids</Link></li>
+                    <li onClick={updateMenu}><Link to={"/portfolio/9"}>Animals</Link></li>
+                    <li onClick={updateMenu}><Link to={"/portfolio/10"}>Cars</Link></li>
+                    <li><Link to={"#"} style={{cursor: 'default'}}><strong>Audiovisual</strong></Link></li>
+                    <li onClick={updateMenu}><Link to={"/portfolio/11"}>Films</Link></li>
+                    <li onClick={updateMenu}><Link to={"/portfolio/12"}>Short Films</Link></li>
+                    <li onClick={updateMenu}><Link to={"/portfolio/13"}>Music</Link></li>
+                    <li onClick={updateMenu}><Link to={"/portfolio/14"}>Videos</Link></li>
+                    <li onClick={updateMenu}><Link to={"/portfolio/15"}>Special Projects</Link></li>
+                    <li onClick={updateMenu}><Link to={"/portfolio/16"}>Still</Link></li>
                     
                 </ul>
             </div>

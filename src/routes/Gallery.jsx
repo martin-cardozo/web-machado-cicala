@@ -19,49 +19,52 @@ function Gallery() {
     
         switch (id) {
             case "1":
-                images = Object.values(import.meta.glob('../assets/images/portfolio/advertising/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
+                images = Object.values(import.meta.glob('../assets/portfolio/1-advertising/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
                 break;
             case "2":
-                images = Object.values(import.meta.glob('../assets/images/portfolio/beauty/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
+                images = Object.values(import.meta.glob('../assets/portfolio/2-beauty/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
                 break;
             case "3":
-                images = Object.values(import.meta.glob('../assets/images/portfolio/celebrities/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
+                images = Object.values(import.meta.glob('../assets/portfolio/3-celebrities/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
                 break;
             case "4":
-                images = Object.values(import.meta.glob('../assets/images/portfolio/entertaiment/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
+                images = Object.values(import.meta.glob('../assets/portfolio/4-entertaiment/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
                 break;
             case "5":
-                images = Object.values(import.meta.glob('../assets/images/portfolio/fashion/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
+                images = Object.values(import.meta.glob('../assets/portfolio/5-fashion/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
                 break;
             case "6":
-                images = Object.values(import.meta.glob('../assets/images/portfolio/hair/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
+                images = Object.values(import.meta.glob('../assets/portfolio/6-hair/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
                 break;
             case "7":
-                images = Object.values(import.meta.glob('../assets/images/portfolio/lifestyle/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
+                images = Object.values(import.meta.glob('../assets/portfolio/7-lifestyle/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
                 break;
             case "8":
-                images = Object.values(import.meta.glob('../assets/images/portfolio/films/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
+                images = Object.values(import.meta.glob('../assets/portfolio/8-kids/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
                 break;
             case "9":
-                images = Object.values(import.meta.glob('../assets/images/portfolio/short_films/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
+                images = Object.values(import.meta.glob('../assets/portfolio/9-animals/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
                 break;
             case "10":
-                images = Object.values(import.meta.glob('../assets/images/portfolio/music_videos/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
+                images = Object.values(import.meta.glob('../assets/portfolio/10-cars/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
                 break;
             case "11":
-                images = Object.values(import.meta.glob('../assets/images/portfolio/special_projects/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
+                images = Object.values(import.meta.glob('../assets/portfolio/11-films/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
                 break;
             case "12":
-                images = Object.values(import.meta.glob('../assets/images/portfolio/still/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
+                images = Object.values(import.meta.glob('../assets/portfolio/12-short_films/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
                 break;
             case "13":
-                images = Object.values(import.meta.glob('../assets/images/portfolio/kids/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
+                images = Object.values(import.meta.glob('../assets/portfolio/13-music/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
                 break;
             case "14":
-                images = Object.values(import.meta.glob('../assets/images/portfolio/animals/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
+                images = Object.values(import.meta.glob('../assets/portfolio/14-videos/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
                 break;
             case "15":
-                images = Object.values(import.meta.glob('../assets/images/portfolio/cars/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
+                images = Object.values(import.meta.glob('../assets/portfolio/15-special_projects/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
+                break;
+            case "16":
+                images = Object.values(import.meta.glob('../assets/portfolio/16-still/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
                 break;
             default:
                 break;
@@ -80,7 +83,7 @@ function Gallery() {
             {
               images.map((image) => (
                 <div className='image-container' onClick={() => setSelectedImg(image)} style={{backgroundColor: grey()}}>
-                    <img key={image} src={image} alt="" />
+                    <img key={image} src={image} alt="" loading="lazy"/>
                     <div className="centered">
                         <h2>Lorem, ipsum.</h2>
                         <hr />

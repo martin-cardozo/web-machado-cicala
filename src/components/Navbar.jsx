@@ -61,6 +61,7 @@ const Navbar = () => {
                     <div className='dropdown'>
                         <Link to={'#'} onClick={pinDropdown}>PORTFOLIO</Link>
                         <div className={`dropdown-content ${portfolioClass}`}>
+                            <Link to={"#"} style={{cursor: 'default'}}><strong>Fotografía</strong></Link>
                             <Link to={"/portfolio/1"} onClick={updateDropdown}>Advertising</Link>
                             <Link to={"/portfolio/2"} onClick={updateDropdown}>Beauty</Link>
                             <Link to={"/portfolio/3"} onClick={updateDropdown}>Celebrities</Link>
@@ -68,14 +69,16 @@ const Navbar = () => {
                             <Link to={"/portfolio/5"} onClick={updateDropdown}>Fashion</Link>
                             <Link to={"/portfolio/6"} onClick={updateDropdown}>Hair</Link>
                             <Link to={"/portfolio/7"} onClick={updateDropdown}>Lifestyle</Link>
-                            <Link to={"/portfolio/8"} onClick={updateDropdown}>Films</Link>
-                            <Link to={"/portfolio/9"} onClick={updateDropdown}>Short Films</Link>
-                            <Link to={"/portfolio/10"} onClick={updateDropdown}>Music Videos</Link>
-                            <Link to={"/portfolio/11"} onClick={updateDropdown}>Special Projects</Link>
-                            <Link to={"/portfolio/12"} onClick={updateDropdown}>Still</Link>
-                            <Link to={"/portfolio/13"} onClick={updateDropdown}>Kids</Link>
-                            <Link to={"/portfolio/14"} onClick={updateDropdown}>Animals</Link>
-                            <Link to={"/portfolio/15"} onClick={updateDropdown}>Cars</Link>
+                            <Link to={"/portfolio/8"} onClick={updateDropdown}>Kids</Link>
+                            <Link to={"/portfolio/9"} onClick={updateDropdown}>Animals</Link>
+                            <Link to={"/portfolio/10"} onClick={updateDropdown}>Cars</Link>
+                            <Link to={"#"} style={{cursor: 'default'}}><strong>Audiovisual</strong></Link>
+                            <Link to={"/portfolio/11"} onClick={updateDropdown}>Films</Link>
+                            <Link to={"/portfolio/12"} onClick={updateDropdown}>Short Films</Link>
+                            <Link to={"/portfolio/13"} onClick={updateDropdown}>Music</Link>
+                            <Link to={"/portfolio/14"} onClick={updateDropdown}>Videos</Link>
+                            <Link to={"/portfolio/15"} onClick={updateDropdown}>Special Projects</Link>
+                            <Link to={"/portfolio/16"} onClick={updateDropdown}>Still</Link>
                         </div>
                     </div>
                     

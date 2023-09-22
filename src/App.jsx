@@ -10,8 +10,6 @@ import Error from './routes/Error'
 import AdminNavbar from './components/AdminNavbar'
 import Gallery from "./routes/Gallery"
 // import Gallery2 from './routes/Gallery2'
-// import Create from './components/Create'
-// import Update from './components/Update'
 
 
 function App() {
