@@ -42,7 +42,7 @@ function Services() {
 
               <div style={{ backgroundColor: grey() }}>
                 <img
-                  src={`/services/${name}.${selectedService.extension}`}
+                  src={`/assets/services/${name}.${selectedService.extension}`}
                   alt="slides"
                 />
               </div>
