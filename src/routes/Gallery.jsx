@@ -68,9 +68,9 @@ function Gallery() {
                     );
                 } else {
                     return (
-                      <div key={imageName} className='image-container' onClick={() => setSelectedImg(`/src/assets/portfolio/${category}/${imageName}.${extension}`)} style={{ backgroundColor: grey() }}>
+                      <div key={imageName} className='image-container' onClick={() => setSelectedImg(`/portfolio/${category}/${imageName}.${extension}`)} style={{ backgroundColor: grey() }}>
                         <img
-                          src={`/src/assets/portfolio/${category}/${imageName}.${extension}`} // Ruta con la extensión correspondiente
+                          src={`/portfolio/${category}/${imageName}.${extension}`} // Ruta con la extensión correspondiente
                           alt={`Descripción de ${imageName}`}
                           loading="lazy"
                         />
