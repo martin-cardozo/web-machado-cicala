@@ -1,11 +1,10 @@
 
-/* Galería estática */
+/* Galería */
 .gallery{
     columns: 4 320px;
     column-gap: 0.5em;
     background-color: #f9f9f9;
     margin: 1em;
-    
 }
 
 .image-container{
@@ -68,7 +67,10 @@
     transition: opacity 0.3s ease-in-out;
 }
 
-
+iframe{
+    /* box-sizing: border-box; */
+    margin: 2px;
+}
 
 
 
@@ -91,30 +93,10 @@
   
 }
 
-.page {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
-  }
-  
-  /* smoothie grid */
-  .photo-grid {
-    margin-top: 40px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 40px;
-  }
-  .photo-card {
-    width: 100%;
-    padding: 10px;
-    background: #fff;
-    box-sizing: border-box;
-    border-radius: 6px;
-    position: relative;
-  }
+
 
   /* forms */
-.form-photo {
+/* .form-photo {
     background: #fff;
     padding: 20px;
     max-width: 480px;
@@ -138,20 +120,8 @@
     font-family: "Poppins";
     cursor: pointer;
   }
+ */
 
-  .admin-navbar {
-    background: #4b064c;
-    padding: 10px 20px;
-    text-align: center;
-  }
-  .admin-navbar a {
-    color: #f2f2f2;
-    margin: 10px;
-    display: inline-block;
-  }
-  .admin-navbar h1 {
-    color: #fff;
-  }
 
 
 @keyframes scroll-up {

@@ -1,0 +1,233 @@
+{
+  "video1": {
+    "videoUrl": "https://www.youtube.com/embed/o6qnHs-wUyY",
+    "extension": "mp4",
+    "client": "Philips",
+    "campaign": "Ídolos",
+    "year": 2018
+  },
+  "video2": {
+    "videoUrl": "https://www.youtube.com/embed/s7JKBf1xHt8",
+    "extension": "mp4",
+    "client": "Philips",
+    "campaign": "Ídolos",
+    "year": 2018
+  },
+  "video3": {
+    "videoUrl": "https://www.youtube.com/embed/gPt3Bf1pyas",
+    "extension": "mp4",
+    "client": "Philips",
+    "campaign": "Ídolos",
+    "year": 2018
+  },
+  "video4": {
+    "videoUrl": "https://www.youtube.com/embed/5Y19oKNll98",
+    "extension": "mp4",
+    "client": "Chandon",
+    "campaign": "Primeras veces",
+    "year": 2018
+  },
+  "video5": {
+    "videoUrl": "https://www.youtube.com/embed/qF61dE0r_-g",
+    "extension": "mp4",
+    "client": "Chandon",
+    "campaign": "Primeras veces",
+    "year": 2018
+  },
+  "video6": {
+    "videoUrl": "https://www.youtube.com/embed/vppZB5h8dd8",
+    "extension": "mp4",
+    "client": "Chandon",
+    "campaign": "Primeras veces",
+    "year": 2018
+  },
+  "video7": {
+    "videoUrl": "https://www.youtube.com/embed/131VsI2g7s4",
+    "extension": "mp4",
+    "client": "Chandon",
+    "campaign": "Chandon Celebration Season",
+    "year": 2017
+  },
+  "video8": {
+    "videoUrl": "https://www.youtube.com/embed/OOuBTh018Ho",
+    "extension": "mp4",
+    "client": "Chandon",
+    "campaign": "Chandon Celebration Season Magnum Week",
+    "year": 2017
+  },
+  "video9": {
+    "videoUrl": "https://www.youtube.com/embed/I79K5E3rKH4",
+    "extension": "mp4",
+    "client": "Baron B",
+    "campaign": "Les Amuse Bouches, Crizia",
+    "year": 2017
+  },
+  "video10": {
+    "videoUrl": "https://www.youtube.com/embed/uK5boi62Eso",
+    "extension": "mp4",
+    "client": "Baron B",
+    "campaign": "Les Amuse Bouches, Cassis",
+    "year": 2017
+  },
+  "video11": {
+    "videoUrl": "https://www.youtube.com/embed/UOhtDJGLnuo",
+    "extension": "mp4",
+    "client": "Baron B",
+    "campaign": "La última copa",
+    "year": 2017
+  },
+  "video12": {
+    "videoUrl": "https://www.youtube.com/embed/-tX3MHKjojQ",
+    "extension": "mp4",
+    "client": "Chandon",
+    "campaign": "The Horsemen – Capitulo 1: La Fuga",
+    "year": 2016
+  },
+  "video13": {
+    "videoUrl": "https://www.youtube.com/embed/NkUWq8fz6Wk",
+    "extension": "mp4",
+    "client": "Chandon",
+    "campaign": "The Horsemen – Capitulo 2: La Competencia",
+    "year": 2016
+  },
+  "video14": {
+    "videoUrl": "https://www.youtube.com/embed/7L4ptMLJais",
+    "extension": "mp4",
+    "client": "Chandon",
+    "campaign": "The Horsemen – Capitulo 3: Yo Invito",
+    "year": 2016
+  },
+  "video15": {
+    "videoUrl": "https://www.youtube.com/embed/bzGt-NKeFkQ",
+    "extension": "mp4",
+    "client": "Chandon",
+    "campaign": "The Horsemen – Capitulo 4: El Baile",
+    "year": 2016
+  },
+  "video16": {
+    "videoUrl": "https://www.youtube.com/embed/TOWh16NKXuQ",
+    "extension": "mp4",
+    "client": "Chandon",
+    "campaign": "The Horsemen – Capitulo 5: Hay Equipo",
+    "year": 2016
+  },
+  "video17": {
+    "videoUrl": "https://www.youtube.com/embed/SfYJtmhC98c",
+    "extension": "mp4",
+    "client": "Chandon",
+    "campaign": "The Horsemen – Capitulo 6: El Partido",
+    "year": 2016
+  },
+  "video18": {
+    "videoUrl": "https://www.youtube.com/embed/6r08087bnMk",
+    "extension": "mp4",
+    "client": "Chandon",
+    "campaign": "The Horsemen – Capitulo 7: Deja Vu",
+    "year": 2016
+  },
+  "video19": {
+    "videoUrl": "https://www.youtube.com/embed/iBkiNulRkrI",
+    "extension": "mp4",
+    "client": "Reel MCM",
+    "campaign": "",
+    "year": null
+  },
+  "video20": {
+    "videoUrl": "https://www.youtube.com/embed/qo7vUrgbsSY",
+    "extension": "mp4",
+    "client": "Newsan",
+    "campaign": "25 Años",
+    "year": 2016
+  },
+  "video21": {
+    "videoUrl": "https://www.youtube.com/embed/7Xj6I3oJjaA",
+    "extension": "mp4",
+    "client": "Peter Pan",
+    "campaign": "",
+    "year": 2016
+  },
+  "video22": {
+    "videoUrl": "https://www.youtube.com/embed/X0bCEUGLONo",
+    "extension": "mp4",
+    "client": "Key Biscayne",
+    "campaign": "Conexión Real (short version)",
+    "year": 2016
+  },
+  "video23": {
+    "videoUrl": "https://www.youtube.com/embed/P81JH6_YUzs",
+    "extension": "mp4",
+    "client": "Key Biscayne",
+    "campaign": "Conexión Real (large version)",
+    "year": 2016
+  },
+  "video24": {
+    "videoUrl": "https://www.youtube.com/embed/WI793PZZKIY",
+    "extension": "mp4",
+    "client": "TUENTI",
+    "campaign": "Las Peñas",
+    "year": 2016
+  },
+  "video25": {
+    "videoUrl": "https://www.youtube.com/embed/o7C-P-IWXD4",
+    "extension": "mp4",
+    "client": "TUENTI",
+    "campaign": "Memes",
+    "year": 2016
+  },
+  "video26": {
+    "videoUrl": "https://www.youtube.com/embed/08jqt7b5pn4",
+    "extension": "mp4",
+    "client": "TUENTI",
+    "campaign": "Manifiesto",
+    "year": 2016
+  },
+  "video27": {
+    "videoUrl": "https://www.youtube.com/embed/UNlagaA0mvI",
+    "extension": "mp4",
+    "client": "L´Oréal",
+    "campaign": "Leyendas que inspiran",
+    "year": 2015
+  },
+  "video28": {
+    "videoUrl": "https://www.youtube.com/embed/rcZ_2F3wkOk",
+    "extension": "mp4",
+    "client": "BATUK",
+    "campaign": "Batuk Jeans",
+    "year": 2015
+  },
+  "video29": {
+    "videoUrl": "https://www.youtube.com/embed/hb2TxxhFjDU",
+    "extension": "mp4",
+    "client": "Falabella",
+    "campaign": "Sal y Vive",
+    "year": 2012
+  },
+  "video30": {
+    "videoUrl": "https://www.youtube.com/embed/2NeFggJEIqw",
+    "extension": "mp4",
+    "client": "Procter and Gamble",
+    "campaign": "Pantene, Summer Edition",
+    "year": 2015
+  },
+  "video31": {
+    "videoUrl": "https://www.youtube.com/embed/pB6HAoqCK5k",
+    "extension": "mp4",
+    "client": "Procter and Gamble",
+    "campaign": "Pantene PRO V – Campo",
+    "year": 2015
+  },
+  "video32": {
+    "videoUrl": "https://www.youtube.com/embed/CiDkU5s9UDk",
+    "extension": "mp4",
+    "client": "Procter and Gamble",
+    "campaign": "Pantene PRO V – Montaña",
+    "year": 2015
+  },
+  "video33": {
+    "videoUrl": "https://www.youtube.com/embed/qATOSb7Arog",
+    "extension": "mp4",
+    "client": "Scappino",
+    "campaign": "Inspiring Style",
+    "year": 2012
+  }
+}

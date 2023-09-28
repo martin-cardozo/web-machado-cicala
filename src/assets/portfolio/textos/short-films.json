@@ -1,0 +1,23 @@
+{
+    "video1": {
+      "videoUrl": "https://youtube.com/embed/ahqk1x3TWLk",
+      "extension": "mp4",
+      "client": "",
+      "campaign": "Sueño de una campaña de verano con el Chino Darin",
+      "year": 2016
+    },
+    "video2": {
+      "videoUrl": "https://youtube.com/embed/CZxHrVDio9s",
+      "extension": "mp4",
+      "client": "",
+      "campaign": "I started a joke",
+      "year": 2016
+    },
+    "video3": {
+      "videoUrl": "https://youtube.com/embed/z_DburSSruQ",
+      "extension": "mp4",
+      "client": "",
+      "campaign": "La Altura Ideal",
+      "year": 2016
+    }
+  }

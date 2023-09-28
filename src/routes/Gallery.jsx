@@ -1,76 +1,30 @@
 import { useParams } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import '../components/gallery.css'
 import Modal from '../components/Modal';
 
 
-
-
 function Gallery() {
-    
-
     const [ selectedImg, setSelectedImg] = useState(null)
 
+    const {category} = useParams()
 
-    const {id} = useParams()
-    
-    let images = []
+    const [imageData, setImageData] = useState({});
 
+    useEffect(() => {
+        // Cargar datos de la categoría seleccionada desde tu archivo JSON aquí
+        // Se tiene un archivo JSON por cada categoría 
     
-        switch (id) {
-            case "1":
-                images = Object.values(import.meta.glob('../assets/portfolio/1-advertising/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
-                break;
-            case "2":
-                images = Object.values(import.meta.glob('../assets/portfolio/2-beauty/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
-                break;
-            case "3":
-                images = Object.values(import.meta.glob('../assets/portfolio/3-celebrities/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
-                break;
-            case "4":
-                images = Object.values(import.meta.glob('../assets/portfolio/4-entertaiment/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
-                break;
-            case "5":
-                images = Object.values(import.meta.glob('../assets/portfolio/5-fashion/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
-                break;
-            case "6":
-                images = Object.values(import.meta.glob('../assets/portfolio/6-hair/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
-                break;
-            case "7":
-                images = Object.values(import.meta.glob('../assets/portfolio/7-lifestyle/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
-                break;
-            case "8":
-                images = Object.values(import.meta.glob('../assets/portfolio/8-kids/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
-                break;
-            case "9":
-                images = Object.values(import.meta.glob('../assets/portfolio/9-animals/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
-                break;
-            case "10":
-                images = Object.values(import.meta.glob('../assets/portfolio/10-cars/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
-                break;
-            case "11":
-                images = Object.values(import.meta.glob('../assets/portfolio/11-films/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
-                break;
-            case "12":
-                images = Object.values(import.meta.glob('../assets/portfolio/12-short_films/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
-                break;
-            case "13":
-                images = Object.values(import.meta.glob('../assets/portfolio/13-music/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
-                break;
-            case "14":
-                images = Object.values(import.meta.glob('../assets/portfolio/14-videos/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
-                break;
-            case "15":
-                images = Object.values(import.meta.glob('../assets/portfolio/15-special_projects/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
-                break;
-            case "16":
-                images = Object.values(import.meta.glob('../assets/portfolio/16-still/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' }))
-                break;
-            default:
-                break;
-        
-        
-    }
+        // Carga de datos utilizando import (ajustar la ruta):
+        import(`../assets/portfolio/textos/${category}.json`)
+          .then((data) => {
+            setImageData(data.default);
+          })
+          .catch((error) => {
+            console.error('Error al cargar los datos:', error);
+          });
+      }, [category]);
+    
 
     /* Color de fondo de la imagen mientras carga en la escala de grises */
     function grey() {
@@ -78,19 +32,57 @@ function Gallery() {
         return "#" + v + v + v;
     }
 
+    // Acotar la cantidad de imágenes poniendo una cantida máxima
+    const imageKeys = Object.keys(imageData).slice(0, 300);
+
     return (
         <div className="gallery">
             {
-              images.map((image) => (
-                <div className='image-container' onClick={() => setSelectedImg(image)} style={{backgroundColor: grey()}}>
-                    <img key={image} src={image} alt="" loading="lazy"/>
-                    <div className="centered">
-                        <h2>Lorem, ipsum.</h2>
-                        <hr />
-                        <h3>Lorem ipsum dolor sit amet.</h3>
-                    </div>
-                </div>
-              ))
+            imageKeys.map((imageName) => {
+                const extension = imageData[imageName].extension; // Obtener la extensión desde los datos
+                const isVideo = extension === 'mp4'; // Verificar si es un video
+
+                if (isVideo) {
+                    return (
+                      <div key={imageName} className='image-container' style={{ backgroundColor: grey() }}>
+                        
+                          <iframe
+                            src={imageData[imageName].videoUrl}
+                            width="100%"
+                            height="250"
+                            allowFullScreen
+                            loading="lazy"
+                          >
+                          </iframe>
+                          <div>
+                            <p>{imageData[imageName].client}</p>
+                            {
+                              imageData[imageName].campaign
+                                ? <p>{imageData[imageName].campaign}</p>
+                                : <p>{imageData[imageName].song}</p>
+                            }
+                            <p>{imageData[imageName].year}</p>
+                          </div>
+                        
+                      </div>
+                    );
+                } else {
+                    return (
+                      <div key={imageName} className='image-container' onClick={() => setSelectedImg(`/src/assets/portfolio/${category}/${imageName}.${extension}`)} style={{ backgroundColor: grey() }}>
+                        <img
+                          src={`/src/assets/portfolio/${category}/${imageName}.${extension}`} // Ruta con la extensión correspondiente
+                          alt={`Descripción de ${imageName}`}
+                          loading="lazy"
+                        />
+                        <div className="centered">
+                          <h2>{imageData[imageName].text1}</h2>
+                          <hr />
+                          <h3>{imageData[imageName].text2}</h3>
+                        </div>
+                      </div>
+                    );
+                }
+            })
             }
             { selectedImg && <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg} /> }
         </div>

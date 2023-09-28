@@ -1,0 +1,94 @@
+{
+  "producciones-fotograficas": {
+    "id": 1,
+    "text": "Texto muy corto 1 que habla sobre este servicio",
+    "menu_text": "PRODUCCIONES FOTOGRÁFICAS",
+    "extension": "jpg"
+  },
+  "producciones-audiovisuales": {
+    "id": 2,
+    "text": "",
+    "menu_text": "PRODUCCIONES AUDIOVISUALES",
+    "extension": "jpg"
+  },
+  "desarrollo-de-conceptos-creativos": {
+    "id": 3,
+    "text": "Texto muy corto 3 que habla sobre este servicio",
+    "menu_text": "DESARROLLO DE CONCEPTOS CREATIVOS",
+    "extension": "jpg"
+  },
+  "direccion-de-arte": {
+    "id": 4,
+    "text": "Texto muy corto 4 que habla sobre este servicio",
+    "menu_text": "DIRECCIÓN DE ARTE",
+    "extension": "jpg"
+  },
+  "video-clips": {
+    "id": 5,
+    "text": "Texto muy corto 5 que habla sobre este servicio",
+    "menu_text": "VIDEO CLIPS",
+    "extension": "jpg"
+  },
+  "mega-producciones": {
+    "id": 6,
+    "text": "Texto muy corto 6 que habla sobre este servicio",
+    "menu_text": "MEGA PRODUCCIONES",
+    "extension": "jpg"
+  },
+  "special-projects": {
+    "id": 7,
+    "text": "Texto muy corto 7 que habla sobre este servicio",
+    "menu_text": "SPECIAL PROJECTS",
+    "extension": "jpg"
+  },
+  "diseño-y-armado-de-escenografias": {
+    "id": 8,
+    "text": "Texto muy corto 8 que habla sobre este servicio",
+    "menu_text": "DISEÑO Y ARMADO DE ESCENOGRAFÍAS",
+    "extension": "jpg"
+  },
+  "scouting-y-realizacion-de-props": {
+    "id": 9,
+    "text": "Texto muy corto 9 que habla sobre este servicio",
+    "menu_text": "SCOUTING Y REALIZACIÓN DE PROPS",
+    "extension": "jpg"
+  },
+  "retoque-estetico": {
+    "id": 10,
+    "text": "Texto muy corto 10 que habla sobre este servicio",
+    "menu_text": "RETOQUE ESTÉTICO",
+    "extension": "jpg"
+  },
+  "montaje": {
+    "id": 11,
+    "text": "Texto muy corto 11 que habla sobre este servicio",
+    "menu_text": "MONTAJE",
+    "extension": "jpg"
+  },
+  "edicion-audiovisual": {
+    "id": 12,
+    "text": "Texto muy corto 12 que habla sobre este servicio",
+    "menu_text": "EDICIÓN AUDIOVISUAL",
+    "extension": "jpg"
+  },
+  "make-up": {
+    "id": 13,
+    "text": "Texto muy corto 13 que habla sobre este servicio",
+    "menu_text": "MAKE UP",
+    "extension": "jpg"
+  },
+  "styling": {
+    "id": 14,
+    "text": "Texto muy corto 14 que habla sobre este servicio",
+    "menu_text": "STYLING",
+    "extension": "jpg"
+  },
+  "produccion-de-moda": {
+    "id": 15,
+    "text": "Texto muy corto 15 que habla sobre este servicio",
+    "menu_text": "PRODUCCIÓN DE MODA",
+    "extension": "jpg"
+  }
+}
+
+

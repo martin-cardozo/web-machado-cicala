@@ -62,34 +62,34 @@ const Navbar = () => {
                         <Link to={'#'} onClick={pinDropdown}>PORTFOLIO</Link>
                         <div className={`dropdown-content ${portfolioClass}`}>
                             <Link to={"#"} style={{cursor: 'default'}}><strong>Fotografía</strong></Link>
-                            <Link to={"/portfolio/1"} onClick={updateDropdown}>Advertising</Link>
-                            <Link to={"/portfolio/2"} onClick={updateDropdown}>Beauty</Link>
-                            <Link to={"/portfolio/3"} onClick={updateDropdown}>Celebrities</Link>
-                            <Link to={"/portfolio/4"} onClick={updateDropdown}>Entertaiment</Link>
-                            <Link to={"/portfolio/5"} onClick={updateDropdown}>Fashion</Link>
-                            <Link to={"/portfolio/6"} onClick={updateDropdown}>Hair</Link>
-                            <Link to={"/portfolio/7"} onClick={updateDropdown}>Lifestyle</Link>
-                            <Link to={"/portfolio/8"} onClick={updateDropdown}>Kids</Link>
-                            <Link to={"/portfolio/9"} onClick={updateDropdown}>Animals</Link>
-                            <Link to={"/portfolio/10"} onClick={updateDropdown}>Cars</Link>
+                            <Link to={"/portfolio/advertising"} onClick={updateDropdown}>Advertising</Link>
+                            <Link to={"/portfolio/beauty"} onClick={updateDropdown}>Beauty</Link>
+                            <Link to={"/portfolio/celebrities"} onClick={updateDropdown}>Celebrities</Link>
+                            <Link to={"/portfolio/entertaiment"} onClick={updateDropdown}>Entertaiment</Link>
+                            <Link to={"/portfolio/fashion"} onClick={updateDropdown}>Fashion</Link>
+                            <Link to={"/portfolio/hair"} onClick={updateDropdown}>Hair</Link>
+                            <Link to={"/portfolio/lifestyle"} onClick={updateDropdown}>Lifestyle</Link>
+                            <Link to={"/portfolio/kids"} onClick={updateDropdown}>Kids</Link>
+                            <Link to={"/portfolio/animals"} onClick={updateDropdown}>Animals</Link>
+                            <Link to={"/portfolio/cars"} onClick={updateDropdown}>Cars</Link>
                             <Link to={"#"} style={{cursor: 'default'}}><strong>Audiovisual</strong></Link>
-                            <Link to={"/portfolio/11"} onClick={updateDropdown}>Films</Link>
-                            <Link to={"/portfolio/12"} onClick={updateDropdown}>Short Films</Link>
-                            <Link to={"/portfolio/13"} onClick={updateDropdown}>Music</Link>
-                            <Link to={"/portfolio/14"} onClick={updateDropdown}>Videos</Link>
-                            <Link to={"/portfolio/15"} onClick={updateDropdown}>Special Projects</Link>
-                            <Link to={"/portfolio/16"} onClick={updateDropdown}>Still</Link>
+                            <Link to={"/portfolio/films"} onClick={updateDropdown}>Films</Link>
+                            <Link to={"/portfolio/short-films"} onClick={updateDropdown}>Short Films</Link>
+                            <Link to={"/portfolio/music"} onClick={updateDropdown}>Music</Link>
+                            <Link to={"/portfolio/videos"} onClick={updateDropdown}>Videos</Link>
+                            <Link to={"/portfolio/special-projects"} onClick={updateDropdown}>Special Projects</Link>
+                            <Link to={"/portfolio/still"} onClick={updateDropdown}>Still</Link>
                         </div>
                     </div>
                     
-                    <Link to={'/services/producciones_fotograficas'}>SERVICIOS</Link>
+                    <Link to={'/services/producciones-fotograficas'}>SERVICIOS</Link>
                     <Link to={'/contact'}>CONTACTO</Link>
                     
                     <div className='social-networks'>
                         <p>Encontranos en: </p> 
                         <Link to={"https://www.instagram.com/machadocicala/?hl=es"} target='_blank'><img rel='icon' src={instagramLogo} alt="instagram" /></Link>
                         <Link to={"https://www.tiktok.com/@machadocicala"} target='_blank'><img rel='icon' src={tiktokLogo} alt="tiktok" /></Link>
-                        <Link to={"#"} target='_blank'><img rel='icon' src={linkedinLogo} alt="linkedin" /></Link>
+                        <Link to={"https://www.linkedin.com/company/machado-cicala/mycompany/"} target='_blank'><img rel='icon' src={linkedinLogo} alt="linkedin" /></Link>
                     </div>
                     
                 </div>

@@ -7,9 +7,7 @@ import Contact from './routes/Contact'
 import Services from './routes/Services'
 import Navbar from './components/Navbar'
 import Error from './routes/Error'
-import AdminNavbar from './components/AdminNavbar'
 import Gallery from "./routes/Gallery"
-// import Gallery2 from './routes/Gallery2'
 
 
 function App() {
@@ -23,8 +21,7 @@ function App() {
             <Route path="/about/2" element={<About path={2} />} errorElement={<Error />} />
             <Route path="/contact" element={<Contact />} errorElement={<Error />} />
             <Route path="/services/:name" element={<Services />} errorElement={<Error />} />
-            <Route path="/admin" element={<AdminNavbar />} errorElement={<Error />} />
-            <Route path="/portfolio/:id" element={<Gallery />} errorElement={<Error />} />
+            <Route path="/portfolio/:category" element={<Gallery />} errorElement={<Error />} />
         </Routes>
     </div>
   )
