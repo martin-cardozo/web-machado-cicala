@@ -2,7 +2,7 @@ import "../components/gallery.css"
 
 function Home() {
   const images = Object.keys(
-    import.meta.glob("../../public/assets/homefiles/*.{jpg,jpeg,png,gif,svg}")
+    import.meta.glob("../../public/images/homefiles/*.{jpg,jpeg,png,gif,svg}")
   ).map((path) => ({
     id: path,
     image: path,

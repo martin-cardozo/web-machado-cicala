@@ -15,7 +15,7 @@ function App() {
     <div>
         <Navbar /> 
         <Routes>
-            <Route path="/" element={<Home />} errorElement={<Error />} />
+            <Route path="" element={<Home />} errorElement={<Error />} />
             <Route path="/about" element={<About />} errorElement={<Error />} />
             <Route path="/about/1" element={<About path={1} />} errorElement={<Error />} />
             <Route path="/about/2" element={<About path={2} />} errorElement={<Error />} />
