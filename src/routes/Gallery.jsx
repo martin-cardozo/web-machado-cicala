@@ -70,7 +70,7 @@ function Gallery() {
                     return (
                       <div key={imageName} className='image-container' onClick={() => setSelectedImg(`/images/portfolio/${category}/${imageName}.${extension}`)} style={{ backgroundColor: grey() }}>
                         <img
-                          src={`/images/portfolio/${category}/${imageName}.${extension}`} // Ruta con la extensión correspondiente
+                          src={`/images/portfolio/${category}/${imageName}.${extension}?v=${Math.random()}`} // Ruta con la extensión correspondiente
                           alt={`Descripción de ${imageName}`}
                           loading="lazy"
                         />
