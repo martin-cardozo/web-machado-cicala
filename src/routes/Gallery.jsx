@@ -33,7 +33,7 @@ function Gallery() {
     }
 
     // Acotar la cantidad de imágenes poniendo una cantida máxima
-    const imageKeys = Object.keys(imageData).slice(0, 300);
+    const imageKeys = Object.keys(imageData).slice(0, 100);
 
     return (
         <div className="gallery">
