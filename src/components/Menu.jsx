@@ -40,13 +40,13 @@ function Menu({setBurgerClass, setMenuClass, isMenuClicked, setIsMenuClicked}) {
                     <li onClick={updateMenu}><Link to={"/portfolio/kids"}>Kids</Link></li>
                     <li onClick={updateMenu}><Link to={"/portfolio/animals"}>Animals</Link></li>
                     <li onClick={updateMenu}><Link to={"/portfolio/cars"}>Cars</Link></li>
+                    <li onClick={updateMenu}><Link to={"/portfolio/special-projects"}>Special Projects</Link></li>
+                    <li onClick={updateMenu}><Link to={"/portfolio/still"}>Still</Link></li>
                     <li><Link to={"#"} style={{cursor: 'default'}}><strong>Audiovisual</strong></Link></li>
                     <li onClick={updateMenu}><Link to={"/portfolio/films"}>Films</Link></li>
                     <li onClick={updateMenu}><Link to={"/portfolio/short-films"}>Short Films</Link></li>
                     <li onClick={updateMenu}><Link to={"/portfolio/music"}>Music</Link></li>
                     <li onClick={updateMenu}><Link to={"/portfolio/videos"}>Videos</Link></li>
-                    <li onClick={updateMenu}><Link to={"/portfolio/special-projects"}>Special Projects</Link></li>
-                    <li onClick={updateMenu}><Link to={"/portfolio/still"}>Still</Link></li>
                     
                 </ul>
             </div>

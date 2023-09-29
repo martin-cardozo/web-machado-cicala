@@ -164,7 +164,7 @@ function Form() {
           </button>
           <div className="message">
             <div className="success" id="success">
-              Su mensaje ha sido enviado con éxito
+              Tu mensaje ha sido enviado con éxito
             </div>
           </div>
         </form>
