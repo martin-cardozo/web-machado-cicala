@@ -1,91 +1,91 @@
 {
   "producciones-fotograficas": {
     "id": 1,
-    "text": "Texto muy corto 1 que habla sobre este servicio",
+    "text": "Estudios totalmente equipados, cámaras e iluminación de última generación.",
     "menu_text": "PRODUCCIONES FOTOGRÁFICAS",
     "extension": "jpg"
   },
   "producciones-audiovisuales": {
     "id": 2,
-    "text": "",
+    "text": "Desarrollo de videos y films end-to-end.",
     "menu_text": "PRODUCCIONES AUDIOVISUALES",
     "extension": "jpg"
   },
   "desarrollo-de-conceptos-creativos": {
     "id": 3,
-    "text": "Texto muy corto 3 que habla sobre este servicio",
+    "text": "Diseño de ideas creativas en base al objetivo a transmitir.",
     "menu_text": "DESARROLLO DE CONCEPTOS CREATIVOS",
     "extension": "jpg"
   },
   "direccion-de-arte": {
     "id": 4,
-    "text": "Texto muy corto 4 que habla sobre este servicio",
+    "text": "Haciendo realidad las ideas creativas.",
     "menu_text": "DIRECCIÓN DE ARTE",
     "extension": "jpg"
   },
   "video-clips": {
     "id": 5,
-    "text": "Texto muy corto 5 que habla sobre este servicio",
+    "text": "Creación y desarrollo de videos musicales y comerciales.",
     "menu_text": "VIDEO CLIPS",
     "extension": "jpg"
   },
   "mega-producciones": {
     "id": 6,
-    "text": "Texto muy corto 6 que habla sobre este servicio",
+    "text": "No importa el tamaño, siempre buscamos la perfección.",
     "menu_text": "MEGA PRODUCCIONES",
     "extension": "jpg"
   },
   "special-projects": {
     "id": 7,
-    "text": "Texto muy corto 7 que habla sobre este servicio",
+    "text": "Dejamos volar la imaginación para crear proyectos sorprendentes.",
     "menu_text": "SPECIAL PROJECTS",
     "extension": "jpg"
   },
   "diseño-y-armado-de-escenografias": {
     "id": 8,
-    "text": "Texto muy corto 8 que habla sobre este servicio",
+    "text": "En interiores o exteriores.",
     "menu_text": "DISEÑO Y ARMADO DE ESCENOGRAFÍAS",
     "extension": "jpg"
   },
   "scouting-y-realizacion-de-props": {
     "id": 9,
-    "text": "Texto muy corto 9 que habla sobre este servicio",
+    "text": "Cada elemento utilizado es especial. Si no encontramos lo que queremos, lo creamos.",
     "menu_text": "SCOUTING Y REALIZACIÓN DE PROPS",
     "extension": "jpg"
   },
   "retoque-estetico": {
     "id": 10,
-    "text": "Texto muy corto 10 que habla sobre este servicio",
+    "text": "Cada fotografía es cuidada como una obra de arte.",
     "menu_text": "RETOQUE ESTÉTICO",
     "extension": "jpg"
   },
   "montaje": {
     "id": 11,
-    "text": "Texto muy corto 11 que habla sobre este servicio",
+    "text": "Lo que se puede imaginar, se puede realizar.",
     "menu_text": "MONTAJE",
     "extension": "jpg"
   },
   "edicion-audiovisual": {
     "id": 12,
-    "text": "Texto muy corto 12 que habla sobre este servicio",
+    "text": "Sonidos, música, efectos especiales y más.",
     "menu_text": "EDICIÓN AUDIOVISUAL",
     "extension": "jpg"
   },
   "make-up": {
     "id": 13,
-    "text": "Texto muy corto 13 que habla sobre este servicio",
+    "text": "Los mejores maquilladores trabajan con los mejores artistas.",
     "menu_text": "MAKE UP",
     "extension": "jpg"
   },
   "styling": {
     "id": 14,
-    "text": "Texto muy corto 14 que habla sobre este servicio",
+    "text": "Los mejores estilistas trabajan con los mejores artistas.",
     "menu_text": "STYLING",
     "extension": "jpg"
   },
   "produccion-de-moda": {
     "id": 15,
-    "text": "Texto muy corto 15 que habla sobre este servicio",
+    "text": "El vestuario adecuado para el objetivo propuesto.",
     "menu_text": "PRODUCCIÓN DE MODA",
     "extension": "jpg"
   }

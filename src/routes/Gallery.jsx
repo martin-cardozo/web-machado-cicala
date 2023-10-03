@@ -73,6 +73,8 @@ function Gallery() {
                           src={`/images/portfolio/${category}/${imageName}.${extension}`} // Ruta con la extensión correspondiente
                           alt={`Descripción de ${imageName}`}
                           loading="lazy"
+                          height={500}
+                          width={400}
                         />
                         <div className="centered">
                           <h2>{imageData[imageName].text1}</h2>
