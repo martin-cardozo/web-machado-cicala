@@ -15,6 +15,8 @@ import image14 from "/images/homefiles/home (14).jpg"
 import image15 from "/images/homefiles/home (15).jpg"
 import image16 from "/images/homefiles/home (16).jpg"
 
+import "../components/gallery.css";
+
 function Home() {
   const images = [
     {

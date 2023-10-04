@@ -1,32 +1,50 @@
+import { Suspense, lazy, useState, useEffect } from "react"
 import { Route, Routes } from "react-router-dom"
-import './index.css'
+import "./index.css"
+import Navbar from "./components/Navbar"
+import Error from "./routes/Error"
+import Loader from "./routes/Loader"
 
-import Home from './routes/Home.jsx'
-import About from './routes/About.jsx'
-import Contact from './routes/Contact'
-import Services from './routes/Services'
-import Navbar from './components/Navbar'
-import Error from './routes/Error'
-import Gallery from "./routes/Gallery"
-
+const Home = lazy(() => import("./routes/Home"))
+const About = lazy(() => import("./routes/About"))
+const Contact = lazy(() => import("./routes/Contact"))
+const Services = lazy(() => import("./routes/Services"))
+const Gallery = lazy(() => import("./routes/Gallery"))
 
 function App() {
+  // const [isLoading, setIsLoading] = useState(true)
+
+  // useEffect(() => {
+  //   // Simula un retraso de 2 segundos 
+  //   const loadingTimer = setTimeout(() => {
+  //     setIsLoading(false)
+  //   }, 2000)
+
+  //   return () => clearTimeout(loadingTimer)
+  // }, [])
+
+
   return (
     <div>
-        <Navbar /> 
-        <Routes>
-            <Route path="" element={<Home />} errorElement={<Error />} />
-            <Route path="/about" element={<About />} errorElement={<Error />} />
-            <Route path="/about/1" element={<About path={1} />} errorElement={<Error />} />
-            <Route path="/about/2" element={<About path={2} />} errorElement={<Error />} />
-            <Route path="/contact" element={<Contact />} errorElement={<Error />} />
-            <Route path="/services/:name" element={<Services />} errorElement={<Error />} />
-            <Route path="/portfolio/:category" element={<Gallery />} errorElement={<Error />} />
-        </Routes>
+      <Navbar />
+      <Suspense fallback={<Loader />}>
+        {/* {isLoading ? (
+          <Loader /> // Muestra el Loader mientras isLoading es true
+        ) : ( */}
+          <Routes>
+            <Route path="" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/about/1" element={<About path={1} />} />
+            <Route path="/about/2" element={<About path={2} />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/services/:name" element={<Services />} />
+            <Route path="/portfolio/:category" element={<Gallery />} />
+            <Route path="*" element={<Error />} />
+          </Routes>
+        {/* )} */}
+      </Suspense>
     </div>
   )
 }
 
 export default App
-
-
