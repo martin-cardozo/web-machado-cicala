@@ -59,7 +59,10 @@ function Gallery() {
                             {
                               imageData[imageName].campaign
                                 ? <p>{imageData[imageName].campaign}</p>
-                                : <p>{imageData[imageName].song}</p>
+                                : <div>
+                                  <p>{imageData[imageName].song}</p>
+                                  <p>{imageData[imageName].company}</p>
+                                  </div> 
                             }
                             <p>{imageData[imageName].year}</p>
                           </div>
