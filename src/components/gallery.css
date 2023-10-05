@@ -1,169 +1,94 @@
-
 /* Galería */
-.gallery{
-    columns: 4 320px;
-    column-gap: 0.5em;
-    background-color: #f9f9f9;
-    margin: 1em;
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #f9f9f9;
+  margin: 1em;
 }
 
-.image-container{
-    position: relative;
-    text-align: center;
-    color: rgb(0, 0, 0);
-    cursor: pointer;
+.image-container {
+  position: relative;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  flex-basis: calc(25% - 0.5em); /* Establece el ancho de cada elemento */
+  margin-bottom: 0.5em;
 }
 
-
-.gallery img{
-    max-width: 100%;
-    margin-bottom: 0.5em;
-    
-    display: block;
-    outline: 2px solid #fff;
+.gallery img {
+  object-fit: cover;
+  height: 450px;
+  max-width: 100%;
+  display: block;
+  outline: 2px solid #fff;
 }
 
-.centered{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-    opacity: 0;
+  opacity: 0;
 }
 
-.centered h2{
-    font-size: 22px;
-    font-weight: bold;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.centered h2 {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.centered hr{
-    width: 50%;
-    transform: translate(50%, -50%);
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 2px solid #000;
-    margin-bottom: 0.5em;
+.centered hr {
+  width: 50%;
+  transform: translate(50%, -50%);
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 2px solid #000;
+  margin-bottom: 0.5em;
 }
 
-.centered h3{
-    font-size: 16px;
-    font-family: 'Poppins';
+.centered h3 {
+  font-size: 16px;
+  font-family: "Poppins";
 }
 
+.image-container:hover img {
+  opacity: 0.4;
+  outline: 1px solid #000;
 
-.image-container:hover img{
-    opacity: 0.4;
-    outline: 1px solid #000;
-
-    transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-.image-container:hover .centered{
-    opacity: 1;
+.image-container:hover .centered {
+  opacity: 1;
 
-    transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 
-iframe{
-    /* box-sizing: border-box; */
-    margin: 2px;
+iframe {
+  /* box-sizing: border-box; */
+  margin: 2px;
 }
 
-
-
-/* Clases del Slider */
-
-/* Slide tracks. En total son 4 tracks verticales */
-/* De abajo hacia arriba */
-.slide-track-up{
-    height: calc(285px * 8);
-    
-    animation: scroll-up 110s linear infinite;
-
-}
-
-/* De arriba hacia abajo */
-.slide-track-down{
-    height: calc(285px * 8);
-    
-    animation: scroll-down 110s linear infinite;
-  
-}
-
-
-
-
-
-@keyframes scroll-up {
-    0%{
-        transform: translateY(0);
-    }
-    100%{
-        transform: translateY(calc(-278px*4));
-    }
-}
-
-@keyframes scroll-down {
-    100%{
-        transform: translateY(0);
-    }
-    0%{
-        transform: translateY(calc(-278px*4));
-    }
-}
-
-/* Slider unico con todas las imagenes */
-.unique-slider{
-    display: none;
-}
-
-@media only screen and (min-width: 1080px) {
-
-    /* Exclusivo para el Slider de Home y Services */
-    .overflow{
-        display: flex;
-        height: 37.4em;
-        overflow-y: hidden;
-    }
-
-}
-
-
-
+/* Para 3 columnas en pantallas de hasta 1080px de ancho */
 @media only screen and (max-width: 1080px) {
-
-    .gallery{
-        columns: 3 240px;
+    .image-container {
+        flex-basis: calc(33.33% - 0.5em);
     }
-
-
-
-    
-    .unique-slider{
-        display: inherit;
-        height: 100%;
-    }
-
-    
-    
-
-    .slide-track-up{
-        display: none;
-        animation-play-state: paused;
-    }
-
-    .slide-track-down{
-        display: none;
-        animation-play-state: paused;
-    }
-    
 }
 
-@media only screen and (max-width: 600px) {
-    .gallery{
-        columns: 1;
+/* Para 2 columnas en pantallas de hasta 800px de ancho */
+@media only screen and (max-width: 800px) {
+    .image-container {
+        flex-basis: calc(50% - 0.5em);
+    }
+}
+
+/* Para 1 columna en pantallas de hasta 400px de ancho */
+@media only screen and (max-width: 400px) {
+    .image-container {
+        flex-basis: calc(100% - 0.5em);
     }
 }

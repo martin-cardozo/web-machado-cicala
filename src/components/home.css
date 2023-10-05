@@ -1,0 +1,81 @@
+/* Clases del Slider */
+
+/* Galería Slider */
+.slider-gallery {
+  columns: 4 320px;
+  column-gap: 0.5em;
+  background-color: #f9f9f9;
+  margin: 1em;
+}
+
+.slider-gallery img {
+  max-width: 100%;
+  margin-bottom: 0.5em;
+
+  display: block;
+  outline: 2px solid #fff;
+}
+
+/* Slide tracks. En total son 4 tracks verticales */
+/* De abajo hacia arriba */
+.slide-track-up {
+  height: calc(285px * 8);
+
+  animation: scroll-up 110s linear infinite;
+}
+
+/* De arriba hacia abajo */
+.slide-track-down {
+  height: calc(285px * 8);
+
+  animation: scroll-down 110s linear infinite;
+}
+
+@keyframes scroll-up {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(calc(-278px * 4));
+  }
+}
+
+@keyframes scroll-down {
+  100% {
+    transform: translateY(0);
+  }
+  0% {
+    transform: translateY(calc(-278px * 4));
+  }
+}
+
+/* Slider unico con todas las imagenes */
+.unique-slider {
+  display: none;
+}
+
+@media only screen and (min-width: 1080px) {
+  /* Exclusivo para el Slider de Home y Services */
+  .overflow {
+    display: flex;
+    height: 37.4em;
+    overflow-y: hidden;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .unique-slider {
+    display: inherit;
+    height: 100%;
+  }
+
+  .slide-track-up {
+    display: none;
+    animation-play-state: paused;
+  }
+
+  .slide-track-down {
+    display: none;
+    animation-play-state: paused;
+  }
+}
