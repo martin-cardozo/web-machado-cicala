@@ -48,10 +48,10 @@ function Gallery() {
                         
                           <iframe
                             src={imageData[imageName].videoUrl}
+                            loading="lazy"
                             width="100%"
                             height="250"
                             allowFullScreen
-                            loading="lazy"
                           >
                           </iframe>
                           <div>
@@ -71,13 +71,13 @@ function Gallery() {
                     );
                 } else {
                     return (
-                      <div key={imageName} className='image-container' onClick={() => setSelectedImg(`/images/portfolio/${category}/${imageName}.${extension}`)} style={{ backgroundColor: grey() }}>
-                        <img
+                      <div key={imageName} className='image-container' onClick={() => setSelectedImg(`/images/portfolio/${category}/${imageName}.${extension}`)} >
+                        <img style={{ backgroundColor: grey() }}
                           src={`/images/portfolio/${category}/${imageName}.${extension}`} // Ruta con la extensión correspondiente
                           alt={`Descripción de ${imageName}`}
                           loading="lazy"
-                          height="500px"
-                          width="400px"
+                          height="450px"
+                          width="450px"
                           
                         />
                         <div className="centered">

@@ -72,21 +72,16 @@
     margin: 0;
   }
 
-  
-
   .service-image img {
     height: 100%;
   }
-
-  /* Mosaico estilo Slider */
-  /* .slider-menu{
-        margin: 15px 0 15px 0px;
-        background-color: #fff;
-    } */
 }
 
 @media only screen and (max-width: 600px) {
-    .service-text{
-        font-size: 15px;
-    }
+  .service-text {
+    max-width: 200px;
+    margin: 0;
+    padding: 10px;
+    font-size: 10px;
+  }
 }
