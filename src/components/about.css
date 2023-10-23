@@ -1,5 +1,6 @@
 .about {
-  height: 39.4em;
+  min-height: 42em;
+  height: 100%;
   background-color: #252525;
   color: #dbdbdb;
   padding: 0 40px;

@@ -1,89 +1,89 @@
 {
-  "producciones-fotograficas": {
+  "1": {
     "id": 1,
     "text": "Estudios totalmente equipados, cámaras e iluminación de última generación.",
     "menu_text": "PRODUCCIONES FOTOGRÁFICAS",
     "extension": "jpg"
   },
-  "producciones-audiovisuales": {
+  "2": {
     "id": 2,
     "text": "Desarrollo de videos y films end-to-end.",
     "menu_text": "PRODUCCIONES AUDIOVISUALES",
     "extension": "jpg"
   },
-  "desarrollo-de-conceptos-creativos": {
+  "3": {
     "id": 3,
     "text": "Diseño de ideas creativas en base al objetivo a transmitir.",
     "menu_text": "DESARROLLO DE CONCEPTOS CREATIVOS",
     "extension": "jpg"
   },
-  "direccion-de-arte": {
+  "4": {
     "id": 4,
     "text": "Haciendo realidad las ideas creativas.",
     "menu_text": "DIRECCIÓN DE ARTE",
     "extension": "jpg"
   },
-  "video-clips": {
+  "5": {
     "id": 5,
     "text": "Creación y desarrollo de videos musicales y comerciales.",
     "menu_text": "VIDEO CLIPS",
     "extension": "jpg"
   },
-  "mega-producciones": {
+  "6": {
     "id": 6,
     "text": "No importa el tamaño, siempre buscamos la perfección.",
     "menu_text": "MEGA PRODUCCIONES",
     "extension": "jpg"
   },
-  "special-projects": {
+  "7": {
     "id": 7,
     "text": "Dejamos volar la imaginación para crear proyectos sorprendentes.",
     "menu_text": "SPECIAL PROJECTS",
     "extension": "jpg"
   },
-  "diseño-y-armado-de-escenografias": {
+  "8": {
     "id": 8,
     "text": "En interiores o exteriores.",
     "menu_text": "DISEÑO Y ARMADO DE ESCENOGRAFÍAS",
     "extension": "jpg"
   },
-  "scouting-y-realizacion-de-props": {
+  "9": {
     "id": 9,
     "text": "Cada elemento utilizado es especial. Si no encontramos lo que queremos, lo creamos.",
     "menu_text": "SCOUTING Y REALIZACIÓN DE PROPS",
     "extension": "jpg"
   },
-  "retoque-estetico": {
+  "10": {
     "id": 10,
     "text": "Cada fotografía es cuidada como una obra de arte.",
     "menu_text": "RETOQUE ESTÉTICO",
     "extension": "jpg"
   },
-  "montaje": {
+  "11": {
     "id": 11,
     "text": "Lo que se puede imaginar, se puede realizar.",
     "menu_text": "MONTAJE",
     "extension": "jpg"
   },
-  "edicion-audiovisual": {
+  "12": {
     "id": 12,
     "text": "Sonidos, música, efectos especiales y más.",
     "menu_text": "EDICIÓN AUDIOVISUAL",
     "extension": "jpg"
   },
-  "make-up": {
+  "13": {
     "id": 13,
     "text": "Los mejores maquilladores trabajan con los mejores artistas.",
     "menu_text": "MAKE UP",
     "extension": "jpg"
   },
-  "styling": {
+  "14": {
     "id": 14,
     "text": "Los mejores estilistas trabajan con los mejores artistas.",
     "menu_text": "STYLING",
     "extension": "jpg"
   },
-  "produccion-de-moda": {
+  "15": {
     "id": 15,
     "text": "El vestuario adecuado para el objetivo propuesto.",
     "menu_text": "PRODUCCIÓN DE MODA",

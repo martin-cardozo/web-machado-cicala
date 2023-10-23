@@ -53,21 +53,21 @@ function Menu({setBurgerClass, setMenuClass, isMenuClicked, setIsMenuClicked}) {
             <div className='menu-col'>
                 <ul>
                     <li><Link to={"#"}><strong>SERVICIOS</strong></Link></li>
-                    <li onClick={updateMenu}><Link to={"/services/producciones-fotograficas"}>Producciones fotográficas</Link></li>
-                    <li onClick={updateMenu}><Link to={"/services/producciones-audiovisuales"}>Producciones audiovisuales</Link></li>
-                    <li onClick={updateMenu}><Link to={"/services/desarrollo-de-conceptos-creativos"}>Desarrollo de conceptos creativos</Link></li>
-                    <li onClick={updateMenu}><Link to={"/services/direccion-de-arte"}>Dirección de arte</Link></li>
-                    <li onClick={updateMenu}><Link to={"/services/video-clips"}>Video clips</Link></li>
-                    <li onClick={updateMenu}><Link to={"/services/mega-producciones"}>Mega producciones</Link></li>
-                    <li onClick={updateMenu}><Link to={"/services/special-projects"}>Special projects</Link></li>
-                    <li onClick={updateMenu}><Link to={"/services/diseño-y-armado-de-escenografias"}>Diseño y armado de escenografías</Link></li>
-                    <li onClick={updateMenu}><Link to={"/services/scouting-y-realizacion-de-props"}>Scouting y realización de props</Link></li>
-                    <li onClick={updateMenu}><Link to={"/services/retoque-estetico"}>Retoque estético</Link></li>
-                    <li onClick={updateMenu}><Link to={"/services/montaje"}>Montaje</Link></li>
-                    <li onClick={updateMenu}><Link to={"/services/edicion-audiovisual"}>Edición audiovisual</Link></li>
-                    <li onClick={updateMenu}><Link to={"/services/make-up"}>Make up</Link></li>
-                    <li onClick={updateMenu}><Link to={"/services/styling"}>Styling</Link></li>
-                    <li onClick={updateMenu}><Link to={"/services/produccion-de-moda"}>Producción de moda</Link></li>
+                    <li onClick={updateMenu}><Link to={"/services/1"}>Producciones fotográficas</Link></li>
+                    <li onClick={updateMenu}><Link to={"/services/2"}>Producciones audiovisuales</Link></li>
+                    <li onClick={updateMenu}><Link to={"/services/3"}>Desarrollo de conceptos creativos</Link></li>
+                    <li onClick={updateMenu}><Link to={"/services/4"}>Dirección de arte</Link></li>
+                    <li onClick={updateMenu}><Link to={"/services/5"}>Video clips</Link></li>
+                    <li onClick={updateMenu}><Link to={"/services/6"}>Mega producciones</Link></li>
+                    <li onClick={updateMenu}><Link to={"/services/7"}>Special projects</Link></li>
+                    <li onClick={updateMenu}><Link to={"/services/8"}>Diseño y armado de escenografías</Link></li>
+                    <li onClick={updateMenu}><Link to={"/services/9"}>Scouting y realización de props</Link></li>
+                    <li onClick={updateMenu}><Link to={"/services/10"}>Retoque estético</Link></li>
+                    <li onClick={updateMenu}><Link to={"/services/11"}>Montaje</Link></li>
+                    <li onClick={updateMenu}><Link to={"/services/12"}>Edición audiovisual</Link></li>
+                    <li onClick={updateMenu}><Link to={"/services/13"}>Make up</Link></li>
+                    <li onClick={updateMenu}><Link to={"/services/14"}>Styling</Link></li>
+                    <li onClick={updateMenu}><Link to={"/services/15"}>Producción de moda</Link></li>
                     
                 </ul>
             </div>

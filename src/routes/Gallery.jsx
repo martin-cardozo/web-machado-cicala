@@ -33,12 +33,12 @@ function Gallery() {
     }
 
     // Acotar la cantidad de imágenes poniendo una cantida máxima
-    const imageKeys = Object.keys(imageData).slice(0, 70);
+    // const imageKeys = Object.keys(imageData).slice(0, 70);
 
     return (
         <div className="gallery">
             {
-            imageKeys.map((imageName) => {
+            Object.keys(imageData).reverse().map((imageName) => {
                 const extension = imageData[imageName].extension; // Obtener la extensión desde los datos
                 const isVideo = extension === 'mp4'; // Verificar si es un video
 

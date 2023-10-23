@@ -4,15 +4,15 @@ import "../components/services.css"
 import data from "../assets/services/textos/textos.json"
 
 function Services() {
-  const { name } = useParams()
+  const { id } = useParams()
   const [selectedService, setSelectedService] = useState(null)
 
   useEffect(() => {
-    // Filtrar el servicio seleccionado por nombre
-    if (name && data[name]) {
-      setSelectedService(data[name])
+    // Filtrar el servicio seleccionado por id
+    if (id && data[id]) {
+      setSelectedService(data[id])
     }
-  }, [name])
+  }, [id])
 
   /* Color de fondo de la imagen mientras carga en la escala de grises */
   function grey() {
@@ -42,7 +42,7 @@ function Services() {
 
               <div style={{ backgroundColor: grey() }}>
                 <img
-                  src={`/images/services/${name}.${selectedService.extension}`}
+                  src={`/images/services/${id}.${selectedService.extension}`}
                   alt="slides"
                 />
               </div>
