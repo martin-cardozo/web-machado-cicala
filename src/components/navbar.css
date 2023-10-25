@@ -230,8 +230,12 @@ header {
 
 @media only screen and (max-width: 840px) {
     
-    .logo{
-        width: 18em;
+    .logo {
+        width: 100%; /* Utiliza todo el ancho disponible */
+        height: auto; /* Ajusta la altura automáticamente */
+        margin-left: 0em; 
+        margin-top: 1em;
+        padding: 0.9em;
     }
     
     .menu{
@@ -246,6 +250,7 @@ header {
     }
 
     .menu-col{
+        height: 100%;
         width: 100%;
         margin: 0 auto 10px;
     }
@@ -257,11 +262,4 @@ header {
 
 }
 
-@media only screen and (max-width: 480px) {
-    
-    .logo{
-        margin: 0.6em 0 0 0;
-    }
-    
 
-}

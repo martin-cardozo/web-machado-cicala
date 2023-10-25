@@ -136,7 +136,7 @@ function About({ path }) {
           </section>
 
           <section className="section2">
-          <div className="info info-size">
+            <div className="info info-size">
               {data.info.map((paragraph, index) => (
                 <p key={index}>{paragraph}</p>
               ))}

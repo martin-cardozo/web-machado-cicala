@@ -17,7 +17,7 @@
 }
 
 .gallery img {
-  object-fit: cover;
+  /* object-fit: cover; */
   height: 450px;
   max-width: 100%;
   display: block;

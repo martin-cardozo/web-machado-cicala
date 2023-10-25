@@ -98,8 +98,12 @@
   font-size: 13px;
 }
 
+.info-size{
+  margin-top: 45px;
+}
+
 .info-size p {
-  font-size: 12px !important;
+  font-size: 11.5px !important;
 }
 
 .links {

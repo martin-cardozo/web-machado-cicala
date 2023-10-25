@@ -10,18 +10,23 @@
   height: 46.2em;
   width: 25%;
   background-color: #1a1a1a;
-  color: #f9f9f9;
   margin: 15px 10px 0 20px;
-  padding: 40px 0;
+  padding: 25px 0 40px 0;
   font-size: 13px;
 }
 
 .service-menu a {
   margin-bottom: 8px;
-  padding: 3px 40px;
+  padding: 4px 40px;
+  text-decoration: none;
+  color: #f9f9f9;
+  transition: background-color 0.3s;
 }
 .service-menu a:hover {
   background-color: #7d7d7d;
+}
+.service-menu a.active {
+  background-color: #7d7d7d; 
 }
 
 .service-image {
@@ -49,11 +54,6 @@
   max-height: 46.2em;
 }
 
-/* Mosaico estilo Slider */
-/* .slider-menu{
-    width: 75%;
-    margin: 0;
-} */
 
 @media only screen and (max-width: 1080px) {
   .services {
@@ -64,8 +64,17 @@
     height: 100%;
     width: 100%;
     margin: 0;
-    font-size: 18px;
+    font-size: 14px;
+
+    display: grid; /* CSS Grid */
+    grid-template-columns: repeat(3, 1fr); /* Organizar en 3 columnas */
+    gap: 2px; /* Espacio entre las opciones */
   }
+
+  .service-menu a {
+    margin-bottom: 6px;
+  }
+
 
   .service-image {
     width: 100%;
@@ -78,6 +87,13 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .service-menu {
+    font-size: 11px;
+    padding: 15px 0 15px 0;
+    grid-template-columns: repeat(2, 1fr); /* Organizar en 3 columnas */
+    gap: 2px; /* Espacio entre las opciones */
+  }
+
   .service-text {
     max-width: 200px;
     margin: 0;

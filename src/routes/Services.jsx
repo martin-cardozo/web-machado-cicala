@@ -6,11 +6,13 @@ import data from "../assets/services/textos/textos.json"
 function Services() {
   const { id } = useParams()
   const [selectedService, setSelectedService] = useState(null)
+  const [activeOption, setActiveOption] = useState(null)
 
   useEffect(() => {
     // Filtrar el servicio seleccionado por id
     if (id && data[id]) {
       setSelectedService(data[id])
+      setActiveOption(id) // Establecer la opción activa al cargar el servicio
     }
   }, [id])
 
@@ -25,7 +27,12 @@ function Services() {
       <div className="services">
         <section className="service-menu">
           {Object.keys(data).map((serviceName) => (
-            <Link key={data[serviceName].id} to={`/services/${serviceName}`}>
+            <Link
+              key={data[serviceName].id}
+              to={`/services/${serviceName}`}
+              onClick={() => setActiveOption(serviceName)}
+              className={activeOption === serviceName ? "active" : ""}
+            >
               {data[serviceName].menu_text}
             </Link>
           ))}

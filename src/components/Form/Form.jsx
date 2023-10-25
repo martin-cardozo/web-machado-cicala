@@ -1,3 +1,8 @@
+// Servicio de Mensajería emailjs
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+//
+
 import { useForm } from "react-hook-form"
 import "./form.css"
 
@@ -17,10 +22,27 @@ function Form() {
     },
   })
 
-  const onSubmit = (data) => {
-    // console.log(data)
-    message()
-  }
+  // Servicio de Mensajería emailjs
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+
+    emailjs.sendForm('service_x5f0rlv', 'template_z1612iz', form.current, 'XXVyIEu1twQ9e-AQe')
+      .then((result) => {
+          // console.log(result.text);
+          message()
+      }, (error) => {
+          console.log(error.text);
+      });
+  
+  };
+  //
+
+  // const onSubmit = (data) => {
+  //   console.log(data)
+  //   message()
+  // }
 
   function message() {
     reset()
@@ -38,7 +60,7 @@ function Form() {
         <h2>
           <strong>Contactanos</strong>
         </h2>
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <form ref={form} onSubmit={handleSubmit(sendEmail)}>
           <div className="data">
             <div className="campo">
               <label>
@@ -191,12 +213,12 @@ function Form() {
           </p>
           <p>contacto@machadocicala.com.ar</p>
         </div>
-        <div className="info-section">
+        {/* <div className="info-section">
           <p>
             <strong>WHATSAPP</strong>
           </p>
           <p>011 4772-9446</p>
-        </div>
+        </div> */}
         <div className="map-responsive">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1111.9578091878625!2d-58.43735374604663!3d-34.59564913863166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca75ac4d5a01%3A0x9b839cae3f5f538d!2sAcevedo%20745%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1688428735566!5m2!1ses-419!2sar"

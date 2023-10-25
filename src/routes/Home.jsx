@@ -15,7 +15,7 @@ import image14 from "/images/homefiles/home (14).jpg"
 import image15 from "/images/homefiles/home (15).jpg"
 import image16 from "/images/homefiles/home (16).jpg"
 
-import "../components/home.css";
+import "../components/home.css"
 
 function Home() {
   const images = [
@@ -104,13 +104,105 @@ function Home() {
 
   return (
     <div className="slider-gallery overflow">
-      <div className="unique-slider">
-        {images &&
-          images.map((image) => (
-            <div key={image.id} style={{ backgroundColor: grey() }}>
-              <img src={image.image} alt="slides" />
-            </div>
-          ))}
+
+      <div className="horizontal-left-scrolling-items">
+        <div className="horizontal-scrolling-items__item">
+          <img src={image1} alt="slides" style={{ backgroundColor: grey() }} />
+        </div>
+
+        <div className="horizontal-scrolling-items__item">
+          <img src={image2} alt="slides" style={{ backgroundColor: grey() }} />
+        </div>
+
+        <div className="horizontal-scrolling-items__item">
+          <img src={image3} alt="slides" style={{ backgroundColor: grey() }} />
+        </div>
+
+        <div className="horizontal-scrolling-items__item">
+          <img src={image4} alt="slides" style={{ backgroundColor: grey() }} />
+        </div>
+
+        <div className="horizontal-scrolling-items__item">
+          <img src={image5} alt="slides" style={{ backgroundColor: grey() }} />
+        </div>
+
+        <div className="horizontal-scrolling-items__item">
+          <img src={image6} alt="slides" style={{ backgroundColor: grey() }} />
+        </div>
+
+        <div className="horizontal-scrolling-items__item">
+          <img src={image7} alt="slides" style={{ backgroundColor: grey() }} />
+        </div>
+
+        <div className="horizontal-scrolling-items__item">
+          <img src={image8} alt="slides" style={{ backgroundColor: grey() }} />
+        </div>
+
+        <div className="horizontal-scrolling-items__item">
+          <img src={image1} alt="slides" style={{ backgroundColor: grey() }} />
+        </div>
+
+        <div className="horizontal-scrolling-items__item">
+          <img src={image2} alt="slides" style={{ backgroundColor: grey() }} />
+        </div>
+
+        <div className="horizontal-scrolling-items__item">
+          <img src={image3} alt="slides" style={{ backgroundColor: grey() }} />
+        </div>
+
+        <div className="horizontal-scrolling-items__item">
+          <img src={image4} alt="slides" style={{ backgroundColor: grey() }} />
+        </div>
+      </div>
+
+      <div className="horizontal-right-scrolling-items">
+        <div className="horizontal-scrolling-items__item">
+          <img src={image9} alt="slides" style={{ backgroundColor: grey() }} />
+        </div>
+
+        <div className="horizontal-scrolling-items__item">
+          <img src={image10} alt="slides" style={{ backgroundColor: grey() }} />
+        </div>
+
+        <div className="horizontal-scrolling-items__item">
+          <img src={image11} alt="slides" style={{ backgroundColor: grey() }} />
+        </div>
+
+        <div className="horizontal-scrolling-items__item">
+          <img src={image12} alt="slides" style={{ backgroundColor: grey() }} />
+        </div>
+
+        <div className="horizontal-scrolling-items__item">
+          <img src={image13} alt="slides" style={{ backgroundColor: grey() }} />
+        </div>
+
+        <div className="horizontal-scrolling-items__item">
+          <img src={image14} alt="slides" style={{ backgroundColor: grey() }} />
+        </div>
+
+        <div className="horizontal-scrolling-items__item">
+          <img src={image15} alt="slides" style={{ backgroundColor: grey() }} />
+        </div>
+
+        <div className="horizontal-scrolling-items__item">
+          <img src={image16} alt="slides" style={{ backgroundColor: grey() }} />
+        </div>
+
+        <div className="horizontal-scrolling-items__item">
+          <img src={image9} alt="slides" style={{ backgroundColor: grey() }} />
+        </div>
+
+        <div className="horizontal-scrolling-items__item">
+          <img src={image10} alt="slides" style={{ backgroundColor: grey() }} />
+        </div>
+
+        <div className="horizontal-scrolling-items__item">
+          <img src={image11} alt="slides" style={{ backgroundColor: grey() }} />
+        </div>
+
+        <div className="horizontal-scrolling-items__item">
+          <img src={image12} alt="slides" style={{ backgroundColor: grey() }} />
+        </div>
       </div>
 
       <div className="slide-track-up">
