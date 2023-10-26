@@ -92,8 +92,8 @@
 
   .service-menu a {
     border: 1px solid #f9f9f9;
-    margin-bottom: 2px;
-    padding: 4px 15px;
+    margin: 0;
+    padding: 4px;
   }
 
   .service-text {

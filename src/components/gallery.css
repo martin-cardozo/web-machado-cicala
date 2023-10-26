@@ -2,9 +2,9 @@
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around; 
   background-color: #f9f9f9;
-  margin: 1em;
+  margin: 0.5em;
 }
 
 .image-container {
@@ -12,17 +12,18 @@
   text-align: center;
   color: rgb(0, 0, 0);
   cursor: pointer;
-  flex-basis: calc(25% - 0.5em); /* Establece el ancho de cada elemento */
   margin-bottom: 0.5em;
+  flex-basis: auto; /* Deja que los elementos tengan un ancho automático */
 }
 
 .gallery img {
   object-fit: cover;
-  height: 450px;
+  height: 300px;
   width: 100%;
   display: block;
   outline: 2px solid #fff;
 }
+
 
 .centered {
   position: absolute;

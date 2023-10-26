@@ -23,14 +23,30 @@ function App() {
   //   return () => clearTimeout(loadingTimer)
   // }, [])
 
+  const [isPageLoaded, setIsPageLoaded] = useState(true);
+
+  useEffect(() => {
+    // Escuchar el evento 'load' en el documento para determinar si la página se ha cargado completamente.
+    window.addEventListener("load", () => {
+      setIsPageLoaded(true);
+    });
+
+    // Limpia el event listener cuando el componente se desmonta.
+    return () => {
+      window.removeEventListener("load", () => {
+        setIsPageLoaded(true);
+      });
+    };
+  }, []);
+
 
   return (
     <div>
       <Navbar />
       <Suspense fallback={<Loader />}>
-        {/* {isLoading ? (
-          <Loader /> // Muestra el Loader mientras isLoading es true
-        ) : ( */}
+      {!isPageLoaded ? (
+          <Loader />
+        ) : (
           <Routes>
             <Route path="" element={<Home />} />
             <Route path="/about" element={<About />} />
@@ -41,7 +57,7 @@ function App() {
             <Route path="/portfolio/:category" element={<Gallery />} />
             <Route path="*" element={<Error />} />
           </Routes>
-        {/* )} */}
+        )}
       </Suspense>
     </div>
   )
