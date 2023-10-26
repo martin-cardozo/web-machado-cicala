@@ -71,11 +71,6 @@
     gap: 2px; /* Espacio entre las opciones */
   }
 
-  .service-menu a {
-    margin-bottom: 6px;
-  }
-
-
   .service-image {
     width: 100%;
     margin: 0;
@@ -87,17 +82,29 @@
 }
 
 @media only screen and (max-width: 600px) {
+
   .service-menu {
-    font-size: 11px;
+    font-size: 10px;
     padding: 15px 0 15px 0;
-    grid-template-columns: repeat(2, 1fr); /* Organizar en 3 columnas */
-    gap: 2px; /* Espacio entre las opciones */
+    grid-template-columns: repeat(3, 1fr); /* Organizar en 2 columnas */
+    gap: 0px; /* Espacio entre las opciones */
+  }
+
+  .service-menu a {
+    border: 1px solid #f9f9f9;
+    margin-bottom: 2px;
+    padding: 4px 15px;
   }
 
   .service-text {
     max-width: 200px;
     margin: 0;
     padding: 10px;
-    font-size: 10px;
+    font-size: 13px;
+  }
+
+  .service-image img {
+    height: 500px;
+    object-fit: cover;
   }
 }

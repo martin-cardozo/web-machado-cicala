@@ -12,9 +12,12 @@ function Gallery() {
     const [imageData, setImageData] = useState({});
 
     useEffect(() => {
+        // Restablecer la posición de desplazamiento cuando se cambia de categoría
+        window.scrollTo(0, 0);
+
         // Cargar datos de la categoría seleccionada desde tu archivo JSON aquí
         // Se tiene un archivo JSON por cada categoría 
-    
+
         // Carga de datos utilizando import (ajustar la ruta):
         import(`../assets/portfolio/textos/${category}.json`)
           .then((data) => {
