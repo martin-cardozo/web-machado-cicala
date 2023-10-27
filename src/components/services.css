@@ -65,10 +65,17 @@
     width: 100%;
     margin: 0;
     font-size: 14px;
+    padding: 15px 0 15px 0;
 
     display: grid; /* CSS Grid */
     grid-template-columns: repeat(3, 1fr); /* Organizar en 3 columnas */
     gap: 2px; /* Espacio entre las opciones */
+  }
+
+  .service-menu a {
+    border: 1px solid #f9f9f9;
+    margin: 0;
+    padding: 2px;
   }
 
   .service-image {
@@ -85,16 +92,10 @@
 
   .service-menu {
     font-size: 10px;
-    padding: 15px 0 15px 0;
-    grid-template-columns: repeat(3, 1fr); /* Organizar en 2 columnas */
     gap: 0px; /* Espacio entre las opciones */
   }
 
-  .service-menu a {
-    border: 1px solid #f9f9f9;
-    margin: 0;
-    padding: 4px;
-  }
+  
 
   .service-text {
     max-width: 200px;

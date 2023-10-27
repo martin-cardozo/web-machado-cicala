@@ -52,8 +52,9 @@ body{
 @media only screen and (max-width: 600px) {
 
     .backdrop #card{
-        max-width: 80%;
-        margin: 160px auto; 
+        max-width: 60%;
+        height: 450px;
+        margin: 140px auto; 
     }
 }
 
