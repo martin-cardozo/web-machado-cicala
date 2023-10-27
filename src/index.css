@@ -46,14 +46,14 @@ body{
     border: 3px solid white;
     cursor: auto;
     opacity: 1;
-    transform: scale(1.7)
+    transform: scale(1.2)
 }
 
 .backdrop-card img{
     width: 100%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 740px) {
 
     .backdrop-card{
         transform: scale(1)
