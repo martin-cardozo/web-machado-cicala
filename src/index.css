@@ -29,6 +29,7 @@ body{
 
 /* Estilos del Modal */
 .backdrop{
+    display: flex;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -38,24 +39,27 @@ body{
     background: rgba(0, 0, 0, 0.8);
 }
 
-.backdrop #card{
+.backdrop-card{
     display: block;
-    max-width: 30%;
-    height: 70%;
-    margin: 120px auto;
+    margin: auto;
     box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.5);
     border: 3px solid white;
     cursor: auto;
     opacity: 1;
+    transform: scale(1.7)
+}
+
+.backdrop-card img{
+    width: 100%;
 }
 
 @media only screen and (max-width: 600px) {
 
-    .backdrop #card{
-        max-width: 60%;
-        height: 450px;
-        margin: 140px auto; 
+    .backdrop-card{
+        transform: scale(1)
     }
+
+    
 }
 
 

@@ -246,7 +246,7 @@ header {
     .menu-container {
         flex-direction: column;
         margin: 4px;
-        padding: 4px;
+        padding: 4px 4px 60px 4px;
     }
 
     .menu-col{
