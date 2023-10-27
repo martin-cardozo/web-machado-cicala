@@ -57,25 +57,25 @@
 
 @media only screen and (max-width: 1080px) {
   .services {
-    flex-direction: column;
+    flex-wrap: wrap;
   }
 
   .service-menu {
     height: 100%;
     width: 100%;
     margin: 0;
-    font-size: 14px;
+    font-size: 12px;
+    gap: 0px; /* Espacio entre las opciones */
     padding: 15px 0 15px 0;
 
     display: grid; /* CSS Grid */
     grid-template-columns: repeat(3, 1fr); /* Organizar en 3 columnas */
-    gap: 2px; /* Espacio entre las opciones */
   }
 
   .service-menu a {
     border: 1px solid #f9f9f9;
     margin: 0;
-    padding: 2px;
+    padding: 4px;
   }
 
   .service-image {
@@ -84,17 +84,15 @@
   }
 
   .service-image img {
-    height: 100%;
+    width: 100%;
   }
 }
 
 @media only screen and (max-width: 600px) {
 
-  .service-menu {
-    font-size: 10px;
-    gap: 0px; /* Espacio entre las opciones */
+  .service-menu a {
+    text-align: center;
   }
-
   
 
   .service-text {
@@ -105,7 +103,6 @@
   }
 
   .service-image img {
-    height: 500px;
-    object-fit: cover;
+    height: 550px;
   }
 }
