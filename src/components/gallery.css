@@ -2,7 +2,7 @@
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around; 
+  justify-content: space-evenly; 
   background-color: #f9f9f9;
   margin: 0.5em;
 }
@@ -13,12 +13,12 @@
   color: rgb(0, 0, 0);
   cursor: pointer;
   margin-bottom: 0.5em;
-  flex-basis: auto; /* Deja que los elementos tengan un ancho automático */
+  flex-basis: calc(33.33% - 0.5em);
 }
 
 .gallery img {
   object-fit: cover;
-  height: 300px;
+  height: 320px;
   width: 100%;
   display: block;
   outline: 2px solid #fff;
