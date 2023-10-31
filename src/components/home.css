@@ -75,7 +75,15 @@
   padding: 3px;
 }
 
-@media only screen and (min-width: 1080px) {
+@media only screen and (min-width: 1280px) {
+  .overflow {
+    display: flex;
+    height: 58em;
+    overflow-y: hidden;
+  }
+}
+
+@media only screen and (min-width: 740px) and (max-width: 1280px) {
   .overflow {
     display: flex;
     height: 37.4em;
@@ -83,7 +91,7 @@
   }
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 740px) {
 
   .slider-gallery {
     display: flex;

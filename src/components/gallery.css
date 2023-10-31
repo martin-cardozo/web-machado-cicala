@@ -92,4 +92,7 @@ iframe {
     .image-container {
         flex-basis: calc(100% - 0.5em);
     }
+    .gallery img {
+      height: 100%;
+    }
 }
