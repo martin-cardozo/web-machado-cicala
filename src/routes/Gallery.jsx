@@ -79,7 +79,7 @@ function Gallery() {
                           src={`/images/portfolio/${category}/${imageName}.${extension}`} // Ruta con la extensión correspondiente
                           alt={`Descripción de ${imageName}`}
                           loading="lazy"
-                          height="300px"
+                          height="320px"
                           
                         />
                         <div className="centered">
