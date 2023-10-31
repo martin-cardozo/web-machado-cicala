@@ -28,7 +28,7 @@ function Form() {
 
   const sendEmail = (e) => {
 
-    emailjs.sendForm('service_x5f0rlv', 'template_z1612iz', form.current, 'XXVyIEu1twQ9e-AQe')
+    emailjs.sendForm('service_el8ryu3', 'template_y5tszif', form.current, 's0bilGuUYkWTGtEsf')
       .then((result) => {
           // console.log(result.text);
           message()
