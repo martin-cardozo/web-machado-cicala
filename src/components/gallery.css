@@ -73,12 +73,7 @@ iframe {
   margin: 2px;
 }
 
-/* Para 3 columnas en pantallas de hasta 1000px de ancho */
-@media only screen and (max-width: 1000px) {
-    .image-container {
-        flex-basis: calc(33.33% - 0.5em);
-    }
-}
+
 
 /* Para 2 columnas en pantallas de hasta 800px de ancho */
 @media only screen and (max-width: 800px) {
