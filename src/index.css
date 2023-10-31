@@ -46,10 +46,7 @@ body {
   transform: scale(1.8);
 }
 
-.backdrop-card img {
-  object-fit: cover;
-  width: 100%;
-}
+
 
 @media only screen and (min-width: 1600px) {
   .backdrop-card {
