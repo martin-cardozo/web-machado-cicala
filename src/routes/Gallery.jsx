@@ -74,9 +74,9 @@ function Gallery() {
                     );
                 } else {
                     return (
-                      <div key={imageName} className='image-container' onClick={() => setSelectedImg(`/images/portfolio/${category}/${imageName}.${extension}`)} >
+                      <div key={imageName} className='image-container' onClick={() => setSelectedImg(`/assets/portfolio/${category}/${imageName}.${extension}`)} >
                         <img style={{ backgroundColor: grey() }}
-                          src={`/images/portfolio/${category}/${imageName}.${extension}`} // Ruta con la extensión correspondiente
+                          src={`/assets/portfolio/${category}/${imageName}.${extension}`} // Ruta con la extensión correspondiente
                           alt={`Descripción de ${imageName}`}
                           loading="lazy"
                           height="320px"

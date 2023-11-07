@@ -72,11 +72,11 @@ const Navbar = () => {
                             <Link to={"/portfolio/kids"} onClick={updateDropdown}>Kids</Link>
                             <Link to={"/portfolio/animals"} onClick={updateDropdown}>Animals</Link>
                             <Link to={"/portfolio/cars"} onClick={updateDropdown}>Cars</Link>
-                            <Link to={"/portfolio/special-projects"} onClick={updateDropdown}>Special Projects</Link>
+                            <Link to={"/portfolio/specialprojects"} onClick={updateDropdown}>Special Projects</Link>
                             <Link to={"/portfolio/still"} onClick={updateDropdown}>Still</Link>
                             <Link to={"#"} style={{cursor: 'default'}}><strong>Audiovisual</strong></Link>
                             <Link to={"/portfolio/films"} onClick={updateDropdown}>Films</Link>
-                            <Link to={"/portfolio/short-films"} onClick={updateDropdown}>Short Films</Link>
+                            <Link to={"/portfolio/shortfilms"} onClick={updateDropdown}>Short Films</Link>
                             <Link to={"/portfolio/music"} onClick={updateDropdown}>Music</Link>
                             <Link to={"/portfolio/videos"} onClick={updateDropdown}>Videos</Link>
                         </div>

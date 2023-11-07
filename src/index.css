@@ -47,8 +47,15 @@ body {
 }
 
 
+@media only screen and (min-width: 1900px) {
+  .backdrop-card {
+    width: auto;
+    flex-basis: auto;
+    transform: scale(1.6);
+  }
+}
 
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1600px) and (max-width: 1900px) {
   .backdrop-card {
     transform: scale(1.4);
   }

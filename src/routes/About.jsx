@@ -1,19 +1,19 @@
 import { Link } from "react-router-dom"
 import "../components/about.css"
-import foto1 from "/images/about/jose_gabriel_1.jpg"
-import foto2 from "/images/about/jose_gabriel_2.jpg"
-import foto3 from "/images/about/jose_gabriel_3.jpg"
+import foto1 from "/assets/about/jose_gabriel_1.jpg"
+import foto2 from "/assets/about/jose_gabriel_2.jpg"
+import foto3 from "/assets/about/jose_gabriel_3.jpg"
 
-import foto4 from "/images/about/gabriel_1.jpg"
-import foto5 from "/images/about/gabriel_2.jpg"
-import foto6 from "/images/about/gabriel_3.jpg"
-import foto7 from "/images/about/gabriel_4.jpg"
+import foto4 from "/assets/about/gabriel_1.jpg"
+import foto5 from "/assets/about/gabriel_2.jpg"
+import foto6 from "/assets/about/gabriel_3.jpg"
+import foto7 from "/assets/about/gabriel_4.jpg"
 
-import foto8 from "/images/about/jose_1.jpg"
+import foto8 from "/assets/about/jose_1.jpg"
 // import foto9 from "../assets/about/jose_2.jpg"
 // import foto10 from "../assets/about/jose_3.jpeg"
 // import foto11 from "../assets/about/jose_4.jpg"
-import foto12 from "/images/about/jose_2.jpg"
+import foto12 from "/assets/about/jose_2.jpg"
 
 import instagramLogo from "../assets/icons/icon-instagram.png"
 
