@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import '../components/gallery.css'
 import Modal from '../components/Modal';
+import GalleryLoader from './GalleryLoader';
 
 
 function Gallery() {
@@ -10,6 +11,10 @@ function Gallery() {
     const {category} = useParams()
 
     const [imageData, setImageData] = useState({});
+
+    const [currentPage, setCurrentPage] = useState(1);
+    const [imagesPerPage, setImagesPerPage] = useState(9);
+    const [loading, setLoading] = useState(true)
 
     useEffect(() => {
         // Restablecer la posición de desplazamiento cuando se cambia de categoría
@@ -26,6 +31,7 @@ function Gallery() {
           .catch((error) => {
             console.error('Error al cargar los datos:', error);
           });
+
       }, [category]);
     
 
@@ -38,10 +44,42 @@ function Gallery() {
     // Acotar la cantidad de imágenes poniendo una cantida máxima
     // const imageKeys = Object.keys(imageData).slice(0, 70);
 
+    // Función para cargar más imágenes cuando se desplaza hacia abajo
+    const handleScroll = () => {
+      if (
+        window.innerHeight + window.scrollY >= document.body.offsetHeight &&
+        (currentPage * imagesPerPage) < Object.keys(imageData).length
+      ) {
+        setLoading(true)
+        setCurrentPage(currentPage + 1);
+      }
+    };
+
+    useEffect(() => {
+      window.addEventListener("scroll", handleScroll);
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }, [currentPage, imageData]);
+
+    useEffect(() => {
+      // Simula un retraso de 2 segundos
+      const loadingTimer = setTimeout(() => {
+        setLoading(false)
+      }, 2000)
+
+      return () => clearTimeout(loadingTimer)
+    }, [loading])
+
+    // Obtén un conjunto de imágenes para la página actual
+    const imagesToShow = Object.keys(imageData).reverse().slice(
+      0,
+      currentPage * imagesPerPage
+    );
+
     return (
         <div className="gallery">
-            {
-            Object.keys(imageData).reverse().map((imageName) => {
+            {imagesToShow.map((imageName) => {
                 const extension = imageData[imageName].extension; // Obtener la extensión desde los datos
                 const isVideo = extension === 'mp4'; // Verificar si es un video
 
@@ -79,7 +117,7 @@ function Gallery() {
                           src={`/assets/portfolio/${category}/${imageName}.${extension}`} // Ruta con la extensión correspondiente
                           alt={`Descripción de ${imageName}`}
                           loading="lazy"
-                          height="320px"
+                          height="350px"
                           
                         />
                         <div className="centered">
@@ -92,6 +130,7 @@ function Gallery() {
                 }
             })
             }
+            {loading && <GalleryLoader />}
             { selectedImg && <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg} /> }
         </div>
     )
