@@ -121,9 +121,9 @@ function Gallery() {
                           
                         />
                         <div className="centered">
-                          <h2>{imageData[imageName].text1}</h2>
-                          <hr />
-                          <h3>{imageData[imageName].text2}</h3>
+                          {imageData[imageName].text1 && <h2>{imageData[imageName].text1}</h2>}
+                          {imageData[imageName].text1 && imageData[imageName].text2 && <hr />} {/* Condición para mostrar la línea divisora */}
+                          {imageData[imageName].text1 && <h3>{imageData[imageName].text2}</h3>}
                         </div>
                       </div>
                     );

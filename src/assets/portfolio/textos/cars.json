@@ -1,22 +1,22 @@
 {
     "car (1)": {
-      "text1": "Imagen 1 - Texto 1",
-      "text2": "Imagen 1 - Texto 2",
+      "text1": "",
+      "text2": "",
       "extension": "jpg"
     },
     "car (2)": {
-      "text1": "Imagen 2 - Texto 1",
-      "text2": "Imagen 2 - Texto 2",
+      "text1": "",
+      "text2": "",
       "extension": "jpg"
     },
     "car (3)": {
-      "text1": "Imagen 3 - Texto 1",
-      "text2": "Imagen 3 - Texto 2",
+      "text1": "",
+      "text2": "",
       "extension": "jpg"
     },
     "car (4)": {
-      "text1": "Imagen 4 - Texto 1",
-      "text2": "Imagen 4 - Texto 2",
+      "text1": "",
+      "text2": "",
       "extension": "jpg"
     }
   }

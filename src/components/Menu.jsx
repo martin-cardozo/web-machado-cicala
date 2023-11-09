@@ -33,7 +33,7 @@ function Menu({setBurgerClass, setMenuClass, isMenuClicked, setIsMenuClicked}) {
                     <li onClick={updateMenu}><Link to={"/portfolio/advertising"}>Advertising</Link></li>
                     <li onClick={updateMenu}><Link to={"/portfolio/beauty"}>Beauty</Link></li>
                     <li onClick={updateMenu}><Link to={"/portfolio/celebrities"}>Celebrities</Link></li>
-                    <li onClick={updateMenu}><Link to={"/portfolio/entertaiment"}>Entertaiment</Link></li>
+                    <li onClick={updateMenu}><Link to={"/portfolio/entertainment"}>Entertainment</Link></li>
                     <li onClick={updateMenu}><Link to={"/portfolio/fashion"}>Fashion</Link></li>
                     <li onClick={updateMenu}><Link to={"/portfolio/hair"}>Hair</Link></li>
                     <li onClick={updateMenu}><Link to={"/portfolio/lifestyle"}>Lifestyle</Link></li>

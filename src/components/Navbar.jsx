@@ -65,7 +65,7 @@ const Navbar = () => {
                             <Link to={"/portfolio/advertising"} onClick={updateDropdown}>Advertising</Link>
                             <Link to={"/portfolio/beauty"} onClick={updateDropdown}>Beauty</Link>
                             <Link to={"/portfolio/celebrities"} onClick={updateDropdown}>Celebrities</Link>
-                            <Link to={"/portfolio/entertaiment"} onClick={updateDropdown}>Entertaiment</Link>
+                            <Link to={"/portfolio/entertainment"} onClick={updateDropdown}>Entertainment</Link>
                             <Link to={"/portfolio/fashion"} onClick={updateDropdown}>Fashion</Link>
                             <Link to={"/portfolio/hair"} onClick={updateDropdown}>Hair</Link>
                             <Link to={"/portfolio/lifestyle"} onClick={updateDropdown}>Lifestyle</Link>

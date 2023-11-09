@@ -20,7 +20,7 @@ body {
 }
 
 .App {
-  max-width: 960px;
+  max-width: 1080px;
   margin: 0 auto;
 }
 
@@ -49,8 +49,6 @@ body {
 
 @media only screen and (min-width: 1900px) {
   .backdrop-card {
-    width: auto;
-    flex-basis: auto;
     transform: scale(1.6);
   }
 }
