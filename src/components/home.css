@@ -21,14 +21,14 @@
 .slide-track-up {
   height: calc(285px * 8);
 
-  animation: scroll-up 110s linear infinite;
+  animation: scroll-up 90s linear infinite;
 }
 
 /* De arriba hacia abajo */
 .slide-track-down {
   height: calc(285px * 8);
 
-  animation: scroll-down 110s linear infinite;
+  animation: scroll-down 90s linear infinite;
 }
 
 @keyframes scroll-up {
