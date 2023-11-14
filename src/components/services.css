@@ -2,36 +2,53 @@
   display: flex;
   font-family: "Poppins", sans-serif;
   background-color: #fff;
+  gap: 2px; /* Espacio entre service-menu y service-image */
 }
 .service-menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 47.2em;
+  display: grid; /* CSS Grid */
+  grid-template-columns: repeat(1, 1fr); /* Organizar en 1 columna */
+  height: 50em;
+  width: 25%; /* Ancho del menú en pantalla grande */
   background-color: #1a1a1a;
-  margin: 15px 5px 0 10px;
-  padding: 25px 0 40px 0;
+  margin: 5px;
+  padding: 25px 0 30px 0;
   font-size: 13px;
 }
 
-.service-menu a {
-  margin-bottom: 8px;
-  padding: 4px 40px;
+.dropdown-header{
+  display: none;
+}
+
+.dropdown-links{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.dropdown-links a {
+  margin-bottom: 5px;
+  padding: 4px 40px; /* Reducir el ancho de los enlaces del menú */
   text-decoration: none;
   color: #f9f9f9;
   transition: background-color 0.3s;
 }
-.service-menu a:hover {
+.dropdown-links a:hover {
   background-color: #7d7d7d;
 }
-.service-menu a.active {
-  background-color: #7d7d7d; 
+.dropdown-links a.active {
+  background-color: #7d7d7d;
 }
 
 .service-image {
-  width: 75%;
-  margin: 15px 10px 0 5px;
+  flex: 1; /* Toma todo el espacio restante en pantalla grande */
+  margin: 5px;
   font-size: 13px;
+}
+
+.service-image img {
+  width: 100%;
+  height: 50em;
+  object-fit: cover;
 }
 
 .service-text {
@@ -46,71 +63,106 @@
   color: #fff;
 }
 
-.service-image img {
-  width: 100%;
-  height: 47.2em;
-  object-fit: cover;
-}
-
 
 @media only screen and (min-width: 1600px) {
-  .service-menu {
-    width: 25%;
+  .service-menu{
     height: 70em;
+    font-size: 14px;
+  }
+  .dropdown-links a {
+    margin: 0;
   }
   .service-image img {
-    height: 70em;
+    height: 75em;
+  }
+  .service-text {
+    max-width: 300px;
+    font-size: 20px;
   }
 }
 
-@media only screen and (max-width: 1080px) {
+
+@media only screen and (max-width: 900px) {
   .services {
     flex-wrap: wrap;
+    gap: 0;
   }
 
   .service-menu {
     height: 100%;
     width: 100%;
     margin: 0;
+    padding: 15px 0 15px 0;
     font-size: 12px;
     gap: 0px; /* Espacio entre las opciones */
-    padding: 15px 0 15px 0;
-
-    display: grid; /* CSS Grid */
-    grid-template-columns: repeat(3, 1fr); /* Organizar en 3 columnas */
   }
 
   .service-menu a {
     border: 1px solid #f9f9f9;
     margin: 0;
     padding: 4px;
-  }
-
-  .service-image {
-    width: 100%;
-    margin: 0;
-  }
-
-  .service-image img {
-    width: 100%;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-
-  .service-menu a {
     text-align: center;
   }
   
+  
+
+  .dropdown-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a1a;
+    padding: 8px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .dropdown-header p{
+    font-size: 16px;
+  }
+
+  .dropdown-header i {
+    font-size: 22px;
+  }
+
+  /* Agrega una clase de animación para el servicio */
+  .dropdown-links.animate {
+    max-height: 1000px; /* El valor máximo debe ser mayor que la altura máxima de los enlaces */
+    opacity: 1;
+    transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  }
+
+  /* Establece la altura máxima y la opacidad en 0 para ocultar por defecto */
+  .dropdown-links {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+  }
+
+  .dropdown-links a {
+    display: block;
+    padding: 8px 0;
+    text-align: center;
+    text-decoration: none;
+    color: #f9f9f9;
+    transition: background-color 0.3s;
+  }
+
+  .dropdown-links a:hover {
+    background-color: #7d7d7d;
+  }
+
+  .dropdown-links a.active {
+    background-color: #7d7d7d;
+  }
+
+  .service-image img {
+    height: 600px;
+  }
 
   .service-text {
     max-width: 200px;
     margin: 0;
     padding: 10px;
     font-size: 13px;
-  }
-
-  .service-image img {
-    height: 550px;
   }
 }

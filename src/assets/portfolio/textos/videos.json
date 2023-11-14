@@ -212,22 +212,22 @@
   "video31": {
     "videoUrl": "https://www.youtube.com/embed/5Y19oKNll98",
     "extension": "mp4",
-    "client": "Chandon",
-    "campaign": "Primeras veces",
+    "client": "Chandon - Primeras veces",
+    "campaign": "Mixología",
     "year": 2018
   },
   "video32": {
     "videoUrl": "https://www.youtube.com/embed/qF61dE0r_-g",
     "extension": "mp4",
-    "client": "Chandon",
-    "campaign": "Primeras veces",
+    "client": "Chandon - Primeras veces",
+    "campaign": "Gastronomía",
     "year": 2018
   },
   "video33": {
     "videoUrl": "https://www.youtube.com/embed/vppZB5h8dd8",
     "extension": "mp4",
-    "client": "Chandon",
-    "campaign": "Primeras veces",
+    "client": "Chandon - Primeras veces",
+    "campaign": "Make-up",
     "year": 2018
   }
 }

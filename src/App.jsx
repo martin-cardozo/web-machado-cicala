@@ -4,6 +4,7 @@ import "./index.css"
 import Navbar from "./components/Navbar"
 import Error from "./routes/Error"
 import Loader from "./routes/Loader"
+import 'font-awesome/css/font-awesome.min.css';
 
 const Home = lazy(() => import("./routes/Home"))
 const About = lazy(() => import("./routes/About"))

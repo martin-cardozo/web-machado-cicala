@@ -77,9 +77,9 @@ function Menu({setBurgerClass, setMenuClass, isMenuClicked, setIsMenuClicked}) {
                     <li onClick={updateMenu}><Link to={"#"}><img rel='icon' src={emailLogo} alt="email" />contacto@machadocicala.com.ar</Link></li>
                     <li onClick={updateMenu}><Link to={"https://www.instagram.com/machadocicala/?hl=es"} target='_blank'><img rel='icon' src={instagramLogo} alt="instagram" />@machadocicala</Link></li>
                     <li onClick={updateMenu}><Link to={"https://www.tiktok.com/@machadocicala"} target='_blank'><img rel='icon' src={tiktokLogo} alt="tiktok" />@machadocicala</Link></li>
-                    <li onClick={updateMenu}><Link to={"https://www.instagram.com/josecicala/?hl=es"} target='_blank'><img rel='icon' src={instagramLogo} alt="instagram" />@josecicala</Link></li>
-                    <li onClick={updateMenu}><Link to={"https://www.instagram.com/machadito_arte/?hl=es"} target='_blank'><img rel='icon' src={instagramLogo} alt="instagram" />@machadito_arte</Link></li>
                     <li onClick={updateMenu}><Link to={"https://www.linkedin.com/company/machado-cicala/mycompany/"} target='_blank'><img rel='icon' src={linkedinLogo} alt="linkedin" />machado-cicala</Link></li>
+                    <li onClick={updateMenu}><Link to={"https://www.instagram.com/machadito_arte/?hl=es"} target='_blank'><img rel='icon' src={instagramLogo} alt="instagram" />@machadito_arte</Link></li>
+                    <li onClick={updateMenu}><Link to={"https://www.instagram.com/josecicala/?hl=es"} target='_blank'><img rel='icon' src={instagramLogo} alt="instagram" />@josecicala</Link></li>
                 </ul>
             </div>
         </div>

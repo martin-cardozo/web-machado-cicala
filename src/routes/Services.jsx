@@ -7,6 +7,7 @@ function Services() {
   const { id } = useParams()
   const [selectedService, setSelectedService] = useState(null)
   const [activeOption, setActiveOption] = useState(null)
+  const [isDropdownOpen, setIsDropdownOpen] = useState(window.innerWidth > 900) // Estado condicional para controlar la visibilidad del menú desplegable
 
   useEffect(() => {
     // Filtrar el servicio seleccionado por id
@@ -15,6 +16,37 @@ function Services() {
       setActiveOption(id) // Establecer la opción activa al cargar el servicio
     }
   }, [id])
+
+  useEffect(() => {
+    // Manejar el evento de redimensionamiento
+    const handleResize = () => {
+      setIsDropdownOpen(window.innerWidth > 900)
+    }
+
+    // Agregar el oyente de redimensionamiento al montar el componente
+    window.addEventListener("resize", handleResize)
+
+    // Eliminar el oyente de redimensionamiento al desmontar el componente
+    return () => {
+      window.removeEventListener("resize", handleResize)
+    }
+  }, [])
+
+  function toggleDropdown() {
+    setIsDropdownOpen(!isDropdownOpen)
+
+    // Si está abriendo el dropdown, agrega la clase de animación
+    if (!isDropdownOpen) {
+      setTimeout(() => {
+        const serviceLinks = document.querySelector(".dropdown-links")
+        serviceLinks.classList.add("animate")
+      }, 0)
+    } else {
+      // Si está cerrando el dropdown, elimina la clase de animación después de que se complete la animación de cierre
+      const serviceLinks = document.querySelector(".dropdown-links")
+      serviceLinks.classList.remove("animate")
+    }
+  }
 
   /* Color de fondo de la imagen mientras carga en la escala de grises */
   function grey() {
@@ -26,16 +58,33 @@ function Services() {
     <>
       <div className="services">
         <section className="service-menu">
-          {Object.keys(data).map((serviceName) => (
-            <Link
-              key={data[serviceName].id}
-              to={`/services/${serviceName}`}
-              onClick={() => setActiveOption(serviceName)}
-              className={activeOption === serviceName ? "active" : ""}
-            >
-              {data[serviceName].menu_text}
-            </Link>
-          ))}
+          <div className="dropdown-header" onClick={toggleDropdown}>
+            <p>SERVICIOS</p>
+            {isDropdownOpen ? (
+              <i className="fa fa-chevron-up"></i> // Puedes utilizar un icono como FontAwesome para indicar que es desplegable
+            ) : (
+              <i className="fa fa-chevron-down"></i>
+            )}
+          </div>
+          {isDropdownOpen && (
+            <div className="dropdown-links">
+              {Object.keys(data).map((serviceName) => (
+                <Link
+                  key={data[serviceName].id}
+                  to={`/services/${serviceName}`}
+                  onClick={() => {
+                    setActiveOption(serviceName)
+                    if (window.innerWidth <= 800) {
+                      toggleDropdown()
+                    }
+                  }}
+                  className={activeOption === serviceName ? "active" : ""}
+                >
+                  {data[serviceName].menu_text}
+                </Link>
+              ))}
+            </div>
+          )}
         </section>
 
         <section className="service-image">

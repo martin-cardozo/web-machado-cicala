@@ -68,7 +68,7 @@
 }
 .horizontal-scrolling-items__item > img {
   object-fit: cover;
-  height: 380px;
+  height: 350px;
   max-width: 100%;
   display: block;
   margin: 1px;
