@@ -59,7 +59,10 @@ function Services() {
       <div className="services">
         <section className="service-menu">
           <div className="dropdown-header" onClick={toggleDropdown}>
-            <p>SERVICIOS</p>
+            <div>
+              <p>SERVICIOS</p>
+              <p className="p2">{data[id].menu_text}</p>
+            </div>
             {isDropdownOpen ? (
               <i className="fa fa-chevron-up"></i> // Puedes utilizar un icono como FontAwesome para indicar que es desplegable
             ) : (
@@ -74,7 +77,7 @@ function Services() {
                   to={`/services/${serviceName}`}
                   onClick={() => {
                     setActiveOption(serviceName)
-                    if (window.innerWidth <= 800) {
+                    if (window.innerWidth <= 900) {
                       toggleDropdown()
                     }
                   }}

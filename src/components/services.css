@@ -120,6 +120,11 @@
     font-size: 16px;
   }
 
+  .dropdown-header .p2{
+    font-size: 12px;
+    color: #9c9c9c;
+  }
+
   .dropdown-header i {
     font-size: 22px;
   }

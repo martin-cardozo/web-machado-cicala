@@ -1,0 +1,53 @@
+{
+  "video1": {
+    "videoUrl": "https://youtube.com/embed/kFdZROXStvE",
+    "extension": "mp4",
+    "client": "Pablo Agustín",
+    "song": "Absurda Ilusión",
+    "year": null
+  },
+  "video2": {
+    "videoUrl": "https://youtube.com/embed/hexZSLPt17I",
+    "extension": "mp4",
+    "client": "Gastón Pauls",
+    "song": "The Way You Are",
+    "year": null
+  },
+  "video3": {
+    "videoUrl": "https://youtube.com/embed/d3COesU0UKI",
+    "extension": "mp4",
+    "client": "Piti Fernández",
+    "song": "Conmigo Mismo",
+    "year": null
+  },
+  "video4": {
+    "videoUrl": "https://youtube.com/embed/X6wP5UjWUfk",
+    "extension": "mp4",
+    "client": "Coronados de Gloria",
+    "song": "Sagrado",
+    "company": "DG ENTERTAINMENT",
+    "year": null
+  },
+  "video5": {
+    "videoUrl": "https://youtube.com/embed/jO7lbO6cYss",
+    "extension": "mp4",
+    "client": "Miss Bolivia",
+    "song": "Bien warrior",
+    "year": null
+  },
+  "video6": {
+    "videoUrl": "https://youtube.com/embed/ggE06T9i4KY",
+    "extension": "mp4",
+    "client": "Javier Parisi",
+    "song": "The Only Truth de la plecícula Lennons",
+    "year": null
+  },
+  "video7": {
+    "videoUrl": "https://player.vimeo.com/video/888020420",
+    "extension": "mp4",
+    "client": "La Beriso",
+    "song": "No me olvides",
+    "company": "SONY MUSIC",
+    "year": null
+  }
+}

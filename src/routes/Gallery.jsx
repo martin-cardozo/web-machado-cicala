@@ -91,7 +91,6 @@ function Gallery() {
                             src={imageData[imageName].videoUrl}
                             loading="lazy"
                             width="100%"
-                            height="250"
                             allowFullScreen
                           >
                           </iframe>
@@ -132,6 +131,18 @@ function Gallery() {
             }
             {loading && <GalleryLoader />}
             { selectedImg && <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg} /> }
+
+            <div className="category-text">
+              {category && (
+                <p>
+                  {!(category === "specialprojects" || category === "shortfilms" || category === "musicvideos") && 
+                  `${category.toUpperCase()}`}
+                  {category === "specialprojects" && "SPECIAL PROJECTS"}
+                  {category === "shortfilms" && "SHORT FILMS"}
+                  {category === "musicvideos" && "MUSIC VIDEOS"}
+                </p>
+              )}
+            </div>
         </div>
     )
 }
