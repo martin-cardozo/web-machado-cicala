@@ -40,4 +40,4 @@ Como único desarrollador encargado de este proyecto freelance, mis responsabili
 - Puesta en producción, asegurando tiempos de carga mínimos y disponibilidad del sitio.
 
 ---
-*Desarrollado con 💻 y ☕ por [Martín Ignacio Cardozo](https://github.com/martin-cardozo)*
+*Desarrollado por [Martín Ignacio Cardozo](https://github.com/martin-cardozo)*
