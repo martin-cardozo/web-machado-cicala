@@ -20,7 +20,7 @@ La plataforma está estructurada para mostrar las dos grandes vertientes del est
 
 ## 🛠️ Tecnologías Utilizadas
 
-* **Frontend:** React.js*, CSS Modules / HTML5.
+* **Frontend:** React.js, CSS Modules / HTML5.
 * **Backend:** Node.js / Express.
 * **Arquitectura:** Diseño 100% Responsivo orientado a UX/UI y rendimiento (Lazy Loading, Image Optimization).
 
