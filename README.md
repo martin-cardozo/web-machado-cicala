@@ -39,5 +39,6 @@ Como único desarrollador encargado de este proyecto freelance, mis responsabili
 - Implementación de la lógica de enrutamiento y carga de galerías multimedia.
 - Puesta en producción, asegurando tiempos de carga mínimos y disponibilidad del sitio.
 
+
 ---
 *Desarrollado por [Martín Ignacio Cardozo](https://github.com/martin-cardozo)*
